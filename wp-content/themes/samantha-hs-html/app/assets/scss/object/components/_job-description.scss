@@ -1,0 +1,11 @@
+.c-job-description {
+  a.is-mail {
+    font-weight: 700;
+    color: $font-base-color;
+    text-decoration: none;
+    @include transition();
+    &:hover {
+      opacity: .5;
+    }
+  }
+}

@@ -1,0 +1,178 @@
+@use "sass:math";
+
+.c-top-recruit {
+  background: $color-background;
+  position: relative;
+
+  &__background {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    padding-top: rem-calc(40);
+    top: 0;
+    left: 0;
+    z-index: 0;
+    @include breakpoint(medium down) {
+      position: relative;
+    }
+    @include breakpoint(small only) {
+      padding-top: rem-calc(16);
+    }
+
+    &-bgimg {
+      @include bg-option;
+      width: 100%;
+      height: calc(100% - 40px);
+      position: absolute;
+      bottom: 0;
+      z-index: 0;
+      @include breakpoint(medium down) {
+        position: relative;
+        height: auto;
+        padding-top: calc(560/1400*100%);
+      }
+
+
+    }
+
+    &-bgtext {
+      width: calc(834/1400*100%);
+      max-width: rem-calc(834);
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      @include breakpoint(small only) {
+        width: 70%;
+      }
+
+    }
+
+  }
+
+  &__content {
+    padding-top: calc(374/ 1400*100%);
+    @include breakpoint(medium down) {
+      padding-top: 0;
+    }
+  }
+
+  &__block {
+    text-decoration: none;
+    color: $font-base-color;
+    position: relative;
+    z-index: 1;
+    width: calc(914/1400*100%);
+    max-width: rem-calc(914);
+    background: $color-white;
+    margin-left: auto;
+    padding: rem-calc(69) rem-calc(188) rem-calc(69) rem-calc(75);
+    display: flex;
+    align-items: center;
+    @media (max-width: 1140px) {
+      padding: rem-calc(40) rem-calc(160) rem-calc(40) rem-calc(40);
+    }
+    @include breakpoint(medium down) {
+      width: 100%;
+      max-width: none;
+    }
+
+    @include breakpoint(small only) {
+      display: block;
+    }
+
+    @media (max-width: 450px) {
+      padding: rem-calc(32) rem-calc(24) rem-calc(80);
+    }
+
+    &:hover {
+      .c-top-recruit__text,
+      .c-top-recruit__title {
+        opacity: .5;
+      }
+
+      .c-top-recruit__arrow {
+        &:after {
+          opacity: .5;
+        }
+
+        &:before {
+          background: $color-accent;
+          transform: scale(1.4);
+        }
+      }
+    }
+
+  }
+
+  &__title {
+    min-width: rem-calc(194);
+    margin-right: rem-calc(10);
+    @include transition();
+    @include breakpoint(small only) {
+      margin-right: 0;
+    }
+
+    .c-heading.is-xlg {
+      margin-bottom: 0;
+      @include breakpoint(small only) {
+        margin-bottom: rem-calc(20);
+      }
+    }
+  }
+
+  &__text {
+    max-width: rem-calc(454);
+    @include transition();
+  }
+
+  &__arrow {
+    position: absolute;
+    width: rem-calc(98);
+    height: rem-calc(48);
+    top: 50%;
+    right: rem-calc(45);
+    transform: translateY(-50%);
+    @include transition();
+
+    @media (max-width: 450px) {
+      top: auto;
+      right: rem-calc(24);
+      bottom: rem-calc(20);
+      transform: none;
+    }
+
+    &:before, &:after {
+      content: "";
+      display: block;
+      position: absolute;
+
+      @include transition();
+    }
+
+    &:before {
+
+      width: rem-calc(48);
+      height: rem-calc(48);
+      border: 1px solid $color-accent;
+      border-radius: 50%;
+      right: 0;
+      top: 0;
+
+    }
+
+    &:after {
+      width: rem-calc(78);
+      height: rem-calc(8);
+      background-image: url(../images/icon-arrow-long.png);
+      @include bg-option;
+      background-size: contain;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+    }
+  }
+
+}

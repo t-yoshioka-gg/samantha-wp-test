@@ -1,0 +1,48 @@
+.c-block-top-message {
+  &__title {}
+  &__subtitle {
+    margin-top: rem-calc(40);
+    @include font-format(24, .06, 34);
+  }
+  &__text {
+    margin-top: rem-calc(30);
+    line-height: 2;
+    &.is-column {
+      display: flex;
+      align-items: flex-start;
+      margin: rem-calc(30) rem-calc(-18) 0;
+      @include breakpoint(medium down) {
+        flex-wrap: wrap;
+        margin: rem-calc(30) auto 0;
+      }
+      p {
+        width: 50%;
+        padding: 0 rem-calc(18);
+        @include breakpoint(medium down) {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    }
+  }
+  &__post {
+    text-align: right;
+    margin-top: rem-calc(60);
+    span {
+      display: block;
+    }
+    b {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: rem-calc(8);
+      @include font-format(24, .06, 34);
+      @include webfont-num();
+      small {
+        display: block;
+        @include font-format(14, .06, 24);
+        margin-right: rem-calc(8);
+      }
+    }
+  }
+}

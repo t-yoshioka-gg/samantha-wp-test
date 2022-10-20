@@ -1,0 +1,16 @@
+.c-service-page-lead {
+  &__links {
+    width: 100%;
+    max-width: rem-calc(748);
+    margin: 0 auto 0;
+
+  }
+
+  &__lead {
+    padding-top: rem-calc(80);
+
+    @include breakpoint(medium down) {
+      padding-top: rem-calc(64);
+    }
+  }
+}

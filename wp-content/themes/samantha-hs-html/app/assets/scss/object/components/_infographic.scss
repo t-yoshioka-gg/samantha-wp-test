@@ -1,0 +1,28 @@
+.c-infographic {
+  .c-page-lead-block {
+    margin-bottom: rem-calc(54);
+    @include breakpoint(small only) {
+      margin-bottom: rem-calc(20);
+    }
+  }
+
+  &__graphics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: rem-calc(84) 0 rem-calc(140);
+    @include breakpoint(medium down) {
+      justify-content: center;
+      margin-top: rem-calc(40);
+      margin-bottom: rem-calc(40);
+    }
+
+    .c-graphic-card {
+      width: calc(552/ 1140*100%);
+      @include breakpoint(medium down) {
+        width: 100%;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,456 @@
+
+<!--横並びフローチャート-->
+<!--グラフチャート-->
+<!-- カード-->
+<!--縦積みフローチャート--><!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>お役立ち情報｜サマンサ・ホームステージング</title>
+    <meta name="description" content="説明文">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="サマンサ・ホームステージング">
+    <meta property="og:description" content="説明文">
+    <meta property="og:url" content="/useful/">
+    <meta property="og:site_name" content="サマンサ・ホームステージング">
+    <meta property="og:image" content="/assets/images/ogp.png">
+    <link href="<?php Gurl::the_url() ?>/assets/images/favicon.ico" rel="icon"/>
+    <link href="<?php Gurl::the_url() ?>/assets/images/favicon.ico" rel="shortcut icon"/>
+    <link href="<?php Gurl::the_url() ?>/assets/images/web-clipicon.png" rel="apple-touch-icon"/>
+    <link href="<?php Gurl::the_url() ?>/assets/css/style.css" rel="stylesheet"/>
+    <link href="<?php Gurl::the_url() ?>/assets/css/app.css" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone|Material+Symbols+Outlined" rel="stylesheet">
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      window.WebFontConfig = {
+        // 以下にフォントを指定する
+        custom: {
+          urls: [
+            "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap",
+            "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&text=0123456789",
+            "https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap",
+            "https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&display=swap",
+            "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+          ],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        }
+      };
+      
+      (function () {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      
+    </script>
+  </head>
+  <body class="useful">
+    <button class="c-slidebar-button js-slidebar-button" type="button"><span class="c-slidebar-button__inner"><span class="c-slidebar-button__line"><span></span><span></span><span></span></span></span></button>
+    <div class="c-slidebar-menu js-slidebar-menu is-top-to-bottom">
+      <ul class="c-slidebar-menu__list">
+        <li><a href="<?php Gurl::the_url() ?>/about-us/">私たちについて</a>
+        </li>
+        <li><a href="<?php Gurl::the_url() ?>/homestaging/">ホームステージングとは</a>
+        </li>
+        <li class="c-slidebar-menu__parent js-accordion"><span data-accordion-title="menu-title">サービス</span>
+          <ul class="c-slidebar-menu__children" data-accordion-content="menu-text">
+            <li><a href="<?php Gurl::the_url() ?>/service/vacant/">空室ホームステージング</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/occupied/">居住中ホームステージング</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/still-photography/">スチール写真撮影</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/still-photography/#walkthrough">3Dウォークスルー動画撮影</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/vacant/#vr-home-stasing">バーチャルホームステージング<bt/>roOomy</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/home-organization/">片付け代行</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/packing-unpacking/">荷造り・荷解き代行</a>
+            </li>
+          </ul>
+        </li>
+        <li class="c-slidebar-menu__parent js-accordion"><span data-accordion-title="menu-title">お役立ち情報</span>
+          <ul class="c-slidebar-menu__children" data-accordion-content="menu-text">
+            <li><a href="<?php Gurl::the_url() ?>/useful/">お役立ち情報</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/useful/category/">用語集</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="<?php Gurl::the_url() ?>/company/">会社情報</a>
+        </li>
+        <li><a href="<?php Gurl::the_url() ?>/recruit/">採用情報</a>
+        </li>
+      </ul>
+      <div class="c-slidebar-menu__bottom"><a class="c-slidebar-menu__link" href="<?php Gurl::the_url() ?>/news/">お知らせ一覧</a><a class="c-slidebar-menu__button c-button__contact" href="<?php Gurl::the_url() ?>/contact/"><span class="icon-contact"></span>お問い合わせ</a>
+      </div>
+    </div>
+    <header class="l-header">
+      <div class="l-header__content">
+        <div class="l-header__logo"><a href="<?php Gurl::the_url() ?>/"><img src="<?php GUrl::the_asset() ?>/assets/images/logo.png" alt="サマンサ・ホームステージング"/></a>
+        </div>
+        <nav class="l-header__nav"><a class="l-header__news" href="<?php Gurl::the_url() ?>/news/">お知らせ一覧<span class="material-symbols-outlined icon-arrow">chevron_right</span></a>
+          <ul>
+            <li><a href="<?php Gurl::the_url() ?>/about-us/">私たちについて</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/homestaging/">ホームステージングとは</a>
+            </li>
+            <li><a class="l-header__parent" href="<?php Gurl::the_url() ?>/service/">サービス</a>
+              <div class="l-header__submenu">
+                <div class="l-header__submenu__outer">
+                  <div class="l-header__submenu__title">
+                    <div class="c-heading is-xlg"><small>SERVICE</small><b>サービス</b></div>
+                  </div>
+                  <div class="l-header__submenu__content">
+                    <div class="l-header__submenu__table">
+                      <ul>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/vacant/">空室ホームステージング</a>
+                        </li>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/occupied/">居住中ホームステージング</a>
+                        </li>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/still-photography/">スチール写真撮影</a>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/still-photography/#3d-walk">3Dウォークスルー動画撮影</a>
+                        </li>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/vacant/#vr-home-stasing">バーチャルホームステージング<br/>roOomy</a>
+                        </li>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/home-organization/">片付け代行</a>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/packing-unpacking/">荷造り・荷解き代行</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a class="l-header__parent" href="<?php Gurl::the_url() ?>/useful/">お役立ち情報</a>
+              <div class="l-header__submenu">
+                <div class="l-header__submenu__outer">
+                  <div class="l-header__submenu__title">
+                    <div class="c-heading is-xlg"><small>COLUMN</small><b>お役立ち情報</b></div>
+                  </div>
+                  <div class="l-header__submenu__content">
+                    <div class="l-header__submenu__flex"><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/useful/category/">お役立ち情報</a><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/useful/category/">用語集</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/company/">会社情報</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/recruit/">採用情報</a>
+            </li>
+          </ul>
+        </nav><a class="l-header__contact" href="<?php Gurl::the_url() ?>/contact/"><span class="icon-contact"></span>お問い合わせ</a>
+      </div>
+    </header>
+    <div class="l-page-header">
+      <div class="l-page-header__image">
+        <div class="l-page-header__bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-page-header-useful.jpg)">
+        </div>
+      </div>
+      <div class="l-page-header__inner">
+        <div class="l-page-header__subtitle"></div>
+        <h1 class="l-page-header__title">お役立ち情報</h1>
+      </div>
+    </div>
+    <div class="c-breadcrumb">
+      <div class="l-container">
+        <div class="c-breadcrumb__inner"><span><span><a href="<?php Gurl::the_url() ?>/">ホーム</a><span class="is-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span><span>お役立ち情報</span></span></span>
+        </div>
+      </div>
+    </div>
+    <main class="l-main">
+      <section class="l-section is-lg is-bottom">
+        <div class="l-container">
+          <div class="c-select-archive">
+            <div class="u-mbs is-sm is-bottom widget-content">
+              <p class="c-heading is-xs widget-title">年別アーカイブ</p>
+              <select name="archive-dropdown" id="archives-dropdown">
+                <option disabled selected>最新1年分</option>
+                <option value="July 2022">July 2022</option>
+                <option value="June 2022">June 2022</option>
+                <option value="July 2021">July 2021</option>
+              </select>
+            </div>
+          </div>
+          <div class="c-tabs  is-index">
+            <ul class="c-tabs__navs">
+              <li><a class="is-active" href="#">すべて</a>
+              </li>
+              <li><a href="#">お役立ち情報</a>
+              </li>
+              <li><a href="#">用語集</a>
+              </li>
+            </ul>
+            <div class="c-tabs__content is-active js-tabs-content" data-tab-name="0">
+              <div class="c-block-lists">
+                <div class="c-block-lists__wrap"><a class="c-card-thumb js-slider-item" href="<?php Gurl::the_url() ?>/useful/page/">
+                    <div class="c-card-thumb__img" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-default.jpg)">
+                    </div>
+                    <div class="c-card-thumb__content"><span class="c-card-thumb__category">カテゴリが入ります</span>
+                      <div class="c-card-thumb__title">2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…</div>
+                      <ul class="c-card-thumb__tags">
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タタグ名タグ名グ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                      </ul>
+                      <div class="c-card-thumb__date">2022.05.31</div>
+                    </div></a><a class="c-card-thumb js-slider-item" href="<?php Gurl::the_url() ?>/useful/page/">
+                    <div class="c-card-thumb__img" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-default.jpg)">
+                    </div>
+                    <div class="c-card-thumb__content"><span class="c-card-thumb__category">お役立ち情報</span>
+                      <div class="c-card-thumb__title">2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…</div>
+                      <ul class="c-card-thumb__tags">
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タタグ名タグ名グ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                      </ul>
+                      <div class="c-card-thumb__date">2022.05.31</div>
+                    </div></a><a class="c-card-thumb js-slider-item" href="<?php Gurl::the_url() ?>/useful/page/">
+                    <div class="c-card-thumb__img" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-default.jpg)">
+                    </div>
+                    <div class="c-card-thumb__content"><span class="c-card-thumb__category">お役立ち情報</span>
+                      <div class="c-card-thumb__title">2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…</div>
+                      <ul class="c-card-thumb__tags">
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タタグ名タグ名グ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                      </ul>
+                      <div class="c-card-thumb__date">2022.05.31</div>
+                    </div></a><a class="c-card-thumb js-slider-item" href="<?php Gurl::the_url() ?>/useful/page/">
+                    <div class="c-card-thumb__img" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-default.jpg)">
+                    </div>
+                    <div class="c-card-thumb__content"><span class="c-card-thumb__category">カテゴリカテゴリカテゴリカテゴリ</span>
+                      <div class="c-card-thumb__title">2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…</div>
+                      <ul class="c-card-thumb__tags">
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タタグ名タグ名グ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                      </ul>
+                      <div class="c-card-thumb__date">2022.05.31</div>
+                    </div></a><a class="c-card-thumb js-slider-item" href="<?php Gurl::the_url() ?>/useful/page/">
+                    <div class="c-card-thumb__img" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-default.jpg)">
+                    </div>
+                    <div class="c-card-thumb__content"><span class="c-card-thumb__category">用語集</span>
+                      <div class="c-card-thumb__title">2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…</div>
+                      <ul class="c-card-thumb__tags">
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タタグ名タグ名グ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                      </ul>
+                      <div class="c-card-thumb__date">2022.05.31</div>
+                    </div></a><a class="c-card-thumb js-slider-item" href="<?php Gurl::the_url() ?>/useful/page/">
+                    <div class="c-card-thumb__img" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-default.jpg)">
+                    </div>
+                    <div class="c-card-thumb__content"><span class="c-card-thumb__category">用語集</span>
+                      <div class="c-card-thumb__title">2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…</div>
+                      <ul class="c-card-thumb__tags">
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タタグ名タグ名グ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                      </ul>
+                      <div class="c-card-thumb__date">2022.05.31</div>
+                    </div></a><a class="c-card-thumb js-slider-item" href="<?php Gurl::the_url() ?>/useful/page/">
+                    <div class="c-card-thumb__img" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-default.jpg)">
+                    </div>
+                    <div class="c-card-thumb__content"><span class="c-card-thumb__category">用語集</span>
+                      <div class="c-card-thumb__title">2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…</div>
+                      <ul class="c-card-thumb__tags">
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タタグ名タグ名グ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                      </ul>
+                      <div class="c-card-thumb__date">2022.05.31</div>
+                    </div></a><a class="c-card-thumb js-slider-item" href="<?php Gurl::the_url() ?>/useful/page/">
+                    <div class="c-card-thumb__img" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-default.jpg)">
+                    </div>
+                    <div class="c-card-thumb__content"><span class="c-card-thumb__category">用語集</span>
+                      <div class="c-card-thumb__title">2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…</div>
+                      <ul class="c-card-thumb__tags">
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タタグ名タグ名グ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                        <li class="c-card-thumb__tag">#タグ名タグ名</li>
+                      </ul>
+                      <div class="c-card-thumb__date">2022.05.31</div>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="c-tabs__content"></div>
+            <div class="c-tabs__content"></div>
+          </div>
+          <div class="c-pagination">
+            <ul>
+              <li><a class="c-pagination__prev" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li></a>
+              </li>
+              <li><span class="is-current">1</span></li>
+              <li><a href="#">2</a>
+              </li>
+              <li><a href="#">3</a>
+              </li>
+              <li><span class="is-dot">…</span></li>
+              <li><a href="#">10</a>
+              </li>
+              <li><a class="c-pagination__next" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="l-offer">
+        <div class="l-container">
+          <div class="l-offer__inner">
+            <h2 class="l-offer__title is-bottom"><b>CONTACT</b><small>お気軽にお問い合わせください</small></h2>
+            <div class="l-offer__text">ホームステージング・物件撮影・お片付け・お引越し時のお荷物の整理・梱包・収納等、<br class="u-hidden-sm">サービスに関するお問い合わせは、お電話または専用フォームより受け付けております。</div>
+            <div class="l-offer__items">
+              <div class="l-offer__box">
+                <div class="l-offer__box-tel"><a href="tel:050-1741-6970"><span class="material-icons icon-phone">call</span>050-1741-6970</a><small>【受付時間】9:00～18:00（年末年始を除く ）</small></div>
+              </div>
+              <div class="l-offer__box"><a class="c-button__contact" href="<?php Gurl::the_url() ?>/contact/"><span class="icon-contact"></span>お問い合わせフォームはこちら</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="l-footer"><a class="js-anchor c-pagetop" href="html" data-anchor-target="html"></a>
+      <div class="l-container">
+        <div class="l-footer__main">
+          <div class="l-footer__content"><a class="l-footer__logo" href="<?php Gurl::the_url() ?>/"><img src="<?php GUrl::the_asset() ?>/assets/images/logo.png" alt="サマンサホームステージング"/></a>
+            <address class="l-footer__address"><b>東京本社</b>〒135-0047　東京都江東区富岡1丁目12-8　アサヒビル 2階<br/>
+              TEL：050-1741-6970（代）　FAX：03-5875-8692
+            </address>
+            <ul class="l-footer__bases">
+              <li><a href="<?php Gurl::the_url() ?>/company/#outline">事業所一覧</a>
+              </li>
+              <li><a href="<?php Gurl::the_url() ?>/showroom/">日本橋ショールーム</a>
+              </li>
+            </ul>
+            <ul class="l-footer__sns">
+              <li><a class="is-instagram" href="https://www.instagram.com/samantha_homestaging/" target="_blank"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-instagram.png" alt="instagram"/></a>
+              </li>
+              <li><a class="is-twitter" href="https://twitter.com/samanthahs01" target="_blank"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-twitter.png" alt="twitter"/></a>
+              </li>
+            </ul>
+          </div>
+          <div class="l-footer__sitemap">
+            <div class="l-footer__menu is-left">
+              <div class="l-footer__block">
+                <ul class="l-footer__menulist">
+                  <li><a href="<?php Gurl::the_url() ?>/">ホーム</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/about-us/">私たちについて</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/homestaging/">ホームステージングとは</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="l-footer__block"><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/service/">サービス</a>
+                <ul class="l-footer__menulist is-sub">
+                  <li><a href="<?php Gurl::the_url() ?>/service/vacant/">空室ホームステージング</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/occupied/">居住中ホームステージング</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/still-photography/">スチール写真撮影</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/still-photography/#3d-walk">3Dウォークスルー動画撮影</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/vacant/#vr-home-stasing">バーチャルホームステージング <br class="u-hidden-sm"/>roOomy</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/home-organization/">片付け代行</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/packing-unpacking/">荷造り・荷解き代行</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="l-footer__menu is-right">
+              <div class="l-footer__block"><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/useful/">お役立ち情報</a>
+                <ul class="l-footer__menulist is-sub">
+                  <li><a href="<?php Gurl::the_url() ?>/useful/category/">お役立ち情報</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/useful/category/">用語集</a>
+                  </li>
+                </ul><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/news/">お知らせ</a>
+                <ul class="l-footer__menulist is-sub">
+                  <li><a href="<?php Gurl::the_url() ?>/news/category/">ニュースリリース</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/news/category/">メディア出演</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/news/category/">ブログ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="l-footer__block"><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/company/"><span>会社情報</span></a>
+                <ul class="l-footer__menulist is-sub">
+                  <li><a href="<?php Gurl::the_url() ?>/showroom/">ショールーム</a>
+                  </li>
+                </ul><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/recruit/">採用情報</a><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/contact/">お問い合わせ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-footer__bottom">
+        <div class="l-container">
+          <div class="l-footer__bottom-content"><small class="l-footer__copyright">Copyright © サマンサ・ホームステージング</small>
+            <ul class="l-footer__links">
+              <li><a href="<?php Gurl::the_url() ?>/legal-notation/">特定商取引法に基づく表記</a>
+              </li>
+              <li><a href="<?php Gurl::the_url() ?>/privacy-policy/">個人情報の取り扱いについて</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="<?php GUrl::the_asset() ?>/assets/js/app.js"></script><script type="text/javascript">
+    (function (d, t) {
+    var pp = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    pp.src = '//app.pageproofer.com/embed/3dae3f75-61c5-57e4-b92a-74f228b461bd';
+    pp.type = 'text/javascript';
+    pp.async = true;
+    s.parentNode.insertBefore(pp, s);
+    })(document, 'script');
+    </script>
+  </body>
+</html>

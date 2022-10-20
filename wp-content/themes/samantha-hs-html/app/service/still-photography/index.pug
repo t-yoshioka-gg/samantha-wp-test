@@ -1,0 +1,203 @@
+extends /inc/foundation/_base.pug
+block append config
+  - current.id = "still-photography" // ページのID
+  - current.title = "スチール写真撮影" // タイトル
+  - current.description = "これはスチール写真撮影についての説明文です" // 説明文
+  - current.bodyClass = "still-photography" // body に付与するクラス
+  - current.depth = 3 // ページの階層
+
+block page_header
+  +l_page_header({
+    image: "img-page-header-still-photography.jpg",
+    title: "スチール写真撮影",
+    subtitle: "サービス"
+  })
+  +c_breadcrumb("サービス","service")
+
+block body
+  main.l-main
+    +c_floating-contact("/contact/?service=still-photography")
+    section.l-section.is-md
+      .l-container
+        +c.service-page-lead
+          +e.links
+            +c_capsul-nav([
+              {
+                id: "#still-photography",
+                text: `スチール写真撮影`,
+              },
+              {
+                id: "#3d-walk",
+                text: `WEB内覧動画制作`,
+              },
+            ])
+          +e.lead#still-photography
+            +c_page-lead-block({
+              subtitle: `OCCUPIED HOME STAGING`,
+              title: `スチール写真撮影`,
+              text: `サマンサ・ホームステージングは、ホームステージングした物件をよりよく見せるツールをオプションで用意しております。<br>
+              ホームステージング後に、当社と契約しているプロカメラマンがスチール撮影を行います。<br>
+              社内による撮影ではなくプロカメラマンにて行いますので、より明るく大きなサイズで納品が可能です。<br>
+              ※撮影はオプションとなります`
+            })
+    section.l-section.is-bg-color.is-md
+      +c.gallery-slider
+        +e.inner
+          +e.main
+            +loop(4)
+              +e.main-content
+                +e.main-image: +bgimg("img-gallery-still-photography-01.jpg").c-gallery-slider__main-bgimg
+              +e.main-content
+                +e.main-image: +bgimg("img-gallery-still-photography-02.jpg").c-gallery-slider__main-bgimg
+              +e.main-content
+                +e.main-image: +bgimg("img-gallery-still-photography-03.jpg").c-gallery-slider__main-bgimg
+              +e.main-content
+                +e.main-image: +bgimg("img-gallery-still-photography-04.jpg").c-gallery-slider__main-bgimg
+
+          +e.thumbnail
+            +loop(4)
+              +e.thumbnail-image: +bgimg("img-gallery-still-photography-01.jpg").c-gallery-slider__thumbnail-bgimg
+              +e.thumbnail-image: +bgimg("img-gallery-still-photography-02.jpg").c-gallery-slider__thumbnail-bgimg
+              +e.thumbnail-image: +bgimg("img-gallery-still-photography-03.jpg").c-gallery-slider__thumbnail-bgimg
+              +e.thumbnail-image: +bgimg("img-gallery-still-photography-04.jpg").c-gallery-slider__thumbnail-bgimg
+    section.l-section.is-lg
+      .l-container
+        h2.c-heading.is-sm サービスの概要・料金
+        table.c-table
+          tbody
+            tr
+              th 撮影内容
+              td 外観・眺望を含む15カット<small>（対応物件目安： 4LDK 程度）</small>
+            tr
+              th 納期
+              td 撮影日から3営業日以内
+            tr
+              th 納品データ
+              td 保存形式： JPEG 画像比率 4:3<br>サイズ：L ・ Sの2サイズ（ L[ 長辺 1920px ］ S[ 長辺 750px ］）
+            tr
+              th 料金
+              td ￥27,500（税抜¥25,000）～
+    section.l-section.is-lg.is-bottom
+      .l-container
+        h2.c-heading.is-sm 撮影メニュー・価格一覧
+        h3.c-heading.is-xs 本州・九州
+        table.c-table.is-column.js-table
+          tbody
+            tr
+              th サービス名
+              th 基本料金<small>（対応面積目安：4LDK）</small>
+              th 納期
+              th 備考
+            tr
+              td スチール写真撮影
+              td ¥27,500 / 回<small>（ 税抜￥25,000）</small>
+              td 3営業日以内
+              td.is-left 電気・照明のご準備をお願いします。<br>室内が暗いと、撮影できない場合がございます。
+            tr
+              td WEB内覧動画<br>3Dウォークスルー
+              td ¥27,500 / 回<small>（ 税抜￥25,000）</small>
+              td 3営業日以内
+              td.is-left.
+                電気・照明のご準備をお願いします。<br>
+                室内が暗いと、撮影できない場合がございます。<br><br>
+                7か月目以降も継続してサーバーをご利用される場合、1データにつき月額¥1,100（税込）がかかります。<br><br>
+                更新は6か月単位で承ります。
+        .u-mbs.is-top
+          h3.c-heading.is-xs 沖縄本島
+          table.c-table.is-column.js-table
+            tbody
+              tr
+                th サービス名
+                th 基本料金<small>（対応面積目安：4LDK）</small>
+                th 納期
+                th 備考
+              tr
+                td ウェブ内覧動画<br>3Dウォークスルー
+                td ¥38,500 / 回
+                td 3営業日以内
+                td.is-left.
+                  電気・照明のご準備をお願いします。<br>
+                  室内が暗いと、撮影できない場合がございます。<br><br>
+                  7か月目以降も継続してサーバーをご利用される場合、1データにつき月額¥1,100（税込）がかかります。<br><br>
+                  更新は6か月単位で承ります。
+    section.l-section.is-lg.is-bottom#3d-walk
+      +c.block-matter-port
+        .l-container
+          +e.title
+            h2.c-heading.is-md WEB内覧動画制作<br>（Matterport <br class="u-hidden-lg"/>3Dウォークスルー）
+          +e.text.
+            物件内を赤外線センサー搭載の専用カメラで360°撮影し、４K画質対応の精細な３Dモデルに変換。<br>
+            スマートフォンやPC、タブレット端末から、実際に訪れているような臨場感で内覧できるクラウドサービスです。<br>
+            まるで家の中に入って内覧しているかのように大変リアルな画像です。<br>「新しい生活様式」に向けた新たなる物件内覧方法として注目されております。
+          +e.content
+            <iframe src="https://my.matterport.com/show/?m=3Ks2rwfTAaR"></iframe>
+    section.l-section.is-lg.is-bottom
+      .l-container
+        +c.hero-block-sm
+          +e.title
+            h2.c-heading.is-md Matterport3Dを使う理由
+          +e.block
+            +e.item
+              +e.item-image: +bgimg("img-hero-block-sm-still-01.jpg").bg-img
+              +e.item-content
+                +e.item-inner
+                  +e.item-title 多くのユーザーにアプローチが<br class="u-hidden-lg"/>出来る
+                  +e.item-text Matterport3Dウォークスルーは、住宅購⼊者が不動産物件をWEB上でどの⾓度からでも⾒ることの出来るオンライン体験ツールです。 PC・スマホ・タブレットなどすべての端末から回覧可能です。
+            +e.item
+              +e.item-image: +bgimg("../gif/gif-01.gif").bg-img
+              +e.item-content
+                +e.item-inner
+                  +e.item-title 実際に物件を内覧しているような<br class="u-hidden-md">臨場感
+                  +e.item-text ４K対応の高画質と、空間内を自由に移動できるスムーズな動作で、実際にその場を訪れているかのようなリアルな没入感を味わうことができます。
+            +e.item
+              +e.item-image: +bgimg("../gif/gif-02.gif").bg-img
+              +e.item-content
+                +e.item-inner
+                  +e.item-title 空間内のあらゆる要素を測れる、<br/>測定モード
+                  +e.item-text 部屋のサイズや出入口から空間自体の要素に至るまで、3D モデルに含まれるあらゆる要素を正確に計測します。測定モードを使えば、現場に何度も足を運ぶ必要がなくなり、時間を節約できます。
+            +e.item
+              +e.item-image: +bgimg("../gif/gif-03.gif").bg-img
+              +e.item-content
+                +e.item-inner
+                  +e.item-title ドールハウスビュー
+                  +e.item-text 3Dのドールハウスビューでは、2Dの写真や動画では把握しにくい部屋の流れを視覚的にイメージしやすく、関心のある空間へスピーディに移動できます。
+    section.l-section
+      .l-container
+        h2.c-heading.is-md サービスの概要・料金
+        .u-mbs.is-top
+          table.c-table
+            tbody
+              tr
+                th 納期
+                td 撮影日から3営業日以内
+              tr
+                th 料金
+                td
+                  <strong>￥27,500</strong>（税抜¥25,000）～
+                  ul.c-list.is-disc.u-mbs.is-xs.is-top
+                   li 価格には6か月間のサーバー利用料が含まれます。
+                   li 延長料月額¥1,100(税込) 延長は6か月単位で承ります。
+                   li 上記価格の対応面積目安：４LDK程度<br>撮影範囲・面積に応じて異なります。詳しくはお問い合わせください。<br>※電気・照明のご準備をお願いします。室内が暗いと、撮影できない場合がございます。
+    section.l-section.is-lg
+      +c.box-voice
+        .l-container
+          +e.title
+            h2.c-heading.is-md お客様の声
+          +e.list.owl-carousel.js-box-voice-slider
+            +loop(6)
+              +e.item
+                +e.item-inner
+                  +e.item-head
+                    +e.item-icon: +img("icon-box-voice-vacant-01.png")
+                    +e.item-name Ｆ様（不動産会社）
+                  +e.item-text インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+              +e.item
+                +e.item-inner
+                  +e.item-head
+                    +e.item-icon: +img("icon-box-voice-vacant-02.png")
+                    +e.item-name Ｆ様（不動産会社）
+                  +e.item-text インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+    section.l-section
+      +c_service-relation
+  +l_offer
+

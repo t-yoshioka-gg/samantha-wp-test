@@ -1,0 +1,94 @@
+// セクション
+//
+// セクションのスタイル
+//
+// markup:
+// <div class="l-section [is-lg | is-md | is-sm | is-bottom | is-top]"></div>
+//
+// Styleguide 5.3.0
+
+$xlg: 120;
+$lg: 100;
+$md: 80;
+$sm: 64;
+$xs: 32;
+
+.l-section {
+  // サイズ設定
+
+
+  &.is-xlg {
+    padding-top: rem-calc($xlg);
+    padding-bottom: rem-calc($xlg);
+    @include breakpoint(small only) {
+      padding-top: rem-calc($xlg) * 0.6;
+      padding-bottom: rem-calc($xlg) * 0.6;
+    }
+  }
+
+  &.is-lg {
+    padding-top: rem-calc($lg);
+    padding-bottom: rem-calc($lg);
+    @include breakpoint(small only) {
+      padding-top: rem-calc($lg) * 0.6;
+      padding-bottom: rem-calc($lg) * 0.6;
+    }
+  }
+
+  &.is-md {
+    padding-top: rem-calc($md);
+    padding-bottom: rem-calc($md);
+    @include breakpoint(small only) {
+      padding-top: rem-calc($md) * 0.6;
+      padding-bottom: rem-calc($md) * 0.6;
+    }
+  }
+
+  &.is-sm {
+    padding-top: rem-calc($sm);
+    padding-bottom: rem-calc($sm);
+    @include breakpoint(small only) {
+      padding-top: rem-calc($sm) * 0.6;
+      padding-bottom: rem-calc($sm) * 0.6;
+    }
+  }
+  &.is-xs {
+    padding-top: rem-calc($xs);
+    padding-bottom: rem-calc($xs);
+    @include breakpoint(small only) {
+      padding-top: rem-calc($xs) * 0.6;
+      padding-bottom: rem-calc($xs) * 0.6;
+    }
+  }
+
+  // カラー設定
+  //->プライマリー
+  &.is-color-primary {
+    background-color: $color-primary;
+  }
+  //->セカンダリー
+  &.is-color-secondary {
+    background-color: $color-secondary;
+  }
+
+  // マージン設定
+  &.is-top {
+    padding-bottom: 0 !important;
+  }
+
+  &.is-bottom {
+    padding-top: 0 !important;
+  }
+
+  &.is-bg-color{
+    background: $color-background;
+  }
+
+  &.is-bg-green {
+    background: $color-background-green;
+  }
+
+  &.is-bg-gray {
+    background: $color-background-gray;
+  }
+}

@@ -1,0 +1,59 @@
+.c-comic-slider {
+
+  max-width: rem-calc(624);
+  margin: rem-calc(40) auto 0;
+  position: relative;
+
+  .owl-nav{
+    position: absolute;
+    top: calc(50% - 1rem);
+    width: 100%;
+
+    button.owl-next,
+    button.owl-prev{
+      font-size: 0;
+      position: absolute;
+      @include transition();
+      &:hover {
+        opacity: .5;
+      }
+    }
+
+    button.owl-next{
+      right: -2rem;
+    }
+    button.owl-prev{
+      left: -2rem;
+    }
+    @include breakpoint(medium down){
+      button.owl-next{
+        right: -1rem;
+      }
+      button.owl-prev{
+        left: -1rem;
+      }
+    }
+
+  }
+  .material-icons{
+    font-size: 2rem;
+  }
+
+  .owl-dots {/* c-box-voice と共通 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: rem-calc(40);
+    button {
+      border: 1px solid $font-base-color !important;
+      margin: 0 rem-calc(7);
+      width: rem-calc(10);
+      height: rem-calc(10);
+      border-radius: 1000px;
+
+      &.active {
+        background: $font-base-color;
+      }
+    }
+  }
+}

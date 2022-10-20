@@ -1,0 +1,59 @@
+.c-card-sm {
+  &__block {
+    margin-top: rem-calc(100);
+    @include breakpoint(medium down) {
+      margin-top: rem-calc(64);
+    }
+    &:first-child {
+      margin-top: rem-calc(0);
+    }
+  }
+  &__title {}
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 rem-calc(-18);
+    @include breakpoint(medium down) {
+      margin: 0;
+    }
+  }
+  &__item {
+    width: calc(100% / 4);
+    margin-top: rem-calc(40);
+    padding: 0 rem-calc(18);
+    @include breakpoint(medium down) {
+      width: 100%;
+      padding: 0;
+      margin-top: rem-calc(30);
+    }
+    &:nth-child(-n + 4) {
+      margin-top: rem-calc(0);
+      @include breakpoint(medium down) {
+        margin-top: rem-calc(30);
+      }
+    }
+    &:first-child {
+      margin-top: rem-calc(0);
+    }
+    &-inner {
+      width: 100%;
+    }
+    &-image {
+      position: relative;
+      width: 100%;
+      &::before {
+        @include bgimg-pt(172,258);
+      }
+      .bg-img {
+        @include bg-img;
+      }
+    }
+    &-content {
+      margin-top: rem-calc(8);
+    }
+    &-title {
+      @include font-format(16, .06, 26);
+    }
+  }
+}

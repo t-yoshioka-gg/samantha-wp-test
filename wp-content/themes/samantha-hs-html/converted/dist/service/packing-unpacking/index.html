@@ -1,0 +1,654 @@
+
+<!--横並びフローチャート-->
+<!--グラフチャート-->
+<!-- カード-->
+<!--縦積みフローチャート--><!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>荷造り・荷解き代行｜サマンサ・ホームステージング</title>
+    <meta name="description" content="説明文">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="サマンサ・ホームステージング">
+    <meta property="og:description" content="説明文">
+    <meta property="og:url" content="/packing-unpacking/">
+    <meta property="og:site_name" content="サマンサ・ホームステージング">
+    <meta property="og:image" content="/assets/images/ogp.png">
+    <link href="<?php Gurl::the_url() ?>/assets/images/favicon.ico" rel="icon"/>
+    <link href="<?php Gurl::the_url() ?>/assets/images/favicon.ico" rel="shortcut icon"/>
+    <link href="<?php Gurl::the_url() ?>/assets/images/web-clipicon.png" rel="apple-touch-icon"/>
+    <link href="<?php Gurl::the_url() ?>/assets/css/style.css" rel="stylesheet"/>
+    <link href="<?php Gurl::the_url() ?>/assets/css/app.css" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone|Material+Symbols+Outlined" rel="stylesheet">
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      window.WebFontConfig = {
+        // 以下にフォントを指定する
+        custom: {
+          urls: [
+            "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap",
+            "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&text=0123456789",
+            "https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap",
+            "https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&display=swap",
+            "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+          ],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        }
+      };
+      
+      (function () {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      
+    </script>
+  </head>
+  <body class="packing-unpacking">
+    <button class="c-slidebar-button js-slidebar-button" type="button"><span class="c-slidebar-button__inner"><span class="c-slidebar-button__line"><span></span><span></span><span></span></span></span></button>
+    <div class="c-slidebar-menu js-slidebar-menu is-top-to-bottom">
+      <ul class="c-slidebar-menu__list">
+        <li><a href="<?php Gurl::the_url() ?>/about-us/">私たちについて</a>
+        </li>
+        <li><a href="<?php Gurl::the_url() ?>/homestaging/">ホームステージングとは</a>
+        </li>
+        <li class="c-slidebar-menu__parent js-accordion"><span data-accordion-title="menu-title">サービス</span>
+          <ul class="c-slidebar-menu__children" data-accordion-content="menu-text">
+            <li><a href="<?php Gurl::the_url() ?>/service/vacant/">空室ホームステージング</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/occupied/">居住中ホームステージング</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/still-photography/">スチール写真撮影</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/still-photography/#walkthrough">3Dウォークスルー動画撮影</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/vacant/#vr-home-stasing">バーチャルホームステージング<bt/>roOomy</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/home-organization/">片付け代行</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/packing-unpacking/">荷造り・荷解き代行</a>
+            </li>
+          </ul>
+        </li>
+        <li class="c-slidebar-menu__parent js-accordion"><span data-accordion-title="menu-title">お役立ち情報</span>
+          <ul class="c-slidebar-menu__children" data-accordion-content="menu-text">
+            <li><a href="<?php Gurl::the_url() ?>/useful/">お役立ち情報</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/useful/category/">用語集</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="<?php Gurl::the_url() ?>/company/">会社情報</a>
+        </li>
+        <li><a href="<?php Gurl::the_url() ?>/recruit/">採用情報</a>
+        </li>
+      </ul>
+      <div class="c-slidebar-menu__bottom"><a class="c-slidebar-menu__link" href="<?php Gurl::the_url() ?>/news/">お知らせ一覧</a><a class="c-slidebar-menu__button c-button__contact" href="<?php Gurl::the_url() ?>/contact/"><span class="icon-contact"></span>お問い合わせ</a>
+      </div>
+    </div>
+    <header class="l-header">
+      <div class="l-header__content">
+        <div class="l-header__logo"><a href="<?php Gurl::the_url() ?>/"><img src="<?php GUrl::the_asset() ?>/assets/images/logo.png" alt="サマンサ・ホームステージング"/></a>
+        </div>
+        <nav class="l-header__nav"><a class="l-header__news" href="<?php Gurl::the_url() ?>/news/">お知らせ一覧<span class="material-symbols-outlined icon-arrow">chevron_right</span></a>
+          <ul>
+            <li><a href="<?php Gurl::the_url() ?>/about-us/">私たちについて</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/homestaging/">ホームステージングとは</a>
+            </li>
+            <li><a class="l-header__parent" href="<?php Gurl::the_url() ?>/service/">サービス</a>
+              <div class="l-header__submenu">
+                <div class="l-header__submenu__outer">
+                  <div class="l-header__submenu__title">
+                    <div class="c-heading is-xlg"><small>SERVICE</small><b>サービス</b></div>
+                  </div>
+                  <div class="l-header__submenu__content">
+                    <div class="l-header__submenu__table">
+                      <ul>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/vacant/">空室ホームステージング</a>
+                        </li>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/occupied/">居住中ホームステージング</a>
+                        </li>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/still-photography/">スチール写真撮影</a>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/still-photography/#3d-walk">3Dウォークスルー動画撮影</a>
+                        </li>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/vacant/#vr-home-stasing">バーチャルホームステージング<br/>roOomy</a>
+                        </li>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/home-organization/">片付け代行</a>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/packing-unpacking/">荷造り・荷解き代行</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a class="l-header__parent" href="<?php Gurl::the_url() ?>/useful/">お役立ち情報</a>
+              <div class="l-header__submenu">
+                <div class="l-header__submenu__outer">
+                  <div class="l-header__submenu__title">
+                    <div class="c-heading is-xlg"><small>COLUMN</small><b>お役立ち情報</b></div>
+                  </div>
+                  <div class="l-header__submenu__content">
+                    <div class="l-header__submenu__flex"><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/useful/category/">お役立ち情報</a><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/useful/category/">用語集</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/company/">会社情報</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/recruit/">採用情報</a>
+            </li>
+          </ul>
+        </nav><a class="l-header__contact" href="<?php Gurl::the_url() ?>/contact/"><span class="icon-contact"></span>お問い合わせ</a>
+      </div>
+    </header>
+    <div class="l-page-header">
+      <div class="l-page-header__image">
+        <div class="l-page-header__bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-page-header-packing-unpacking.jpg)">
+        </div>
+      </div>
+      <div class="l-page-header__inner">
+        <div class="l-page-header__subtitle">サービス</div>
+        <h1 class="l-page-header__title">荷造り・荷解き代行</h1>
+      </div>
+    </div>
+    <div class="c-breadcrumb">
+      <div class="l-container">
+        <div class="c-breadcrumb__inner"><span><span><a href="<?php Gurl::the_url() ?>/">ホーム</a><span class="is-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span><span><a href="<?php Gurl::the_url() ?>/service/">サービス</a><span class="is-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span><span>荷造り・荷解き代行</span></span></span></span>
+        </div>
+      </div>
+    </div>
+    <main class="l-main"><a class="c-button__floating" href="<?php Gurl::the_url() ?>/contact/?service=packing-unpacking"><span class="icon-contact"></span>このサービスへの<br class="u-hidden-sm"/>お問い合わせはこちら</a>
+      <section class="l-section is-md">
+        <div class="l-container">
+          <div class="c-service-page-lead  u-mbs is-bottom">
+            <div class="c-page-lead-block">
+              <div class="c-page-lead-block__title">
+                <h2 class="c-heading is-lg is-center"><small>PACKING / UNPACKING</small><b>荷造り・荷解き<br class="u-hidden-lg"/>代行サービス</b></h2>
+              </div>
+              <p class="c-page-lead-block__text">弊社提携引越会社をご利用のお客様向けのサービスです。<br>
+            ※引越し・荷造り荷解きのご依頼先をお探しのお客様には、弊社提携引越会社をご紹介いたしますので、お気軽にお問い合わせください。</p>
+            </div>
+          </div>
+        </div>
+        <div class="c-homestaging-hero">
+          <div class="c-hero-block-wide">
+            <div class="c-hero-block-wide__block">
+              <div class="c-hero-block-wide__images js-tabs">
+                <div class="c-hero-block-wide__image">
+                  <div class="c-hero-block-wide__img is-01 js-tabs-content" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-hero-packing-unpacking-01.jpg)" data-tab-name="0">
+                  </div>
+                </div>
+              </div>
+              <div class="c-hero-block-wide__content">
+                <div class="c-hero-block-wide__title">
+                  <h3 class="c-heading is-lg"><small></small><b>累計6,000件以上の<br/>引越し荷造り実績</b></h3>
+                </div>
+                <div class="c-hero-block-wide__text">お引越し・リフォーム・建替えは、暮らしを⾒直す絶好のチャンスです。<br>
+            「ただ荷物を移動する」のではなく、今お持ちのモノとしっかり向き合い、これからの暮らしに本当に必要なものが何かを判断し、モノの⾏き先を決める作業を行うことで、理想とする快適な暮らしが手に入ります。<br>
+            <br>
+            当社の荷造り・荷解きは、ホームステージャーの知識をプラスした、新しい暮らしを快適に迎え て頂く為の特別なサービスです。専⾨技術を身に着けた、経験豊富なスタッフによる仕分け・梱包開梱・収納をぜひお試しください。</div>
+              </div>
+            </div>
+            <div class="c-hero-block-wide__block">
+              <div class="c-hero-block-wide__images js-tabs">
+                <div class="c-hero-block-wide__image">
+                  <div class="c-hero-block-wide__img is-01 js-tabs-content" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-hero-packing-unpacking-02.jpg)" data-tab-name="0">
+                  </div>
+                </div>
+              </div>
+              <div class="c-hero-block-wide__content">
+                <div class="c-hero-block-wide__title">
+                  <h3 class="c-heading is-lg"><small></small><b>お客様に安心していただける<br class="u-hidden-md">スタッフの品質</b></h3>
+                </div>
+                <div class="c-hero-block-wide__text">お客様の大切なものを扱わせていただくため、当社独⾃の梱包研修を修了し、認定を受けたスタッフのみが作業を担当いたします。<br>
+            また、階級制度を設けており、すべての研修をマスターした最上位のスタッフがリーダーとして現場責任者を務めます。<br>
+            <br>
+            満足度アンケートでは、98％のお客様から当社最⾼の基準である「感激」の評価を頂いております。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section is-bg-color is-lg">
+        <div class="l-container">
+          <div class="c-section-top">
+            <div class="c-section-top__title">
+              <h2 class="c-heading is-md">こんな方におすすめします</h2>
+            </div>
+          </div>
+          <div class="c-box-recommend">
+            <div class="c-box-recommend__box">
+              <div class="c-box-recommend__box-img">
+              </div>
+              <div class="c-box-recommend__box-text">
+                <p>多忙で時間がない</p>
+              </div>
+            </div>
+            <div class="c-box-recommend__box">
+              <div class="c-box-recommend__box-img">
+              </div>
+              <div class="c-box-recommend__box-text">
+                <p>体力的に難しい</p>
+              </div>
+            </div>
+            <div class="c-box-recommend__box">
+              <div class="c-box-recommend__box-img">
+              </div>
+              <div class="c-box-recommend__box-text">
+                <p>
+                  大量の家財で一人で<br class="u-hidden-sm">
+                  梱包するのは大変
+                </p>
+              </div>
+            </div>
+            <div class="c-box-recommend__box">
+              <div class="c-box-recommend__box-img">
+              </div>
+              <div class="c-box-recommend__box-text">
+                <p>新居がせまくなるので、<br class="u-hidden-sm">物を減らしたい</p>
+              </div>
+            </div>
+            <div class="c-box-recommend__box">
+              <div class="c-box-recommend__box-img">
+              </div>
+              <div class="c-box-recommend__box-text">
+                <p>新居では居心地のいい暮らしがしたい</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section is-lg">
+        <h2 class="c-heading is-md">荷造り・荷解き代行の料金</h2>
+        <div class="l-container">
+          <div class="c-plan-card">
+            <div class="c-plan-card__content">
+              <div class="c-plan-card__card">
+                <div class="c-plan-card__card-head">3時間 ホームステージャー2名<br><span class="u-text-small">（ヒアリング込み）</span>
+                </div>
+                <div class="c-plan-card__card-content">
+                  <div class="c-plan-card__card-price"><span>￥26,400～</span><small>（税込、交通費込）</small>
+                  </div>
+                  <p class="c-plan-card__card-text  is-lg u-text-center">ご希望の場所により作業時間や<br class="u-hidden-sm">ホームステージャーの人数は変動致します。
+                  </p>
+                  <p class="c-plan-card__card-text">
+                    ※ 最大作業時間は6時間までとなります。<br>
+                    ※ 残業の場合は1名1時間4,400円（税込）になります。<br>
+                    ※ 特定の住所によっては、遠方料金及びその他費用の実費請求をさせていただきます。
+                  </p>
+                </div>
+              </div>
+              <div class="c-plan-card__card">
+                <div class="c-plan-card__card-head">6時間 ホームステージャー2名<br><span class="u-text-small">（ヒアリング込み）</span>
+                </div>
+                <div class="c-plan-card__card-content">
+                  <div class="c-plan-card__card-price"><span>￥52,800～</span><small>（税込、交通費込）</small>
+                  </div>
+                  <p class="c-plan-card__card-text  is-lg u-text-center">ご希望の場所により作業時間や<br class="u-hidden-sm">ホームステージャーの人数は変動致します。
+                  </p>
+                  <p class="c-plan-card__card-text">
+                    ※ 最大作業時間は6時間までとなります。<br>
+                    ※ 残業の場合は1名1時間4,400円（税込）になります。<br>
+                    ※ 特定の住所によっては、遠方料金及びその他費用の実費請求をさせていただきます。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-box-caption">
+            <div class="c-box-caption__inner">
+              <div class="c-box-caption__title">＜梱包できない物もございます＞
+              </div>
+              <div class="c-box-caption__list">
+                <div class="c-box-caption__item">電化製品・照明器具
+                </div>
+                <div class="c-box-caption__item">現金・有価証券・小切手・通帳・印鑑・キャッシュカード・貴重品・骨董品・美術品
+                </div>
+                <div class="c-box-caption__item">危険物（灯油・ガソリン・油）
+                </div>
+                <p>その他スタッフが梱包できないと判断した物も梱包できません。また３０万を超える物には別途保険をお掛け下さい。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section is-bg-color is-lg">
+        <div class="l-container">
+          <div class="c-section-top">
+            <div class="c-section-top__title">
+              <h2 class="c-heading is-md">サービスエリア</h2>
+            </div>
+          </div>
+          <div class="c-block-area-map">
+            <div class="c-block-area-map__map-img"><img src="<?php GUrl::the_asset() ?>/assets/images/img-block-area-map.png" alt=""/>
+            </div>
+            <div class="c-block-area-map__map-text">
+              <ul class="c-list is-disc">
+                <li>首都圏</li>
+                <li>関西エリア<span class="u-text-small">(大阪府、京都府、兵庫県、奈良県、滋賀県の都市部)</span></li>
+                <li>東海エリア<span class="u-text-small">(愛知県、三重県、岐阜県の都市部)</span></li>
+                <li>福岡市</li>
+              </ul>
+              <p><span class="u-text-small">※上記以外のエリアもご相談下さい。</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section is-lg">
+        <div class="c-box-voice">
+          <div class="l-container">
+            <div class="c-box-voice__title">
+              <h2 class="c-heading is-md">お客様の声</h2>
+            </div>
+            <div class="c-box-voice__list  owl-carousel js-box-voice-slider">
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-01.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-02.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-01.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-02.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-01.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-02.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-01.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-02.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-01.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-02.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-01.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-02.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section">
+        <div class="c-block-relation">
+          <div class="l-container">
+            <div class="c-block-relation__container">
+              <div class="c-block-relation__head">
+                <div class="c-block-relation__title">NEXT<br class="u-hidden-md">CONTENTS
+                </div>
+              </div>
+              <div class="c-block-relation__list">
+                <div class="c-block-relation__item"><a class="c-block-relation__item-link js-current-nav" href="<?php Gurl::the_url() ?>/service/vacant/">空室ホームステージング</a>
+                </div>
+                <div class="c-block-relation__item"><a class="c-block-relation__item-link js-current-nav" href="<?php Gurl::the_url() ?>/service/occupied/">居住中ホームステージング</a>
+                </div>
+                <div class="c-block-relation__item"><a class="c-block-relation__item-link js-current-nav" href="<?php Gurl::the_url() ?>/service/still-photography/">スチール写真撮影</a>
+                </div>
+                <div class="c-block-relation__item"><a class="c-block-relation__item-link js-current-nav" href="<?php Gurl::the_url() ?>/service/still-photography/#3d-walk">3Dウォークスルー動画撮影</a>
+                </div>
+                <div class="c-block-relation__item"><a class="c-block-relation__item-link js-current-nav" href="<?php Gurl::the_url() ?>/service/vacant/#vr-home-stasing">バーチャルホームステージング<br>roOomy</a>
+                </div>
+                <div class="c-block-relation__item"><a class="c-block-relation__item-link js-current-nav" href="<?php Gurl::the_url() ?>/service/home-organization/">片付け代行</a>
+                </div>
+                <div class="c-block-relation__item"><a class="c-block-relation__item-link js-current-nav" href="<?php Gurl::the_url() ?>/service/packing-unpacking/">荷造り・荷解き代行</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="l-offer">
+      <div class="l-container">
+        <div class="l-offer__inner">
+          <h2 class="l-offer__title is-bottom"><b>CONTACT</b><small>お気軽にお問い合わせください</small></h2>
+          <div class="l-offer__text">ホームステージング・物件撮影・お片付け・お引越し時のお荷物の整理・梱包・収納等、<br class="u-hidden-sm">サービスに関するお問い合わせは、お電話または専用フォームより受け付けております。</div>
+          <div class="l-offer__items">
+            <div class="l-offer__box">
+              <div class="l-offer__box-tel"><a href="tel:050-1741-6970"><span class="material-icons icon-phone">call</span>050-1741-6970</a><small>【受付時間】9:00～18:00（年末年始を除く ）</small></div>
+            </div>
+            <div class="l-offer__box"><a class="c-button__contact" href="<?php Gurl::the_url() ?>/contact/"><span class="icon-contact"></span>お問い合わせフォームはこちら</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="l-footer"><a class="js-anchor c-pagetop" href="html" data-anchor-target="html"></a>
+      <div class="l-container">
+        <div class="l-footer__main">
+          <div class="l-footer__content"><a class="l-footer__logo" href="<?php Gurl::the_url() ?>/"><img src="<?php GUrl::the_asset() ?>/assets/images/logo.png" alt="サマンサホームステージング"/></a>
+            <address class="l-footer__address"><b>東京本社</b>〒135-0047　東京都江東区富岡1丁目12-8　アサヒビル 2階<br/>
+              TEL：050-1741-6970（代）　FAX：03-5875-8692
+            </address>
+            <ul class="l-footer__bases">
+              <li><a href="<?php Gurl::the_url() ?>/company/#outline">事業所一覧</a>
+              </li>
+              <li><a href="<?php Gurl::the_url() ?>/showroom/">日本橋ショールーム</a>
+              </li>
+            </ul>
+            <ul class="l-footer__sns">
+              <li><a class="is-instagram" href="https://www.instagram.com/samantha_homestaging/" target="_blank"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-instagram.png" alt="instagram"/></a>
+              </li>
+              <li><a class="is-twitter" href="https://twitter.com/samanthahs01" target="_blank"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-twitter.png" alt="twitter"/></a>
+              </li>
+            </ul>
+          </div>
+          <div class="l-footer__sitemap">
+            <div class="l-footer__menu is-left">
+              <div class="l-footer__block">
+                <ul class="l-footer__menulist">
+                  <li><a href="<?php Gurl::the_url() ?>/">ホーム</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/about-us/">私たちについて</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/homestaging/">ホームステージングとは</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="l-footer__block"><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/service/">サービス</a>
+                <ul class="l-footer__menulist is-sub">
+                  <li><a href="<?php Gurl::the_url() ?>/service/vacant/">空室ホームステージング</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/occupied/">居住中ホームステージング</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/still-photography/">スチール写真撮影</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/still-photography/#3d-walk">3Dウォークスルー動画撮影</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/vacant/#vr-home-stasing">バーチャルホームステージング <br class="u-hidden-sm"/>roOomy</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/home-organization/">片付け代行</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/packing-unpacking/">荷造り・荷解き代行</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="l-footer__menu is-right">
+              <div class="l-footer__block"><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/useful/">お役立ち情報</a>
+                <ul class="l-footer__menulist is-sub">
+                  <li><a href="<?php Gurl::the_url() ?>/useful/category/">お役立ち情報</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/useful/category/">用語集</a>
+                  </li>
+                </ul><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/news/">お知らせ</a>
+                <ul class="l-footer__menulist is-sub">
+                  <li><a href="<?php Gurl::the_url() ?>/news/category/">ニュースリリース</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/news/category/">メディア出演</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/news/category/">ブログ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="l-footer__block"><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/company/"><span>会社情報</span></a>
+                <ul class="l-footer__menulist is-sub">
+                  <li><a href="<?php Gurl::the_url() ?>/showroom/">ショールーム</a>
+                  </li>
+                </ul><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/recruit/">採用情報</a><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/contact/">お問い合わせ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-footer__bottom">
+        <div class="l-container">
+          <div class="l-footer__bottom-content"><small class="l-footer__copyright">Copyright © サマンサ・ホームステージング</small>
+            <ul class="l-footer__links">
+              <li><a href="<?php Gurl::the_url() ?>/legal-notation/">特定商取引法に基づく表記</a>
+              </li>
+              <li><a href="<?php Gurl::the_url() ?>/privacy-policy/">個人情報の取り扱いについて</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="<?php GUrl::the_asset() ?>/assets/js/app.js"></script><script type="text/javascript">
+    (function (d, t) {
+    var pp = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    pp.src = '//app.pageproofer.com/embed/3dae3f75-61c5-57e4-b92a-74f228b461bd';
+    pp.type = 'text/javascript';
+    pp.async = true;
+    s.parentNode.insertBefore(pp, s);
+    })(document, 'script');
+    </script>
+  </body>
+</html>

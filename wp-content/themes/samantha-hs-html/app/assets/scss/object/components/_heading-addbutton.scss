@@ -1,0 +1,39 @@
+.c-heading-addbutton {
+  margin-bottom: rem-calc(32);
+  @include breakpoint(medium down) {
+    margin-bottom: rem-calc(24);
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid $border-base-color;
+  }
+  &__title {
+    margin: 0;
+    @include font-format(22, .04, 33, 400);
+    @include webfont(400);
+    padding-bottom: rem-calc(24);
+    position: relative;
+    @include breakpoint(medium down) {
+      @include font-format(20, .04, 30);
+      padding-bottom: rem-calc(18);
+    }
+
+    &:after {
+      content: "";
+      width: rem-calc(32);
+      height: rem-calc(1);
+      background: $color-secondary;
+      position: absolute;
+      left: 0;
+      bottom: rem-calc(-1);
+    }
+  }
+  &__button {
+    margin-bottom: rem-calc(-1);
+    @include breakpoint(medium down) {
+      display: none;
+    }
+  }
+}

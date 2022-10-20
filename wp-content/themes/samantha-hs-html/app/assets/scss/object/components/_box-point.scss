@@ -1,0 +1,119 @@
+.c-box-point {
+  &__title {
+    .c-heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      @include breakpoint(medium down) {
+        font-size: rem-calc(22) !important;
+      }
+      img {
+        width: rem-calc(151);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: rem-calc(96) rem-calc(-18) 0;
+    position: relative;
+    @include breakpoint(medium down) {
+      margin: rem-calc(64) auto 0;
+    }
+  }
+
+  &__item {
+    width: calc(100% / 3);
+    padding: 0 rem-calc(18);
+    margin-top: rem-calc(56);
+    @media all and (-ms-high-contrast:none){
+      width: calc(99% / 3);
+    }
+    &:nth-child(-n + 3) {
+      margin-top: rem-calc(0);
+      @include breakpoint(medium down) {
+        margin-top: rem-calc(56);
+      }
+    }
+    &:first-child {
+      margin-top: rem-calc(0);
+    }
+    @include breakpoint(medium down) {
+      width: 100%;
+      padding: 0;
+    }
+    &-inner {
+      background: $color-background;
+      padding: rem-calc(54) rem-calc(28);
+      position: relative;
+      height: 100%;
+      @include breakpoint(medium down) {
+        padding: rem-calc(32) rem-calc(16);
+      }
+    }
+    &-numbers {
+      position: absolute;
+      top: rem-calc(-36);
+      right: 0;
+      left: 0;
+      margin:auto;
+      text-align: center;
+      color: $color-secondary;
+      @include breakpoint(medium down) {
+        top: rem-calc(-30);
+      }
+      small {
+        display: block;
+        @include font-format(11, .1, 14);
+        @include webfont;
+      }
+      span {
+        display: block;
+        @include font-format(36, .06, 36);
+        @include webfont-num();
+        @include breakpoint(medium down) {
+          @include font-format(30, .06, 40);
+        }
+      }
+    }
+    &-title {
+      @include font-format(20, .04, 30);
+      @include webfont-num();
+      text-align: center;
+    }
+    &-text {
+      margin-top: rem-calc(32);
+      @include font-format(14, .06, 26);
+      @include breakpoint(medium down) {
+        margin-top: rem-calc(24);
+      }
+    }
+  }
+
+  &__list-end-text {
+    @include font-format(22, .04, 32);
+    @include webfont-num();
+    position: relative;
+    margin-top: rem-calc(40);
+    text-align: center;
+    @include breakpoint(medium down) {
+      @include font-format(20, .04, 30);
+    }
+    &.is-arrow {
+      padding-top: rem-calc(56);
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin:auto;
+        width: rem-calc(34);
+        height: rem-calc(24);
+        background: url(../images/icon-btm-arrow.png)no-repeat center center / cover;
+      }
+    }
+  }
+}

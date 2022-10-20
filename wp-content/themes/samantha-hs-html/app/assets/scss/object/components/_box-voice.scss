@@ -1,0 +1,95 @@
+.c-box-voice {
+  &__title {}
+  &__list {}
+
+  &__item {
+    max-width: rem-calc(552);
+    width: 100%;
+    @include breakpoint(medium down) {
+      margin: auto;
+      width: 90%;
+    }
+    @include breakpoint(small only) {
+      width: rem-calc(295);
+    }
+    &-inner {
+      background: $color-background;
+      padding: rem-calc(40) rem-calc(62);
+      @include breakpoint(medium down) {
+        padding: rem-calc(20) rem-calc(16);
+      }
+    }
+    &-head {
+      display: flex;
+      align-items: center;
+    }
+    &-icon {
+      width: rem-calc(67);
+      max-width: rem-calc(67);
+      margin-right: rem-calc(21);
+    }
+    &-name {
+      @include font-format(20, .04, 30);
+      @include webfont-num();
+
+      @include breakpoint(medium down) {
+        @include font-format(15, .04, 25);
+        @include webfont-num();
+      }
+    }
+    &-text {
+      margin-top: rem-calc(24);
+    }
+  }
+
+  .owl-nav {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    left: -100%;
+    margin:auto;
+    width:calc(100% + 140px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+    @include breakpoint(1300 down) {
+      width: calc(100% + 16px);
+    }
+    @include breakpoint(medium down) {
+      width: calc(100% + 16px);
+    }
+    button {
+      pointer-events: auto;
+      @include breakpoint(medium down) {
+        width: rem-calc(36);
+      }
+    }
+
+    .owl-next,.owl-prev {
+      @include transition();
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+
+  .owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: rem-calc(40);
+    button {
+      border: 1px solid $font-base-color !important;
+      margin: 0 rem-calc(7);
+      width: rem-calc(10);
+      height: rem-calc(10);
+      border-radius: 1000px;
+
+      &.active {
+        background: $font-base-color;
+      }
+    }
+  }
+}

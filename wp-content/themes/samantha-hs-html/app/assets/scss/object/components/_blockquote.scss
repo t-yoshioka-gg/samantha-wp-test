@@ -1,0 +1,39 @@
+/*
+---
+name: <blockquote> 引用テキスト
+category: Base
+---
+*/
+.c-blockquote {
+  background: $color-background;
+  border-left: 5px solid $color-secondary;
+  position: relative;
+  padding: rem-calc(35) rem-calc(48) rem-calc(31) rem-calc(91);
+  font-size: $font-base-size;
+  margin: rem-calc(16) 0;
+  @include breakpoint(small only) {
+    padding: rem-calc(12) rem-calc(12) rem-calc(12) rem-calc(32);
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 29px;
+    height: 23px;
+    background-image: url(../images/icon-blcokquote.png);
+    @include bg-option;
+    background-size: contain;
+    position: absolute;
+    left: rem-calc(40);
+    top: rem-calc(25);
+    @include breakpoint(small only) {
+      font-size: rem-calc(20)*0.8;
+      top: rem-calc(2);
+      left: rem-calc(8);
+    }
+  }
+
+  cite {
+    display: block;
+    margin-top: rem-calc(16);
+  }
+}

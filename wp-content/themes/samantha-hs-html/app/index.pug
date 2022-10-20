@@ -1,0 +1,498 @@
+//- filename: index.jade
+//- description: サイトのトップページ
+
+extends /inc/foundation/_base.pug
+block append config
+  - current.id = "top" // ページのID
+  - current.title = "トップページ" // タイトルあ
+  - current.description = "これはトップページの説明文です" // 説明文
+  - current.bodyClass = "top" // body に付与するクラス
+  - current.depth = 1 // ページの階層
+
+block body
+  main.l-main
+    section.l-section
+      .c-main-visual-block
+        +c_main-visual()
+        +c.top-lead
+          +e.inner
+            +e.image
+              +bgimg("img-top-lead-01.jpg").c-top-lead__image-pic01
+              +bgimg("img-top-lead-02.jpg").c-top-lead__image-pic02
+            +e.content
+              h2.c-heading.is-xlg
+                small ABOUT SAMANTHA HOME STAGING
+                b 不動産をスピーディーに<br/>売却するための<br class="u-hidden-lg" />「空間演出」
+              +e("p").text
+                | 家具・小物の設置や片付けなど、物件本来の魅力が伝わる演出を施すことで、<br class="u-hidden-sm">
+                | 検討者の購買意欲を掻き立てる「売却支援サービス」です。<br/>
+                | 適切な演出＝ホームステージングを行うことにより明るく清潔な印象を与え、そこでの新生活をイメージさせることができ、早期売却につながりやすくなります。
+              +e("ul").links
+                li: +a("/homestaging/").c-button ホームステージングとは
+                li: +a("/about-us/#homestager").c-button ホームステージャーについて
+
+
+    section.l-section
+      +c.top-service
+        +e.heading
+          h2.c-heading.is-xlg.is-center
+            small SERVICE
+            b 不動産売却と<br class="u-hidden-lg" />快適な暮らしづくりを<br class="u-hidden-lg" />サポート
+        +c_top-service-hero([
+          {
+            subtitle: `VACANT HOME STAGING`,
+            title: `空室ホームステージング`,
+            text: `新築マンションギャラリーのように、既存不動産物件や賃貸マンション、高齢者施設等をインテリアでホームステージングします。`,
+            url: `/service/vacant/`,
+            img: `img-top-service-hero-01.jpg`,
+          }, {
+            subtitle: `OCCUPIED HOME STAGING`,
+            title: `居住中ホームステージング`,
+            text: `住みながら売るための、お片付けと空間演出。<br/>専門のホームステージャーが、住宅の演出を行うサービスです。`,
+            url: `/service/occupied/`,
+            img: `img-top-service-hero-02.jpg`,
+          }
+        ])
+        +c_top-service-card([
+          {
+            url: `/service/still-photography/`,
+            img: `img-top-service-card-01.jpg`,
+            subtitle: `STILL PHOTOGRAPHY`,
+            title: `スチール写真撮影`,
+            text: `ホームステージング後、プロカメラマンがスチール写真を撮影するサービスです。`
+          },
+          {
+            url: `/service/still-photography/#3d-walk`,
+            img: `img-top-service-card-02.gif`,
+            subtitle: `3D WALKTHROUGHS`,
+            title: `3Dウォークスルー動画撮影`,
+            text: `物件内を専用の3Dカメラで撮影し、360度パノラマのリアルなオンライン内見を可能にするサービスです。`
+          },
+          {
+            url: `/service/vacant/#vr-home-stasing"`,
+            img: `img-top-service-card-03.jpg`,
+            subtitle: `VIRTUAL HOME STAGING`,
+            title: `バーチャルホームステージング roOomy`,
+            text: `物件内の家具や小物などインテリア全てをCGで制作し、3D動画と組み合わせて魅力的に演出するサービスです。`
+          },
+          {
+            url: `/service/home-organization/`,
+            img: `img-top-service-card-04.jpg`,
+            subtitle: `HOME ORGANIZATION`,
+            title: `片付け代行`,
+            text: `各ご家庭の生活パターンや理想のライフスタイルに沿って、整理収納作業を致します。`
+          },
+          {
+            url: `/service/packing-unpacking/`,
+            img: `img-top-service-card-05.jpg`,
+            subtitle: `PACKING / UNPACKING`,
+            title: `荷造り・荷解き代行`,
+            text: `仕分け・梱包・開梱・収納を、ホームステージャーの知識をプラスし全力でサポート致します。`
+          },
+        ])
+
+    section.l-section
+      +c.top-about
+        +bgimg("bg-top-about.jpg").c-top-about__bgimg
+        +e.content
+          +e.title
+            h2.c-heading.is-xlg
+              small ABOUT US
+              b 人の役に立ち、<br class="u-hidden-lg" />世間の役に立ち、<br/>自らの力になる
+          +e("p").text
+            | 私たちは、ホームステージング事業を中心としたさまざまなサービスを、日本全国で提供しております。<br/>
+            | 創業10年を超えて多くのお客様に支えられ、ホームステージングという「住宅の演出」を中心に様々なサービスを行っております。
+          +a("/about-us/").c-top-about__link.c-button 私たちについて
+
+    section.l-section.is-bg-green
+      .l-container
+        +c.top-news
+          +e.title
+            h2.c-heading.is-xlg.is-center
+              small USEFUL INFORMATION
+              b お役立ち情報
+          +e.slider-content
+            +e.slider.js-card-slider.owl-carousel
+              +c_card-thumb([
+                {
+                  url: "/useful/page/",
+                  img: `img-default.jpg`,
+                  category: [`カテゴリが入ります`],
+                  text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                  tags: [`タグ名タグ名`, `タグ名タタグ名タグ名グ名`, `タグ名タグ名タグ名`, `タグ名タグ名`, `タグ名タグ名`, `タグ名タグ名`,],
+                  date: `2022.05.31`
+                },
+                {
+                  url: "/useful/page/",
+                  img: `img-default.jpg`,
+                  category: [`お役立ち情報`],
+                  text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                  tags: [`タグ名タグ名`, `タグ名タタグ名タグ名グ名`, `タグ名タグ名タグ名`, `タグ名タグ名`, `タグ名タグ名`, `タグ名タグ名`,],
+                  date: `2022.05.31`
+                },
+                {
+                  url: "/useful/page/",
+                  img: `img-default.jpg`,
+                  category: [`お役立ち情報`],
+                  text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                  tags: [`タグ名タグ名`, `タグ名タタグ名タグ名グ名`, `タグ名タグ名タグ名`, `タグ名タグ名`, `タグ名タグ名`, `タグ名タグ名`,],
+                  date: `2022.05.31`
+                },
+                {
+                  url: "/useful/page/",
+                  img: `img-default.jpg`,
+                  category: [`カテゴリカテゴリカテゴリカテゴリ`],
+                  text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                  tags: [`タグ名タグ名`, `タグ名タタグ名タグ名グ名`, `タグ名タグ名タグ名`, `タグ名タグ名`, `タグ名タグ名`, `タグ名タグ名`,],
+                  date: `2022.05.31`
+                },
+                {
+                  url: "/useful/page/",
+                  img: `img-default.jpg`,
+                  category: [`コラム`],
+                  text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                  tags: [`タグ名タグ名`, `タグ名タタグ名タグ名グ名`, `タグ名タグ名タグ名`, `タグ名タグ名`, `タグ名タグ名`, `タグ名タグ名`,],
+                  date: `2022.05.31`
+                },
+                {
+                  url: "/useful/page/",
+                  img: `img-default.jpg`,
+                  category: [`コラム`],
+                  text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                  tags: [`タグ名タグ名`, `タグ名タタグ名タグ名グ名`, `タグ名タグ名タグ名`, `タグ名タグ名`, `タグ名タグ名`, `タグ名タグ名`,],
+                  date: `2022.05.31`
+                },
+                {
+                  url: "/useful/page/",
+                  img: `img-default.jpg`,
+                  category: [`コラム`],
+                  text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                  tags: [`タグ名タグ名`, `タグ名タタグ名タグ名グ名`, `タグ名タグ名タグ名`, `タグ名タグ名`, `タグ名タグ名`, `タグ名タグ名`,],
+                  date: `2022.05.31`
+                },
+                {
+                  url: "/useful/page/",
+                  img: `img-default.jpg`,
+                  category: [`コラム`],
+                  text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                  tags: [`タグ名タグ名`, `タグ名タタグ名タグ名グ名`, `タグ名タグ名タグ名`, `タグ名タグ名`, `タグ名タグ名`, `タグ名タグ名`,],
+                  date: `2022.05.31`
+                },
+
+
+              ])
+            +a("/useful/").c-top-news__link.c-button.is-sm 一覧へ
+
+
+
+
+    section.l-section
+      .l-container
+        +c.top-news.is-tab
+          +e.title
+            h2.c-heading.is-xlg.is-center
+              small NEWS
+              b お知らせ
+
+          .c-tabs.is-index.js-tabs
+            .c-top-news__head
+              ul.c-tabs__navs.js-tabs-nav
+                li: +a("#").is-active(data-tab-target="0" data-toggle="tab") すべて
+                li: +a("#")(data-tab-target="1"  data-toggle="tab") ニュースリリース
+                li: +a("#")(data-tab-target="2"  data-toggle="tab") メディア出演
+                li: +a("#")(data-tab-target="3"  data-toggle="tab") ブログ
+
+            .c-tabs__content.c-top-news__content.js-tabs-content(data-tab-name="0")
+              +e.slider.js-card-slider.owl-carousel
+                +c_card-thumb([
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`カテゴリが入ります`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`お役立ち情報`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`お役立ち情報`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`カテゴリカテゴリカテゴリカテゴリ`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`コラム`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`コラム`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`コラム`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`コラム`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+
+
+                ])
+            .c-tabs__content.c-top-news__content.js-tabs-content(data-tab-name="1")
+              +e.slider.js-card-slider.owl-carousel
+                +c_card-thumb([
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`ニュースリリース`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`ニュースリリース`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`ニュースリリース`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`ニュースリリース`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`ニュースリリース`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`ニュースリリース`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`ニュースリリース`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`ニュースリリース`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+
+
+                ])
+            .c-tabs__content.c-top-news__content.js-tabs-content(data-tab-name="2")
+              +e.slider.js-card-slider.is-2.owl-carousel
+                +c_card-thumb([
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`メディア出演`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`メディア出演`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`メディア出演`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`メディア出演`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`メディア出演`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`メディア出演`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`メディア出演`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`メディア出演`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+
+
+                ])
+            .c-tabs__content.c-top-news__content.js-tabs-content(data-tab-name="3")
+              +e.slider.js-card-slider.is-3.owl-carousel
+                +c_card-thumb([
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`ブログ`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`ブログ`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`ブログ`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`ブログ`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`ブログ`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`ブログ`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`ブログ`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`ブログ`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+
+
+                ])
+
+
+          +a("/news/").c-top-news__link.c-button.is-sm 一覧へ
+    section.l-section
+      +c.top-banner
+        .l-container
+          +c_banner-showroom
+    section.l-section
+      +c.top-recruit
+        +e.background
+          +bgimg("bg-top-recruit.jpg").c-top-recruit__background-bgimg
+          +img("img-text-top-recruit.png").c-top-recruit__background-bgtext
+        +e.content
+          +a("/recruit/").c-top-recruit__block
+            +e.title
+              h2.c-heading.is-xlg
+                small RECRUIT
+                b 採用情報
+            +e("p").text
+              | インテリアやお片付けに興味のある方、人に喜ばれる仕事がしたいという方、ぜひ私たちと一緒に「ホームステージング」を世の中に広めていきませんか？
+            +e.arrow
+    section.l-section.is-bg-color
+      +c.top-sns
+        +e.title
+          h2.c-heading.is-xlg.is-center
+            small OFFICIAL SNS ACCOUNT
+            b SNS公式アカウント
+        +e.content
+          .c-top-sns__link: +a-ex("https://www.instagram.com/samantha_homestaging/").c-button.is-sm Instagramでフォローする
+          .l-container
+            +e.head
+              +e.icon Instagram
+          +c.box-image-slider
+            +e.slider.owl-carousel.js-image-slider
+              +a-ex("https://www.instagram.com/samantha_homestaging/")(style="background-image: url(/assets/images/img-top-sns-01.jpg);").c-box-image-slider__block
+              +a-ex("https://www.instagram.com/samantha_homestaging/")(style="background-image: url(/assets/images/img-top-sns-02.jpg);").c-box-image-slider__block
+              +a-ex("https://www.instagram.com/samantha_homestaging/")(style="background-image: url(/assets/images/img-top-sns-03.jpg);").c-box-image-slider__block
+              +a-ex("https://www.instagram.com/samantha_homestaging/")(style="background-image: url(/assets/images/img-top-sns-04.jpg);").c-box-image-slider__block
+              +a-ex("https://www.instagram.com/samantha_homestaging/")(style="background-image: url(/assets/images/img-top-sns-05.jpg);").c-box-image-slider__block
+              +a-ex("https://www.instagram.com/samantha_homestaging/")(style="background-image: url(/assets/images/img-top-sns-06.jpg);").c-box-image-slider__block
+              +a-ex("https://www.instagram.com/samantha_homestaging/")(style="background-image: url(/assets/images/img-top-sns-07.jpg);").c-box-image-slider__block
+
+
+
+  // オファーブロック
+  +l_offer

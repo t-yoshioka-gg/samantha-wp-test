@@ -1,0 +1,15 @@
+{
+  "name": "growp_dev",
+  "remoteUser": "vscode",
+  "dockerComposeFile": "./docker-compose.yml",
+  "postCreateCommand": "sh /workspace/growp/.devcontainer/start.sh",
+  "forwardPorts": [8000, 3306],
+  "service" : "wordpress",
+  "workspaceFolder": "/var/www/html",
+  "extensions": [
+    "wordpresstoolbox.wordpress-toolbox",
+    "bmewburn.vscode-intelephense-client",
+    "neilbrayfield.php-docblocker",
+    "rifi2k.format-html-in-php"
+  ]
+}

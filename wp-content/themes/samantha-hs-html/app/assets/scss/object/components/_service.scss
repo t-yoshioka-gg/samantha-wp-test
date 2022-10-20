@@ -1,0 +1,68 @@
+
+.c-service {
+  .c-panel-card {
+    &__text {
+      color: $color-black;
+      font-size: rem-calc(16);
+    }
+  }
+
+  &__block-head {
+    display: flex;
+    justify-content: space-between;
+    @include breakpoint(medium down) {
+      display: block;
+    }
+
+
+    .c-panel-card {
+      width: 49%;
+      max-width: rem-calc(552);
+      @include breakpoint(medium down) {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      &__title {
+        .c-heading.is-lg {
+          b {
+            @include font-format(26, .04, 38, 400);
+          }
+          small {
+
+          }
+        }
+
+      }
+    }
+  }
+
+  &__block-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint(medium down) {
+      display: block;
+    }
+
+    .c-panel-card {
+      width: calc(356/1140*100%);
+      @include breakpoint(medium down) {
+        width: 100%;
+        max-width: rem-calc(552);
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      &:not(:nth-child(3n)) {
+        margin-right: calc(36/1140*100%);
+        @include breakpoint(medium down) {
+          margin-right: auto;
+        }
+      }
+
+    }
+
+
+  }
+
+}

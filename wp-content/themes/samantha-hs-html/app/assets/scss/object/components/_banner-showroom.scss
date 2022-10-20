@@ -1,0 +1,115 @@
+
+.c-banner-showroom {
+  text-decoration: none;
+  background-image: url(../images/bg-banner-showroom.jpg);
+  @include bg-option;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem-calc(72) calc(96/1140*100%);
+  @include transition();
+
+  @include breakpoint(medium down) {
+    display: block;
+    padding: rem-calc(40) 5%;
+  }
+  &:hover {
+    opacity: .5;
+  }
+
+
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba($color-white, .7);
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: rem-calc(341);
+    position: relative;
+    z-index: 1;
+    color: $color-black;
+    @include breakpoint(medium down) {
+      max-width: none;
+    }
+
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    margin-right: rem-calc(40);
+    @include breakpoint(medium down) {
+      margin-right: 0;
+    }
+    .c-heading.is-xlg {
+      @include breakpoint(small only) {
+        text-align: center;
+      }
+
+      small {
+        color: $color-black;
+        @include font-format(22, .04, 33, 400);
+        @include breakpoint(small only) {
+          font-size: rem-calc(18);
+          margin-bottom: rem-calc(4);
+        }
+      }
+      b {
+        color: $color-black;
+        @include font-format(60, .16, 74, 400);
+
+        @media (max-width: 1140px) {
+          font-size: rem-calc(46);
+        }
+
+        @include breakpoint(small only) {
+          font-size: rem-calc(28);
+        }
+      }
+
+
+    }
+  }
+
+  &__text {
+    @include font-format(16, .06, 32, 400);
+    @include breakpoint(small only) {
+      font-size: rem-calc(14);
+      text-align: center;
+    }
+  }
+
+  &__button {
+    display: block !important;
+    margin-top: rem-calc(40);
+    text-decoration: none;
+    pointer-events: none;
+    @include breakpoint(medium down) {
+      max-width: 260px;
+      margin-right: 0;
+      margin-left: auto;
+    }
+
+    @include breakpoint(small only) {
+      margin-top: rem-calc(20);
+
+    }
+
+    @media (max-width: 450px) {
+      margin-right: auto;
+    }
+  }
+
+
+
+}

@@ -1,0 +1,5 @@
+span.icon-contact {
+  background-image: url("../images/icon-contact.png");
+  @include bg-option;
+  background-size: contain;
+}

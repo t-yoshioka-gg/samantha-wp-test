@@ -1,0 +1,203 @@
+/*
+---
+name: ヒーローブロック_枡目型
+category: SpecialComponents
+---
+*/
+
+.c-hero-block-square {
+  &__block {
+    position: relative;
+    padding: rem-calc(37) 0;
+    &:not(:first-child) {
+      margin-top: rem-calc(80);
+      @include breakpoint(medium down) {
+        margin-top: rem-calc(40);
+      }
+    }
+
+    @media (max-width: 1300px) {
+      padding-top: rem-calc(80);
+    }
+
+    @include breakpoint(medium down) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: calc(878/1400*100%);
+    padding-top: calc(384/1400*100%);
+    transform: translateY(-50%);
+    @include bg-option;
+    z-index: 0;
+    @media(min-width: 1400px) {
+      padding-top: 384px;
+    }
+
+    @media (max-width: 1300px) {
+      top: 0;
+      transform: none;
+    }
+
+    @include breakpoint(medium down) {
+      position: relative;
+      width: 100%;
+      max-width: none;
+      top: auto;
+      left: auto;
+
+    }
+    @include breakpoint(small only) {
+      padding-top: 45%;
+    }
+  }
+
+  &__inner {
+    @include transition();
+    p {
+      @include font-format(16, .06, 30, 400);
+      max-width: rem-calc(490);
+
+    }
+
+    @include breakpoint(medium down) {
+      width: 100%;
+      p {
+        max-width: none;
+      }
+    }
+  }
+
+  &__arrow {
+    width: rem-calc(100);
+    height: rem-calc(50);
+    position: relative;
+    margin-left: rem-calc(36);
+    @include breakpoint(1400 down) {
+      margin-left: rem-calc(36);
+    }
+    @include breakpoint(medium down) {
+      margin-left: auto;
+      margin-top: rem-calc(20);
+    }
+    &:before, &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      @include transition();
+    }
+
+    &:before {
+      width: rem-calc(48);
+      height: rem-calc(48);
+      border: 1px solid $color-accent;
+      border-radius: 50%;
+      right: 0;
+      top: 0;
+      z-index: 0;
+    }
+
+    &:after {
+      width: rem-calc(79);
+      height: rem-calc(7);
+      background-image: url(../images/icon-arrow-long.png);
+      @include bg-option;
+      background-size: contain;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      @include transition();
+    }
+  }
+
+  &__content {
+    color: $font-base-color;
+    position: relative;
+    background: $color-white;
+    text-decoration: none;
+    width: calc(738/1400*100%);
+    box-shadow: 0 0 30px rgba(#000, .04);
+    border-bottom: 1px solid $color-accent;
+    margin-left: auto;
+    padding: rem-calc(68) rem-calc(28) rem-calc(73) rem-calc(85);
+    display: flex;
+    min-height: rem-calc(310);
+    align-items: center;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: 0;
+
+    @media (max-width: 1300px) {
+      width: 62%;
+      padding: rem-calc(40) rem-calc(28) rem-calc(60) rem-calc(60);
+    }
+
+    @include breakpoint(medium down) {
+      padding: rem-calc(40) rem-calc(24);
+      width: 100%;
+      min-height: inherit;
+      display: block;
+    }
+
+    .c-heading {
+      @include breakpoint(small only) {
+        margin-bottom: rem-calc(16) !important;
+      }
+    }
+
+    &:hover {
+      opacity: 1;
+
+      .c-hero-block-square__inner {
+        opacity: .5;
+      }
+
+      .c-hero-block-square__arrow {
+        &:after {
+          opacity: .5;
+        }
+        &:before {
+          background: $color-accent;
+          transform: scale(1.4);
+
+        }
+
+      }
+    }
+  }
+
+
+
+
+}
+
+// 偶数番目
+.c-hero-block-square__block:nth-child(even),
+.c-hero-block-square__block.is-reverse {
+  .c-hero-block-square__image {
+    left: auto;
+    right: 0;
+  }
+
+  .c-hero-block-square__content {
+    margin-left: 0;
+    padding: rem-calc(65) rem-calc(40) rem-calc(85) rem-calc(71);
+    @media (max-width: 1300px) {
+      padding: rem-calc(40) rem-calc(28) rem-calc(60) rem-calc(40);
+    }
+
+    @include breakpoint(medium down) {
+      padding: rem-calc(40) rem-calc(24);
+    }
+
+  }
+}
+
+
+

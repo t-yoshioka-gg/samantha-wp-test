@@ -1,0 +1,859 @@
+
+<!--横並びフローチャート-->
+<!--グラフチャート-->
+<!-- カード-->
+<!--縦積みフローチャート--><!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>スチール写真撮影｜サマンサ・ホームステージング</title>
+    <meta name="description" content="説明文">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="サマンサ・ホームステージング">
+    <meta property="og:description" content="説明文">
+    <meta property="og:url" content="/still-photography/">
+    <meta property="og:site_name" content="サマンサ・ホームステージング">
+    <meta property="og:image" content="/assets/images/ogp.png">
+    <link href="<?php Gurl::the_url() ?>/assets/images/favicon.ico" rel="icon"/>
+    <link href="<?php Gurl::the_url() ?>/assets/images/favicon.ico" rel="shortcut icon"/>
+    <link href="<?php Gurl::the_url() ?>/assets/images/web-clipicon.png" rel="apple-touch-icon"/>
+    <link href="<?php Gurl::the_url() ?>/assets/css/style.css" rel="stylesheet"/>
+    <link href="<?php Gurl::the_url() ?>/assets/css/app.css" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone|Material+Symbols+Outlined" rel="stylesheet">
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      window.WebFontConfig = {
+        // 以下にフォントを指定する
+        custom: {
+          urls: [
+            "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap",
+            "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&text=0123456789",
+            "https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap",
+            "https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&display=swap",
+            "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+          ],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        }
+      };
+      
+      (function () {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      
+    </script>
+  </head>
+  <body class="still-photography">
+    <button class="c-slidebar-button js-slidebar-button" type="button"><span class="c-slidebar-button__inner"><span class="c-slidebar-button__line"><span></span><span></span><span></span></span></span></button>
+    <div class="c-slidebar-menu js-slidebar-menu is-top-to-bottom">
+      <ul class="c-slidebar-menu__list">
+        <li><a href="<?php Gurl::the_url() ?>/about-us/">私たちについて</a>
+        </li>
+        <li><a href="<?php Gurl::the_url() ?>/homestaging/">ホームステージングとは</a>
+        </li>
+        <li class="c-slidebar-menu__parent js-accordion"><span data-accordion-title="menu-title">サービス</span>
+          <ul class="c-slidebar-menu__children" data-accordion-content="menu-text">
+            <li><a href="<?php Gurl::the_url() ?>/service/vacant/">空室ホームステージング</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/occupied/">居住中ホームステージング</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/still-photography/">スチール写真撮影</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/still-photography/#walkthrough">3Dウォークスルー動画撮影</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/vacant/#vr-home-stasing">バーチャルホームステージング<bt/>roOomy</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/home-organization/">片付け代行</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/service/packing-unpacking/">荷造り・荷解き代行</a>
+            </li>
+          </ul>
+        </li>
+        <li class="c-slidebar-menu__parent js-accordion"><span data-accordion-title="menu-title">お役立ち情報</span>
+          <ul class="c-slidebar-menu__children" data-accordion-content="menu-text">
+            <li><a href="<?php Gurl::the_url() ?>/useful/">お役立ち情報</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/useful/category/">用語集</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="<?php Gurl::the_url() ?>/company/">会社情報</a>
+        </li>
+        <li><a href="<?php Gurl::the_url() ?>/recruit/">採用情報</a>
+        </li>
+      </ul>
+      <div class="c-slidebar-menu__bottom"><a class="c-slidebar-menu__link" href="<?php Gurl::the_url() ?>/news/">お知らせ一覧</a><a class="c-slidebar-menu__button c-button__contact" href="<?php Gurl::the_url() ?>/contact/"><span class="icon-contact"></span>お問い合わせ</a>
+      </div>
+    </div>
+    <header class="l-header">
+      <div class="l-header__content">
+        <div class="l-header__logo"><a href="<?php Gurl::the_url() ?>/"><img src="<?php GUrl::the_asset() ?>/assets/images/logo.png" alt="サマンサ・ホームステージング"/></a>
+        </div>
+        <nav class="l-header__nav"><a class="l-header__news" href="<?php Gurl::the_url() ?>/news/">お知らせ一覧<span class="material-symbols-outlined icon-arrow">chevron_right</span></a>
+          <ul>
+            <li><a href="<?php Gurl::the_url() ?>/about-us/">私たちについて</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/homestaging/">ホームステージングとは</a>
+            </li>
+            <li><a class="l-header__parent" href="<?php Gurl::the_url() ?>/service/">サービス</a>
+              <div class="l-header__submenu">
+                <div class="l-header__submenu__outer">
+                  <div class="l-header__submenu__title">
+                    <div class="c-heading is-xlg"><small>SERVICE</small><b>サービス</b></div>
+                  </div>
+                  <div class="l-header__submenu__content">
+                    <div class="l-header__submenu__table">
+                      <ul>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/vacant/">空室ホームステージング</a>
+                        </li>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/occupied/">居住中ホームステージング</a>
+                        </li>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/still-photography/">スチール写真撮影</a>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/still-photography/#3d-walk">3Dウォークスルー動画撮影</a>
+                        </li>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/vacant/#vr-home-stasing">バーチャルホームステージング<br/>roOomy</a>
+                        </li>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/home-organization/">片付け代行</a>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/service/packing-unpacking/">荷造り・荷解き代行</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a class="l-header__parent" href="<?php Gurl::the_url() ?>/useful/">お役立ち情報</a>
+              <div class="l-header__submenu">
+                <div class="l-header__submenu__outer">
+                  <div class="l-header__submenu__title">
+                    <div class="c-heading is-xlg"><small>COLUMN</small><b>お役立ち情報</b></div>
+                  </div>
+                  <div class="l-header__submenu__content">
+                    <div class="l-header__submenu__flex"><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/useful/category/">お役立ち情報</a><a class="l-header__submenu__block" href="<?php Gurl::the_url() ?>/useful/category/">用語集</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/company/">会社情報</a>
+            </li>
+            <li><a href="<?php Gurl::the_url() ?>/recruit/">採用情報</a>
+            </li>
+          </ul>
+        </nav><a class="l-header__contact" href="<?php Gurl::the_url() ?>/contact/"><span class="icon-contact"></span>お問い合わせ</a>
+      </div>
+    </header>
+    <div class="l-page-header">
+      <div class="l-page-header__image">
+        <div class="l-page-header__bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-page-header-still-photography.jpg)">
+        </div>
+      </div>
+      <div class="l-page-header__inner">
+        <div class="l-page-header__subtitle">サービス</div>
+        <h1 class="l-page-header__title">スチール写真撮影</h1>
+      </div>
+    </div>
+    <div class="c-breadcrumb">
+      <div class="l-container">
+        <div class="c-breadcrumb__inner"><span><span><a href="<?php Gurl::the_url() ?>/">ホーム</a><span class="is-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span><span><a href="<?php Gurl::the_url() ?>/service/">サービス</a><span class="is-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span><span>スチール写真撮影</span></span></span></span>
+        </div>
+      </div>
+    </div>
+    <main class="l-main"><a class="c-button__floating" href="<?php Gurl::the_url() ?>/contact/?service=still-photography"><span class="icon-contact"></span>このサービスへの<br class="u-hidden-sm"/>お問い合わせはこちら</a>
+      <section class="l-section is-md">
+        <div class="l-container">
+          <div class="c-service-page-lead">
+            <div class="c-service-page-lead__links">
+              <div class="c-capsul-nav"><a class="c-capsul-nav__block c-button__page-link is-pagelink js-anchor" target="_self" href="#still-photography"><span>スチール写真撮影</span></a><a class="c-capsul-nav__block c-button__page-link is-pagelink js-anchor" target="_self" href="#3d-walk"><span>WEB内覧動画制作</span></a>
+              </div>
+            </div>
+            <div class="c-service-page-lead__lead" id="still-photography">
+              <div class="c-page-lead-block">
+                <div class="c-page-lead-block__title">
+                  <h2 class="c-heading is-lg is-center"><small>OCCUPIED HOME STAGING</small><b>スチール写真撮影</b></h2>
+                </div>
+                <p class="c-page-lead-block__text">サマンサ・ホームステージングは、ホームステージングした物件をよりよく見せるツールをオプションで用意しております。<br>
+              ホームステージング後に、当社と契約しているプロカメラマンがスチール撮影を行います。<br>
+              社内による撮影ではなくプロカメラマンにて行いますので、より明るく大きなサイズで納品が可能です。<br>
+              ※撮影はオプションとなります</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section is-bg-color is-md">
+        <div class="c-gallery-slider">
+          <div class="c-gallery-slider__inner">
+            <div class="c-gallery-slider__main">
+              <div class="c-gallery-slider__main-content">
+                <div class="c-gallery-slider__main-image">
+                  <div class="c-gallery-slider__main-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-01.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="c-gallery-slider__main-content">
+                <div class="c-gallery-slider__main-image">
+                  <div class="c-gallery-slider__main-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-02.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="c-gallery-slider__main-content">
+                <div class="c-gallery-slider__main-image">
+                  <div class="c-gallery-slider__main-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-03.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="c-gallery-slider__main-content">
+                <div class="c-gallery-slider__main-image">
+                  <div class="c-gallery-slider__main-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-04.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="c-gallery-slider__main-content">
+                <div class="c-gallery-slider__main-image">
+                  <div class="c-gallery-slider__main-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-01.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="c-gallery-slider__main-content">
+                <div class="c-gallery-slider__main-image">
+                  <div class="c-gallery-slider__main-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-02.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="c-gallery-slider__main-content">
+                <div class="c-gallery-slider__main-image">
+                  <div class="c-gallery-slider__main-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-03.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="c-gallery-slider__main-content">
+                <div class="c-gallery-slider__main-image">
+                  <div class="c-gallery-slider__main-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-04.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="c-gallery-slider__main-content">
+                <div class="c-gallery-slider__main-image">
+                  <div class="c-gallery-slider__main-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-01.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="c-gallery-slider__main-content">
+                <div class="c-gallery-slider__main-image">
+                  <div class="c-gallery-slider__main-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-02.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="c-gallery-slider__main-content">
+                <div class="c-gallery-slider__main-image">
+                  <div class="c-gallery-slider__main-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-03.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="c-gallery-slider__main-content">
+                <div class="c-gallery-slider__main-image">
+                  <div class="c-gallery-slider__main-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-04.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="c-gallery-slider__main-content">
+                <div class="c-gallery-slider__main-image">
+                  <div class="c-gallery-slider__main-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-01.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="c-gallery-slider__main-content">
+                <div class="c-gallery-slider__main-image">
+                  <div class="c-gallery-slider__main-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-02.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="c-gallery-slider__main-content">
+                <div class="c-gallery-slider__main-image">
+                  <div class="c-gallery-slider__main-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-03.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="c-gallery-slider__main-content">
+                <div class="c-gallery-slider__main-image">
+                  <div class="c-gallery-slider__main-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-04.jpg)">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-gallery-slider__thumbnail">
+              <div class="c-gallery-slider__thumbnail-image">
+                <div class="c-gallery-slider__thumbnail-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-01.jpg)">
+                </div>
+              </div>
+              <div class="c-gallery-slider__thumbnail-image">
+                <div class="c-gallery-slider__thumbnail-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-02.jpg)">
+                </div>
+              </div>
+              <div class="c-gallery-slider__thumbnail-image">
+                <div class="c-gallery-slider__thumbnail-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-03.jpg)">
+                </div>
+              </div>
+              <div class="c-gallery-slider__thumbnail-image">
+                <div class="c-gallery-slider__thumbnail-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-04.jpg)">
+                </div>
+              </div>
+              <div class="c-gallery-slider__thumbnail-image">
+                <div class="c-gallery-slider__thumbnail-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-01.jpg)">
+                </div>
+              </div>
+              <div class="c-gallery-slider__thumbnail-image">
+                <div class="c-gallery-slider__thumbnail-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-02.jpg)">
+                </div>
+              </div>
+              <div class="c-gallery-slider__thumbnail-image">
+                <div class="c-gallery-slider__thumbnail-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-03.jpg)">
+                </div>
+              </div>
+              <div class="c-gallery-slider__thumbnail-image">
+                <div class="c-gallery-slider__thumbnail-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-04.jpg)">
+                </div>
+              </div>
+              <div class="c-gallery-slider__thumbnail-image">
+                <div class="c-gallery-slider__thumbnail-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-01.jpg)">
+                </div>
+              </div>
+              <div class="c-gallery-slider__thumbnail-image">
+                <div class="c-gallery-slider__thumbnail-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-02.jpg)">
+                </div>
+              </div>
+              <div class="c-gallery-slider__thumbnail-image">
+                <div class="c-gallery-slider__thumbnail-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-03.jpg)">
+                </div>
+              </div>
+              <div class="c-gallery-slider__thumbnail-image">
+                <div class="c-gallery-slider__thumbnail-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-04.jpg)">
+                </div>
+              </div>
+              <div class="c-gallery-slider__thumbnail-image">
+                <div class="c-gallery-slider__thumbnail-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-01.jpg)">
+                </div>
+              </div>
+              <div class="c-gallery-slider__thumbnail-image">
+                <div class="c-gallery-slider__thumbnail-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-02.jpg)">
+                </div>
+              </div>
+              <div class="c-gallery-slider__thumbnail-image">
+                <div class="c-gallery-slider__thumbnail-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-03.jpg)">
+                </div>
+              </div>
+              <div class="c-gallery-slider__thumbnail-image">
+                <div class="c-gallery-slider__thumbnail-bgimg" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-gallery-still-photography-04.jpg)">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section is-lg">
+        <div class="l-container">
+          <h2 class="c-heading is-sm">サービスの概要・料金</h2>
+          <table class="c-table">
+            <tbody>
+              <tr>
+                <th>撮影内容</th>
+                <td>外観・眺望を含む15カット<small>（対応物件目安： 4LDK 程度）</small></td>
+              </tr>
+              <tr>
+                <th>納期</th>
+                <td>撮影日から3営業日以内</td>
+              </tr>
+              <tr>
+                <th>納品データ</th>
+                <td>保存形式： JPEG 画像比率 4:3<br>サイズ：L ・ Sの2サイズ（ L[ 長辺 1920px ］ S[ 長辺 750px ］）</td>
+              </tr>
+              <tr>
+                <th>料金</th>
+                <td>￥27,500（税抜¥25,000）～</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="l-section is-lg is-bottom">
+        <div class="l-container">
+          <h2 class="c-heading is-sm">撮影メニュー・価格一覧</h2>
+          <h3 class="c-heading is-xs">本州・九州</h3>
+          <table class="c-table is-column js-table">
+            <tbody>
+              <tr>
+                <th>サービス名</th>
+                <th>基本料金<small>（対応面積目安：4LDK）</small></th>
+                <th>納期</th>
+                <th>備考</th>
+              </tr>
+              <tr>
+                <td>スチール写真撮影</td>
+                <td>¥27,500 / 回<small>（ 税抜￥25,000）</small></td>
+                <td>3営業日以内</td>
+                <td class="is-left">電気・照明のご準備をお願いします。<br>室内が暗いと、撮影できない場合がございます。</td>
+              </tr>
+              <tr>
+                <td>WEB内覧動画<br>3Dウォークスルー</td>
+                <td>¥27,500 / 回<small>（ 税抜￥25,000）</small></td>
+                <td>3営業日以内</td>
+                <td class="is-left">
+                  電気・照明のご準備をお願いします。<br>
+                  室内が暗いと、撮影できない場合がございます。<br><br>
+                  7か月目以降も継続してサーバーをご利用される場合、1データにつき月額¥1,100（税込）がかかります。<br><br>
+                  更新は6か月単位で承ります。
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="u-mbs is-top">
+            <h3 class="c-heading is-xs">沖縄本島</h3>
+            <table class="c-table is-column js-table">
+              <tbody>
+                <tr>
+                  <th>サービス名</th>
+                  <th>基本料金<small>（対応面積目安：4LDK）</small></th>
+                  <th>納期</th>
+                  <th>備考</th>
+                </tr>
+                <tr>
+                  <td>ウェブ内覧動画<br>3Dウォークスルー</td>
+                  <td>¥38,500 / 回</td>
+                  <td>3営業日以内</td>
+                  <td class="is-left">
+                    電気・照明のご準備をお願いします。<br>
+                    室内が暗いと、撮影できない場合がございます。<br><br>
+                    7か月目以降も継続してサーバーをご利用される場合、1データにつき月額¥1,100（税込）がかかります。<br><br>
+                    更新は6か月単位で承ります。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="l-section is-lg is-bottom" id="3d-walk">
+        <div class="c-block-matter-port">
+          <div class="l-container">
+            <div class="c-block-matter-port__title">
+              <h2 class="c-heading is-md">WEB内覧動画制作<br>（Matterport <br class="u-hidden-lg"/>3Dウォークスルー）</h2>
+            </div>
+            <div class="c-block-matter-port__text">
+              物件内を赤外線センサー搭載の専用カメラで360°撮影し、４K画質対応の精細な３Dモデルに変換。<br>
+              スマートフォンやPC、タブレット端末から、実際に訪れているような臨場感で内覧できるクラウドサービスです。<br>
+              まるで家の中に入って内覧しているかのように大変リアルな画像です。<br>「新しい生活様式」に向けた新たなる物件内覧方法として注目されております。
+            </div>
+            <div class="c-block-matter-port__content"><iframe src="https://my.matterport.com/show/?m=3Ks2rwfTAaR"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section is-lg is-bottom">
+        <div class="l-container">
+          <div class="c-hero-block-sm">
+            <div class="c-hero-block-sm__title">
+              <h2 class="c-heading is-md">Matterport3Dを使う理由</h2>
+            </div>
+            <div class="c-hero-block-sm__block">
+              <div class="c-hero-block-sm__item">
+                <div class="c-hero-block-sm__item-image">
+                  <div class="bg-img" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/img-hero-block-sm-still-01.jpg)">
+                  </div>
+                </div>
+                <div class="c-hero-block-sm__item-content">
+                  <div class="c-hero-block-sm__item-inner">
+                    <div class="c-hero-block-sm__item-title">多くのユーザーにアプローチが<br class="u-hidden-lg"/>出来る
+                    </div>
+                    <div class="c-hero-block-sm__item-text">Matterport3Dウォークスルーは、住宅購⼊者が不動産物件をWEB上でどの⾓度からでも⾒ることの出来るオンライン体験ツールです。 PC・スマホ・タブレットなどすべての端末から回覧可能です。
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-hero-block-sm__item">
+                <div class="c-hero-block-sm__item-image">
+                  <div class="bg-img" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/../gif/gif-01.gif)">
+                  </div>
+                </div>
+                <div class="c-hero-block-sm__item-content">
+                  <div class="c-hero-block-sm__item-inner">
+                    <div class="c-hero-block-sm__item-title">実際に物件を内覧しているような<br class="u-hidden-md">臨場感
+                    </div>
+                    <div class="c-hero-block-sm__item-text">４K対応の高画質と、空間内を自由に移動できるスムーズな動作で、実際にその場を訪れているかのようなリアルな没入感を味わうことができます。
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-hero-block-sm__item">
+                <div class="c-hero-block-sm__item-image">
+                  <div class="bg-img" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/../gif/gif-02.gif)">
+                  </div>
+                </div>
+                <div class="c-hero-block-sm__item-content">
+                  <div class="c-hero-block-sm__item-inner">
+                    <div class="c-hero-block-sm__item-title">空間内のあらゆる要素を測れる、<br/>測定モード
+                    </div>
+                    <div class="c-hero-block-sm__item-text">部屋のサイズや出入口から空間自体の要素に至るまで、3D モデルに含まれるあらゆる要素を正確に計測します。測定モードを使えば、現場に何度も足を運ぶ必要がなくなり、時間を節約できます。
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-hero-block-sm__item">
+                <div class="c-hero-block-sm__item-image">
+                  <div class="bg-img" style="background-image: url(<?php GUrl::the_asset() ?>/assets/images/../gif/gif-03.gif)">
+                  </div>
+                </div>
+                <div class="c-hero-block-sm__item-content">
+                  <div class="c-hero-block-sm__item-inner">
+                    <div class="c-hero-block-sm__item-title">ドールハウスビュー
+                    </div>
+                    <div class="c-hero-block-sm__item-text">3Dのドールハウスビューでは、2Dの写真や動画では把握しにくい部屋の流れを視覚的にイメージしやすく、関心のある空間へスピーディに移動できます。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section">
+        <div class="l-container">
+          <h2 class="c-heading is-md">サービスの概要・料金</h2>
+          <div class="u-mbs is-top">
+            <table class="c-table">
+              <tbody>
+                <tr>
+                  <th>納期</th>
+                  <td>撮影日から3営業日以内</td>
+                </tr>
+                <tr>
+                  <th>料金</th>
+                  <td><strong>￥27,500</strong>（税抜¥25,000）～
+                    <ul class="c-list is-disc u-mbs is-xs is-top">
+                      <li>価格には6か月間のサーバー利用料が含まれます。</li>
+                      <li>延長料月額¥1,100(税込) 延長は6か月単位で承ります。</li>
+                      <li>上記価格の対応面積目安：４LDK程度<br>撮影範囲・面積に応じて異なります。詳しくはお問い合わせください。<br>※電気・照明のご準備をお願いします。室内が暗いと、撮影できない場合がございます。</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="l-section is-lg">
+        <div class="c-box-voice">
+          <div class="l-container">
+            <div class="c-box-voice__title">
+              <h2 class="c-heading is-md">お客様の声</h2>
+            </div>
+            <div class="c-box-voice__list  owl-carousel js-box-voice-slider">
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-01.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-02.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-01.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-02.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-01.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-02.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-01.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-02.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-01.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-02.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-01.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+              <div class="c-box-voice__item">
+                <div class="c-box-voice__item-inner">
+                  <div class="c-box-voice__item-head">
+                    <div class="c-box-voice__item-icon"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-box-voice-vacant-02.png" alt=""/>
+                    </div>
+                    <div class="c-box-voice__item-name">Ｆ様（不動産会社）
+                    </div>
+                  </div>
+                  <div class="c-box-voice__item-text">インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section">
+        <div class="c-block-relation">
+          <div class="l-container">
+            <div class="c-block-relation__container">
+              <div class="c-block-relation__head">
+                <div class="c-block-relation__title">NEXT<br class="u-hidden-md">CONTENTS
+                </div>
+              </div>
+              <div class="c-block-relation__list">
+                <div class="c-block-relation__item"><a class="c-block-relation__item-link js-current-nav" href="<?php Gurl::the_url() ?>/service/vacant/">空室ホームステージング</a>
+                </div>
+                <div class="c-block-relation__item"><a class="c-block-relation__item-link js-current-nav" href="<?php Gurl::the_url() ?>/service/occupied/">居住中ホームステージング</a>
+                </div>
+                <div class="c-block-relation__item"><a class="c-block-relation__item-link js-current-nav" href="<?php Gurl::the_url() ?>/service/still-photography/">スチール写真撮影</a>
+                </div>
+                <div class="c-block-relation__item"><a class="c-block-relation__item-link js-current-nav" href="<?php Gurl::the_url() ?>/service/still-photography/#3d-walk">3Dウォークスルー動画撮影</a>
+                </div>
+                <div class="c-block-relation__item"><a class="c-block-relation__item-link js-current-nav" href="<?php Gurl::the_url() ?>/service/vacant/#vr-home-stasing">バーチャルホームステージング<br>roOomy</a>
+                </div>
+                <div class="c-block-relation__item"><a class="c-block-relation__item-link js-current-nav" href="<?php Gurl::the_url() ?>/service/home-organization/">片付け代行</a>
+                </div>
+                <div class="c-block-relation__item"><a class="c-block-relation__item-link js-current-nav" href="<?php Gurl::the_url() ?>/service/packing-unpacking/">荷造り・荷解き代行</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="l-offer">
+      <div class="l-container">
+        <div class="l-offer__inner">
+          <h2 class="l-offer__title is-bottom"><b>CONTACT</b><small>お気軽にお問い合わせください</small></h2>
+          <div class="l-offer__text">ホームステージング・物件撮影・お片付け・お引越し時のお荷物の整理・梱包・収納等、<br class="u-hidden-sm">サービスに関するお問い合わせは、お電話または専用フォームより受け付けております。</div>
+          <div class="l-offer__items">
+            <div class="l-offer__box">
+              <div class="l-offer__box-tel"><a href="tel:050-1741-6970"><span class="material-icons icon-phone">call</span>050-1741-6970</a><small>【受付時間】9:00～18:00（年末年始を除く ）</small></div>
+            </div>
+            <div class="l-offer__box"><a class="c-button__contact" href="<?php Gurl::the_url() ?>/contact/"><span class="icon-contact"></span>お問い合わせフォームはこちら</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="l-footer"><a class="js-anchor c-pagetop" href="html" data-anchor-target="html"></a>
+      <div class="l-container">
+        <div class="l-footer__main">
+          <div class="l-footer__content"><a class="l-footer__logo" href="<?php Gurl::the_url() ?>/"><img src="<?php GUrl::the_asset() ?>/assets/images/logo.png" alt="サマンサホームステージング"/></a>
+            <address class="l-footer__address"><b>東京本社</b>〒135-0047　東京都江東区富岡1丁目12-8　アサヒビル 2階<br/>
+              TEL：050-1741-6970（代）　FAX：03-5875-8692
+            </address>
+            <ul class="l-footer__bases">
+              <li><a href="<?php Gurl::the_url() ?>/company/#outline">事業所一覧</a>
+              </li>
+              <li><a href="<?php Gurl::the_url() ?>/showroom/">日本橋ショールーム</a>
+              </li>
+            </ul>
+            <ul class="l-footer__sns">
+              <li><a class="is-instagram" href="https://www.instagram.com/samantha_homestaging/" target="_blank"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-instagram.png" alt="instagram"/></a>
+              </li>
+              <li><a class="is-twitter" href="https://twitter.com/samanthahs01" target="_blank"><img src="<?php GUrl::the_asset() ?>/assets/images/icon-twitter.png" alt="twitter"/></a>
+              </li>
+            </ul>
+          </div>
+          <div class="l-footer__sitemap">
+            <div class="l-footer__menu is-left">
+              <div class="l-footer__block">
+                <ul class="l-footer__menulist">
+                  <li><a href="<?php Gurl::the_url() ?>/">ホーム</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/about-us/">私たちについて</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/homestaging/">ホームステージングとは</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="l-footer__block"><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/service/">サービス</a>
+                <ul class="l-footer__menulist is-sub">
+                  <li><a href="<?php Gurl::the_url() ?>/service/vacant/">空室ホームステージング</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/occupied/">居住中ホームステージング</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/still-photography/">スチール写真撮影</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/still-photography/#3d-walk">3Dウォークスルー動画撮影</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/vacant/#vr-home-stasing">バーチャルホームステージング <br class="u-hidden-sm"/>roOomy</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/home-organization/">片付け代行</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/service/packing-unpacking/">荷造り・荷解き代行</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="l-footer__menu is-right">
+              <div class="l-footer__block"><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/useful/">お役立ち情報</a>
+                <ul class="l-footer__menulist is-sub">
+                  <li><a href="<?php Gurl::the_url() ?>/useful/category/">お役立ち情報</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/useful/category/">用語集</a>
+                  </li>
+                </ul><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/news/">お知らせ</a>
+                <ul class="l-footer__menulist is-sub">
+                  <li><a href="<?php Gurl::the_url() ?>/news/category/">ニュースリリース</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/news/category/">メディア出演</a>
+                  </li>
+                  <li><a href="<?php Gurl::the_url() ?>/news/category/">ブログ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="l-footer__block"><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/company/"><span>会社情報</span></a>
+                <ul class="l-footer__menulist is-sub">
+                  <li><a href="<?php Gurl::the_url() ?>/showroom/">ショールーム</a>
+                  </li>
+                </ul><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/recruit/">採用情報</a><a class="l-footer__menutitle" href="<?php Gurl::the_url() ?>/contact/">お問い合わせ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-footer__bottom">
+        <div class="l-container">
+          <div class="l-footer__bottom-content"><small class="l-footer__copyright">Copyright © サマンサ・ホームステージング</small>
+            <ul class="l-footer__links">
+              <li><a href="<?php Gurl::the_url() ?>/legal-notation/">特定商取引法に基づく表記</a>
+              </li>
+              <li><a href="<?php Gurl::the_url() ?>/privacy-policy/">個人情報の取り扱いについて</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="<?php GUrl::the_asset() ?>/assets/js/app.js"></script><script type="text/javascript">
+    (function (d, t) {
+    var pp = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    pp.src = '//app.pageproofer.com/embed/3dae3f75-61c5-57e4-b92a-74f228b461bd';
+    pp.type = 'text/javascript';
+    pp.async = true;
+    s.parentNode.insertBefore(pp, s);
+    })(document, 'script');
+    </script>
+  </body>
+</html>

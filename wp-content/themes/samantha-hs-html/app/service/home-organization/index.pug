@@ -1,0 +1,176 @@
+extends /inc/foundation/_base.pug
+block append config
+  - current.id = "home-organization" // ページのID
+  - current.title = "片付け代行" // タイトル
+  - current.description = "これは片付け代行についての説明文です" // 説明文
+  - current.bodyClass = "home-organization" // body に付与するクラス
+  - current.depth = 3 // ページの階層
+
+block page_header
+  +l_page_header({
+    image: "img-page-header-home-organization.jpg",
+    title: "片付け代行",
+    subtitle: "サービス"
+  })
+  +c_breadcrumb("サービス","service")
+
+block body
+  main.l-main
+    +c_floating-contact("/contact/?service=home-organization")
+    section.l-section.is-md.is-top
+      .l-container
+        +c.service-page-lead
+          +c_page-lead-block({
+            subtitle: `HOME ORGANIZATION`,
+            title: `片付け代行サービス`,
+            text: `ホームステージャーは、整理・収納のナビゲーターです。お客様の快適な暮らしを実現する事、<br class="u-hidden-sm">
+            そして、その暮らしが維持できるようナビゲートする事が私たちの仕事です。<br>
+            整理収納の苦手な方、より効率のいい暮らしを実現したい方に、各ご家庭の生活パターンや理想のライフスタイルに沿って、<br class="u-hidden-sm">
+            アドバイスや整理収納作業を致します。`
+          })
+          .u-mbs.is-top
+            +img('img-lead-home-organization.jpg')
+    section.l-section.is-xlg
+      .l-container
+        h2.c-heading.is-md 片付け代行サービスの特徴
+
+        +c.box-service-feature
+          +e.box
+            +e.box-img
+              +img('img-box-service-feature-01.png')
+            +e.box-text
+              p
+                |全員がホームステージャーの資格を持っている女性スタッフです。
+          +e.box
+            +e.box-img
+              +img('img-box-service-feature-02.png')
+            +e.box-text
+              p
+                |リーダーとスタッフの2名でお伺い致しますので、効率よく丁寧なお片づけサービスをすることができます。
+          +e.box
+            +e.box-img
+              +img('img-box-service-feature-03.png')
+            +e.box-text
+              p
+                |ホームファイリング、着物ファイリングなど色々な整理方法のご提案も致します。
+
+    section.l-section.is-bg-color.is-lg
+      .l-container
+        +c.section-top
+          +e.title
+            h2.c-heading.is-md こんな方におすすめします
+        +c.box-recommend
+          +e.box
+            +e.box-img
+            +e.box-text
+              p
+                | 片付ける時間や体力がないため、<br class="u-hidden-sm">プロのサポートが欲しい
+
+          +e.box
+            +e.box-img
+            +e.box-text
+              p
+                | 自分に合った整理整頓の<br class="u-hidden-sm">アドバイスをしてほしい
+
+          +e.box
+            +e.box-img
+            +e.box-text
+              p
+                | 物がなかなか捨てられず、<br class="u-hidden-sm">部屋がすぐに散らかってしまう
+
+          +e.box
+            +e.box-img
+            +e.box-text
+              p
+                | 探し物に時間がかかり、<br class="u-hidden-sm">ストレスを感じている
+
+          +e.box
+            +e.box-img
+            +e.box-text
+              p
+                | 高齢の親の家を、<br class="u-hidden-sm">片付けで住みやすくしてあげたい
+    section.l-section.is-lg.is-top
+      .l-container
+        h2.c-heading.is-md 片付け代行サービスの実例
+        +c.card-flex-block
+          +e.block
+            +bgimg("img-hero-home-organization-before.jpg").c-card-flex-block__img.is-before
+            //- +e("p").text 生活イメージが湧かない空っぽの状態
+          +e.block
+            +bgimg("img-hero-home-organization-after.jpg").c-card-flex-block__img.is-after
+            //- +e("p").text 物件毎のペルソナに合わせてコーディネート
+
+    section.l-section.is-lg
+        h2.c-heading.is-md 片付け代行サービスの料金
+        .l-container
+          +c.plan-card
+            +e.content
+              +e.card
+                +e.card-head
+                  | 3時間 ホームステージャー2名<br>
+                  span.u-text-small （ヒアリング込み）
+                +e.card-content
+                  +e.card-price
+                    span ￥26,400～
+                    small （税込、交通費込）
+                  +e("p").card-text.is-lg.u-text-center
+                    | ご希望の場所により作業時間や<br class="u-hidden-sm">ホームステージャーの人数は変動致します。
+                  +e("p").card-text
+                    | ※ 最大作業時間は6時間までとなります。<br>
+                    | ※ 残業の場合は1名1時間4,400円（税込）になります。
+              +e.card
+                +e.card-head
+                  | 6時間 ホームステージャー2名<br>
+                  span.u-text-small （ヒアリング込み）
+                +e.card-content
+                  +e.card-price
+                    span ￥52,800～
+                    small （税込、交通費込）
+                  +e("p").card-text.is-lg.u-text-center
+                    | ご希望の場所により作業時間や<br class="u-hidden-sm">ホームステージャーの人数は変動致します。
+                  +e("p").card-text
+                    | ※ 最大作業時間は6時間までとなります。<br>
+                    | ※ 残業の場合は1名1時間4,400円（税込）になります。
+
+    section.l-section.is-bg-color.is-lg
+      .l-container
+        +c.section-top
+          +e.title
+            h2.c-heading.is-md サービスエリア
+        +c.block-area-map
+          +e.map-img
+            +img("img-block-area-map.png")
+          +e.map-text
+            ul.c-list.is-disc
+              li 首都圏
+              li 関西エリア
+                span.u-text-small (大阪府、京都府、兵庫県、奈良県、滋賀県の都市部)
+              li 東海エリア
+                span.u-text-small (愛知県、三重県、岐阜県の都市部)
+              li 福岡市
+            p
+              span.u-text-small ※上記以外のエリアもご相談下さい。
+    section.l-section.is-lg
+      +c.box-voice
+        .l-container
+          +e.title
+            h2.c-heading.is-md お客様の声
+          +e.list.owl-carousel.js-box-voice-slider
+            +loop(6)
+              +e.item
+                +e.item-inner
+                  +e.item-head
+                    +e.item-icon: +img("icon-box-voice-vacant-01.png")
+                    +e.item-name Ｆ様（不動産会社）
+                  +e.item-text インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+              +e.item
+                +e.item-inner
+                  +e.item-head
+                    +e.item-icon: +img("icon-box-voice-vacant-02.png")
+                    +e.item-name Ｆ様（不動産会社）
+                  +e.item-text インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+
+    section.l-section
+      +c_service-relation
+  +l_offer
+

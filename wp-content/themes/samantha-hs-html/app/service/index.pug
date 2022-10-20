@@ -1,0 +1,82 @@
+extends /inc/foundation/_base.pug
+block append config
+  - current.id = "service" // ページのID
+  - current.title = "サービス" // タイトル
+  - current.description = "これはサービスについての説明文です" // 説明文
+  - current.bodyClass = "service" // body に付与するクラス
+  - current.depth = 2 // ページの階層
+
+block page_header
+  +l_page_header({
+    image: "img-page-header-service.jpg",
+    title: "サービス",
+  })
+  +c_breadcrumb()
+
+block body
+  main.l-main
+    section.l-section.is-lg
+      .l-container
+        +c.service
+          +e.title
+            h2.c-heading.is-xlg.is-center
+              b 不動産売却と<br class="u-hidden-lg"/>快適な暮らしづくりを<br class="u-hidden-lg"/>サポート
+          +e.block-head
+            +c_panel-card([
+              {
+                img: "img-top-service-hero-01.jpg",
+                subtitle: `VACANT HOME STAGING`,
+                title: `空室ホームステージング`,
+                text: `新築マンションギャラリーのように、既存不動産物件や賃貸マンション、高齢者施設等をインテリアでホームステージングします。`,
+                url: "/service/vacant/"
+              },
+              {
+                img: "img-top-service-hero-02.jpg",
+                subtitle: `OCCUPIED HOME STAGING`,
+                title: `居住中ホームステージング`,
+                text: `住みながら売るための、お片付けと空間演出。専門のホームステージャーが、住宅の演出を行うサービスです。`,
+                url: "/service/occupied/"
+              }])
+          +e.block-bottom
+            +c_panel-card([
+              {
+                img: "img-top-service-card-01.jpg",
+                subtitle: `STILL PHOTOGRAPHY`,
+                title: `スチール写真撮影`,
+                text: `ホームステージング後、プロカメラマンがスチール写真を撮影するサービスです。`,
+                url: `/service/still-photography/`
+              },
+              {
+                img: "img-top-service-card-02.gif",
+                subtitle: `3D WALKTHROUGHS`,
+                title: `3Dウォークスルー動画撮影`,
+                text: `物件内を専用の3Dカメラで撮影し、360度パノラマのリアルなオンライン内見を可能にするサービスです。`,
+                url: `/service/still-photography/#3d-walk`
+              },
+              {
+                img: "img-top-service-card-03.jpg",
+                subtitle: `VIRTUAL HOME STAGING`,
+                title: `バーチャルホームステージング roOomy`,
+                text: `物件内の家具や小物などインテリア全てをCGで制作し、3D動画と組み合わせて魅力的に演出するサービスです。`,
+                url: `/service/vacant/#vr-home-stasing`
+              },
+              {
+                img: "img-top-service-card-04.jpg",
+                subtitle: `HOME ORGANIZATION`,
+                title: `片付け代行`,
+                text: `各ご家庭の生活パターンや理想のライフスタイルに沿って、整理収納作業を致します。`,
+                url: `/service/home-organization/`
+              },
+              {
+                img: "img-top-service-card-05.jpg",
+                subtitle: `PACKING / UNPACKING`,
+                title: `荷造り・荷解き代行`,
+                text: `仕分け・梱包・開梱・収納を、ホームステージャーの知識をプラスし全力でサポート致します。`,
+                url: `/service/packing-unpacking/`
+              },
+
+            ])
+
+
+  +l_offer
+

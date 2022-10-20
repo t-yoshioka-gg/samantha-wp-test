@@ -1,0 +1,39 @@
+.c-box-image-slider {
+  overflow: hidden;
+  //margin-top: rem-calc(60);
+  position: relative;
+
+  @include breakpoint(medium only) {
+    //margin-top: rem-calc(40);
+  }
+
+  @include breakpoint(small only) {
+    //margin-top: rem-calc(30);
+  }
+
+  &__slider {
+    display: flex;
+  }
+
+
+
+  &__block {
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    padding-bottom: 100%;
+    overflow: hidden;
+    position: relative;
+    @include transition();
+    @include bg-option;
+    @include breakpoint(small only) {
+      width: 100px;
+    }
+
+    &:hover {
+      opacity: .5;
+    }
+
+  }
+
+}

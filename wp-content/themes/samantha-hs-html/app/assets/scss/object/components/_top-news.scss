@@ -1,0 +1,140 @@
+.c-top-news {
+  position: relative;
+  padding: rem-calc(80) rem-calc(0);
+  @include breakpoint(medium down) {
+    padding: rem-calc(80) rem-calc(0) rem-calc(120);
+  }
+
+  @include breakpoint(small only) {
+    padding: rem-calc(40) rem-calc(40) rem-calc(120);
+  }
+
+  &__title {
+    padding: 0 rem-calc(124);
+    position: relative;
+    @include breakpoint(medium down) {
+      padding: 0;
+    }
+  }
+
+  &__link {
+    @include font-format(16, .06, 24, 400);
+    padding-bottom: rem-calc(14);
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: rem-calc(122);
+    @media (max-width: 1300px) {
+      right: 60px;
+    }
+    @include breakpoint(medium down) {
+      top: auto;
+      right: auto;
+      bottom: rem-calc(40);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__slider-content {
+    @media (max-width: 1300px) {
+      margin: 0 60px;
+    }
+    @include breakpoint(small only) {
+      margin: 0;
+    }
+  }
+
+  .owl-carousel {
+    position: relative;
+
+    .owl-nav {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: rem-calc(106);
+      width: 100%;
+
+      .owl-prev {
+        position: absolute;
+        left: -24px;
+        transform: translateX(-100%);
+        @include breakpoint(small only) {
+          left: -3px;
+        }
+
+      }
+
+      .owl-next {
+        position: absolute;
+        right: -24px;
+        transform: translateX(100%);
+        @include breakpoint(small only) {
+          right: -3px;
+        }
+      }
+
+      .owl-prev, .owl-next {
+        top: 0;
+        @include transition();
+        @media (max-width: 1300px) {
+          width: 34px;
+
+        }
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .owl-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: rem-calc(60);
+      @include breakpoint(medium down) {
+        margin-top: rem-calc(30);
+      }
+      .owl-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 1px solid $color-black;
+        margin: 0 rem-calc(7);
+
+        &.active {
+          background: $color-black;
+        }
+      }
+
+
+    }
+  }
+
+  &.is-tab {
+    padding-left: 0;
+    padding-right: 0;
+    .c-top-news__head {
+      @include breakpoint(medium down) {
+        padding: 0 rem-calc(0) 0;
+      }
+
+      @include breakpoint(small only) {
+        padding: 0 rem-calc(0) 0;
+      }
+    }
+
+    .c-top-news__content {
+      @include breakpoint(medium down) {
+        padding: 0 rem-calc(40) 0;
+      }
+
+      @include breakpoint(small only) {
+        padding: 0 rem-calc(40) 0;
+      }
+    }
+  }
+
+
+
+}

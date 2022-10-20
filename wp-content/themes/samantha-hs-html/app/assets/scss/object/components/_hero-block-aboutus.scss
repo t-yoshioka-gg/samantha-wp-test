@@ -1,0 +1,184 @@
+/*
+---
+name: ヒーローブロック_わたしたにちについて
+category: SpecialComponents
+---
+*/
+
+.c-hero-block-aboutus {
+  //overflow-x: hidden;
+  &__container {
+    margin-top: rem-calc(48);
+    padding-bottom: rem-calc(60);
+    position: relative;
+    @include breakpoint(medium down) {
+      margin-top: rem-calc(40);
+      padding-bottom: rem-calc(130);
+    }
+  }
+  &__inner {
+    width: 100%;
+  }
+
+  /* 画像 */
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    width: calc(365/1140*100%);
+    max-height: rem-calc(365);
+    &:before {
+      @include bgimg-pt(365,486);
+      @include breakpoint(medium down) {
+        @include bgimg-pt(240,375);
+      }
+    }
+    @include breakpoint(medium down) {
+      width: 64%;
+      max-height: rem-calc(161);
+    }
+
+    .c-hero-block-aboutus__bgimg {
+      @include bg-img();
+      @include breakpoint(medium down) {
+        background-position: center top 20%;
+      }
+    }
+  }
+
+  &__contentbox {
+    position: relative;
+    z-index: 4;
+    overflow-x: hidden;
+    &:before {
+      position: absolute;
+      left: -50%;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: $color-background;
+      z-index: 1;
+    }
+  }
+  &__content {
+    position: relative;
+    z-index: 3;
+    background-color: $color-background;
+    width: calc(980/1140*100%);
+    padding: rem-calc(80) rem-calc(294) rem-calc(80) 0;
+    @include breakpoint(medium down) {
+      width: 100%;
+      padding: rem-calc(32) rem-calc(24) rem-calc(32) 0;
+    }
+  }
+  &__title {
+    margin-top: rem-calc(0);
+    margin-bottom: rem-calc(50);
+    padding-top: rem-calc(40);
+    position: relative;
+    > strong,
+    > small {
+      display: block;
+      @include webfont(400);
+    }
+    strong {
+      @include font-format(30, .06, 46, 400);
+      color: $font-base-color;
+      @include breakpoint(medium down) {
+        @include font-format(20, .06, 30, 400);
+      }
+    }
+    small {
+      font-size: rem-calc(20);
+      opacity: 0.4;
+      margin-top: 0.8rem;
+      @include breakpoint(medium down) {
+
+        @include font-format(14, .08, 24);
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: rem-calc(62);
+      height: rem-calc(1);
+      background: $color-secondary;
+    }
+  }
+  &__text {
+    line-height: 2;
+  }
+
+
+  /******************** 反転 ********************/
+
+  &.is-reverse {
+    .c-hero-block-aboutus__inner {
+      width: 100%;
+    }
+
+    /* 画像 */
+    .c-hero-block-aboutus__image {
+      left: 0;
+    }
+
+    /* テキストコンテンツ */
+    .l-container {
+      position: relative;
+
+    }
+
+    .c-hero-block-aboutus__contentbox {
+      position: relative;
+      z-index: 2;
+      overflow-x: hidden;
+      &:before {
+        position: absolute;
+        right: -50%;
+        left: inherit;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: $color-background;
+        z-index: 1;
+      }
+    }
+    .c-hero-block-aboutus__content {
+      background-color: $color-background;
+      padding: rem-calc(80) rem-calc(0) rem-calc(80) rem-calc(294);
+      margin-right: rem-calc(0);
+      margin-left: auto;
+      @include breakpoint(1200 down) {
+        padding-left: rem-calc(204);
+      }
+      @include breakpoint(medium down) {
+        width: 100%;
+        padding: rem-calc(32) 0 rem-calc(32) rem-calc(24);
+      }
+    }
+    .c-hero-block-aboutus__title {
+      margin-bottom: rem-calc(50);
+      > strong,
+      > small {
+        display: block;
+        @include webfont(400);
+      }
+      strong {
+        // font-size: rem-calc(30);
+        // color: $font-base-color;
+      }
+      small {
+        // font-size: rem-calc(20);
+        // opacity: 0.4;
+      }
+    }
+    .c-hero-block-aboutus__text {
+    }
+  }
+}

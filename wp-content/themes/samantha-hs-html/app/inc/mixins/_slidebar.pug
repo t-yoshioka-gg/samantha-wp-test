@@ -1,0 +1,33 @@
+//- スマホメニュー
+mixin c_slidebar
+  //-> スマホメニューのボタン
+  button(type="button").c-slidebar-button.js-slidebar-button
+    span.c-slidebar-button__inner
+      span.c-slidebar-button__line
+        span
+        span
+        span
+  .c-slidebar-menu.js-slidebar-menu.is-top-to-bottom
+    ul.c-slidebar-menu__list
+      li: +a("/about-us/") 私たちについて
+      li: +a("/homestaging/") ホームステージングとは
+      li.c-slidebar-menu__parent.js-accordion
+        span(data-accordion-title="menu-title") サービス
+        ul.c-slidebar-menu__children(data-accordion-content="menu-text")
+          li: +a("/service/vacant/") 空室ホームステージング
+          li: +a("/service/occupied/") 居住中ホームステージング
+          li: +a("/service/still-photography/") スチール写真撮影
+          li: +a("/service/still-photography/#walkthrough") 3Dウォークスルー動画撮影
+          li: +a("/service/vacant/#vr-home-stasing") バーチャルホームステージング<bt/>roOomy
+          li: +a("/service/home-organization/") 片付け代行
+          li: +a("/service/packing-unpacking/") 荷造り・荷解き代行
+      li.c-slidebar-menu__parent.js-accordion
+        span(data-accordion-title="menu-title") お役立ち情報
+        ul.c-slidebar-menu__children(data-accordion-content="menu-text")
+          li: +a("/useful/") お役立ち情報
+          li: +a("/useful/category/") 用語集
+      li: +a("/company/") 会社情報
+      li: +a("/recruit/") 採用情報
+    .c-slidebar-menu__bottom
+      +a("/news/").c-slidebar-menu__link お知らせ一覧
+      +a("/contact/").c-slidebar-menu__button.c-button__contact <span class="icon-contact"></span>お問い合わせ

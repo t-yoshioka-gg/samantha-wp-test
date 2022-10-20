@@ -1,0 +1,44 @@
+.c-block-access {
+  &__title {}
+  &__map {
+    position: relative;
+    width: 100%;
+    margin-top: rem-calc(40);
+    &::before {
+      @include bgimg-pt(500,1400);
+      @include breakpoint(medium down) {
+        @include bgimg-pt(300,375);
+      }
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin:auto;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__address {
+    margin-top: rem-calc(24);
+    a.is-tel {
+      font-weight: 700;
+      color: $font-base-color;
+      text-decoration: none;
+      pointer-events: none;
+
+      @include breakpoint(small only) {
+        text-decoration: underline;
+        pointer-events: auto;
+      }
+
+
+    }
+  }
+  &__button {
+    margin-top: rem-calc(40);
+    @include breakpoint(medium down) {
+      margin-top: rem-calc(30);
+    }
+  }
+}

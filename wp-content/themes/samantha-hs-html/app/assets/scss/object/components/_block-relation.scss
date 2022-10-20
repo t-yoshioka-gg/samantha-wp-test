@@ -1,0 +1,97 @@
+.c-block-relation {
+  background: $color-background;
+  &__container {
+    display: flex;
+    padding: rem-calc(120) 0;
+    @include breakpoint(medium down) {
+      display: block;
+      padding: rem-calc(40) 0;
+    }
+  }
+  &__head {
+    width: rem-calc(258);
+    padding-right: rem-calc(90);
+  }
+  &__title {
+    @include font-format(22, .160, 40);
+    @include webfont();
+    color: $color-secondary;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+  &__item {
+    width: calc(100% / 3);
+    margin-top: rem-calc(40);
+    @media all and (-ms-high-contrast:none){
+      width: calc(99% / 3);
+    }
+    &:nth-child(-n + 3) {
+      margin-top: rem-calc(0);
+      @include breakpoint(medium down) {
+        margin-top: rem-calc(20);
+      }
+    }
+    &:nth-child(3n) {
+      padding-left: rem-calc(40);
+      @include breakpoint(medium down) {
+        padding-left: rem-calc(0);
+      }
+    }
+    @include breakpoint(medium down) {
+      width: 50%;
+      margin-top: rem-calc(20);
+    }
+    @include breakpoint(small only) {
+      width: 100%;
+    }
+    &-link {
+      display: inline-block;
+      text-decoration: none;
+      color: $font-base-color;
+      position: relative;
+      padding-right: rem-calc(38);
+      padding-bottom: rem-calc(18);
+      @include breakpoint(medium down) {
+        padding-bottom: rem-calc(10);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: rem-calc(10);
+        right: 0;
+        margin:auto;
+        width: rem-calc(24);
+        height: rem-calc(7);
+        background: url(../images/icon-arrow-short.png)no-repeat center center / cover;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin:auto;
+        width: 0;
+        height: rem-calc(1);
+        background: #68897D;
+        @include transition();
+      }
+      &:hover {
+        &::before {
+          @include transition();
+          width: 100%;
+        }
+      }
+      &.is-current {
+        opacity: .5;
+        pointer-events: none;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.c-homestaging-hero {
+  &__link {
+    text-align: center;
+    margin-top: rem-calc(80);
+    margin-bottom: rem-calc(160);
+    @include breakpoint(small only) {
+      margin-top: rem-calc(40);
+      margin-bottom: rem-calc(80);
+    }
+  }
+}

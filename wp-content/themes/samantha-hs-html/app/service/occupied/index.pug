@@ -1,0 +1,257 @@
+extends /inc/foundation/_base.pug
+block append config
+  - current.id = "occupied" // ページのID
+  - current.title = "居住中ホームステージング" // タイトル
+  - current.description = "これは居住中ホームステージングについての説明文です" // 説明文
+  - current.bodyClass = "occupied" // body に付与するクラス
+  - current.depth = 3 // ページの階層
+
+block page_header
+  +l_page_header({
+    image: "img-page-header-occupied.jpg",
+    title: "居住中ホームステージング",
+    subtitle: "サービス"
+  })
+  +c_breadcrumb("サービス","service")
+
+block body
+  main.l-main
+    +c_floating-contact("/contact/?service=occupied")
+    section.l-section.is-md
+      .l-container
+        +c.service-page-lead
+          +e.links
+            +c_capsul-nav([
+              {
+                id: "#occupied",
+                text: `居住中ホームステージング`,
+              },
+              {
+                id: "#comic",
+                text: `漫画で読むホームステージング`,
+              },
+            ])
+          +e.lead#occupied
+            +c_page-lead-block({
+              subtitle: `OCCUPIED HOME STAGING`,
+              title: `居住中ホームステージング`,
+              text: `居住中物件専門のホームステージャーによる、「住みながら売るための空間演出」サービスです。<br/>売主様のお住まいを片付けた後、お持ちのインテリア小物などをお借りして、モデルルームのように飾り付け。<br/>生活感を抑えつつ、物件本来の魅力・価値が伝わるように演出を施すことで、早期売却をサポートします。`
+            })
+        .row
+          .large-10.is-push-lg-1.small-12
+            +c.block-iframe.u-mbs.is-sm.is-top
+              |<iframe width="1110" height="625" src="https://www.youtube.com/embed/1_lFh7mVj1k" title="【ビフォーアフター】居住中ホームステージング" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    section.l-section.is-bg-color.is-md
+      .l-container
+        h2.c-heading.is-md 空室ホームステージング実例
+
+      +c.gallery-slider
+        +e.inner
+          +e.main
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-01.jpg").c-gallery-slider__main-bgimg
+              +e.text ①リビング〈ホームステージング前〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-02.jpg").c-gallery-slider__main-bgimg
+              +e.text ①リビング〈ホームステージング後〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-03.jpg").c-gallery-slider__main-bgimg
+              +e.text ②リビングダイニング〈ホームステージング前〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-04.jpg").c-gallery-slider__main-bgimg
+              +e.text ②リビングダイニング〈ホームステージング後〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-05.jpg").c-gallery-slider__main-bgimg
+              +e.text ③リビング〈ホームステージング前〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-06.jpg").c-gallery-slider__main-bgimg
+              +e.text ③リビング〈ホームステージング後〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-07.jpg").c-gallery-slider__main-bgimg
+              +e.text ④リビングダイニング〈ホームステージング前〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-08.jpg").c-gallery-slider__main-bgimg
+              +e.text ④リビングダイニング〈ホームステージング後〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-09.jpg").c-gallery-slider__main-bgimg
+              +e.text ⑤玄関〈ホームステージング前〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-10.jpg").c-gallery-slider__main-bgimg
+              +e.text ⑤玄関〈ホームステージング後〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-11.jpg").c-gallery-slider__main-bgimg
+              +e.text ⑥キッチン〈ホームステージング前〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-12.jpg").c-gallery-slider__main-bgimg
+              +e.text ⑥キッチン〈ホームステージング後〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-13.jpg").c-gallery-slider__main-bgimg
+              +e.text ⑦浴室〈ホームステージング前〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-14.jpg").c-gallery-slider__main-bgimg
+              +e.text ⑦浴室〈ホームステージング後〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-15.jpg").c-gallery-slider__main-bgimg
+              +e.text ⑧洗面室〈ホームステージング前〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-16.jpg").c-gallery-slider__main-bgimg
+              +e.text ⑧洗面室〈ホームステージング後〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-17.jpg").c-gallery-slider__main-bgimg
+              +e.text ⑨トイレ〈ホームステージング前〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-18.jpg").c-gallery-slider__main-bgimg
+              +e.text ⑨トイレ〈ホームステージング後〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-19.jpg").c-gallery-slider__main-bgimg
+              +e.text ⑩バルコニー〈ホームステージング前〉
+            +e.main-content
+              +e.main-image: +bgimg("img-gallery-occupied-20.jpg").c-gallery-slider__main-bgimg
+              +e.text ⑩バルコニー〈ホームステージング後〉
+
+
+
+          +e.thumbnail
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-01.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-02.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-03.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-04.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-05.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-06.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-07.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-08.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-09.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-10.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-11.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-12.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-13.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-14.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-15.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-16.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-17.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-18.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-19.jpg").c-gallery-slider__thumbnail-bgimg
+            +e.thumbnail-image: +bgimg("img-gallery-occupied-20.jpg").c-gallery-slider__thumbnail-bgimg
+    section.l-section.is-md
+      .l-container
+        +c.section-top
+          +e.title
+            h2.c-heading.is-md 設営までの流れ
+        +c_flow-block([
+            {
+                title: `お申込み`,
+                text: `お電話、またはお問い合わせフォームよりお気軽にお問い合わせください。`
+            },
+            {
+                title: `資材配送`,
+                text: `当日のお片付けに使用する、段ボール箱10枚、テープ、緩衝材などを事前に配送します。`
+            },
+            {
+                title: `お片付け・小物演出`,
+                text: `女性ホームステージャー2名が訪問します。作業時間の目安：4～5時間`
+            },
+            {
+                title: `プロカメラマンによる当日写真撮影`,
+                text: `各部屋・外観・眺望・玄関等の撮影をし、撮影後3営業日以内にご納品`
+            },
+        ])
+
+    section.l-section.is-md.is-top
+      .l-container
+        h2.c-heading.is-md 居住中ホームステージングの<br class="u-hidden-lg" />料金
+        +c.plan-card.is-vertical
+          +e.content
+            +e.card
+              +e.card-head 居住中ホームステージング
+              +e.card-content
+                +e.card-price
+                  span ￥82,500〜
+                  small （税抜 ¥75,000）
+                +e("p").card-text スタンダードプランはリビング・ダイニング家具一式と、水まわり空間にインテリア小物を飾るプランです。
+                +e.card-box
+                  ul.is-inner.is-horizontal
+                    li
+                      span.is-category 梱包資材
+                    li
+                      span.is-category 家財の移動・お片付け
+                    li
+                      span.is-category 小物・グリーンで演出<sup>※1<sup>
+                    li
+                      span.is-category プロカメラマン写真撮影〈 15 カット 〉
+          +e.note ※1.小物は売主様の所有品をお借りして飾りますので、レンタル費用はかかりません。
+        .u-mbs.is-top
+          h3.c-heading.is-sm オプション
+          p.u-mbs.is-xs.is-bottom プロのハウスクリーニング業者による水廻りクリーニングで、お部屋をより美しく演出。
+          table.c-table
+            tbody
+              tr
+                th 水廻りクリーニング 5 点
+                td <strong>55,000 室</strong>（税抜50,000）<br>
+                  ul.c-list.is-disc.u-mbs.is-xs.is-top
+                    li 作業員数：2 名
+                    li 清掃箇所： 洗面 ･トイレ ･浴室 ･キッチン ･レンジフード※
+          +c.box-caption
+            +e.inner
+              +e.title ＜注意事項＞
+              +e.list
+                +e.item レンジフード内のシロッコファンは、構造・汚れ具合によっては清掃を省かせていただく場合がございます。
+                +e.item 写真撮影のための清掃です。作業時間に限りがあるため、状態によっては汚れを取りきれない場合がございます。
+                +e.item シンク内や浴室鏡のカルキ汚れ落としなど、特殊機材を必要とする清掃は含まれません。
+                +e.item キャンセル連絡の時期によっては所定のキャンセル料が掛かる場合があります。
+
+    section.l-section.is-lg
+      +c.box-voice
+        .l-container
+          +e.title
+            h2.c-heading.is-md お客様の声
+          +e.list.owl-carousel.js-box-voice-slider
+            +loop(6)
+              +e.item
+                +e.item-inner
+                  +e.item-head
+                    +e.item-icon: +img("icon-box-voice-vacant-01.png")
+                    +e.item-name Ｆ様（不動産会社）
+                  +e.item-text インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+              +e.item
+                +e.item-inner
+                  +e.item-head
+                    +e.item-icon: +img("icon-box-voice-vacant-02.png")
+                    +e.item-name Ｆ様（不動産会社）
+                  +e.item-text インテリアを設置し内覧すると、お客様の物件に対する滞留時間が長くなりました。その分色々な物件メリットを説明することが出来ました。契約も設置していただいた、ダイニングテーブルで行いました。お客様が買った物件の中で契約が出来るなんて本当にホームステージングは素敵な提案だと思います。
+
+    section.l-section.is-bg-color
+      +c.hero-block-homestager
+        +e.bg
+          +bgimg("bg-hero-block-homestager.jpg").c-hero-block-homestager__bg-img
+          +img("img-text-home-stager.png").c-hero-block-homestager__bg-text
+        +e.content
+          +e.card
+            +e.title 経験豊富なスタッフが、確かな品質とサービスで信頼にお応えします
+            +e("p").text 弊社のサービス提供するスタッフは 、一般社団法人日本ホームステージング協会の認定資格「ホームステージャー2級」以上の資格を習得しています。
+            +a("/about-us/#homestager").c-button.is-sm ホームステージャーとは
+
+    section.l-section.is-lg#comic
+      .l-container
+        +c_page-lead-block({
+            subtitle: ``,
+            title: `漫画で読むホーム<br class="u-visible-md">ステージング`,
+            text: `漫画でホームステージングをご説明しております。`
+        })
+        +c.comic-slider.js-comic-slider.owl-carousel
+          +e.item
+            +img('img-comic-01.jpg')
+          +e.item
+            +img('img-comic-02.jpg')
+          +e.item
+            +img('img-comic-03.jpg')
+          +e.item
+            +img('img-comic-04.jpg')
+          +e.item
+            +img('img-comic-05.jpg')
+
+    section.l-section
+      +c_service-relation
+
+  +l_offer
+

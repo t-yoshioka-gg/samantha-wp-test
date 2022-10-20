@@ -1,0 +1,90 @@
+.c-card-flex-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: rem-calc(36);
+  @include breakpoint(small only) {
+    display: block;
+  }
+  &__block {
+    width: calc(552/ 1140*100%);
+    margin-top: rem-calc(36);
+    @include breakpoint(small only) {
+      width: 100%;
+      max-width: rem-calc(552);
+      margin-right: auto;
+      margin-left: auto;
+      &:not(:first-child) {
+        margin: rem-calc(36) auto 0;
+      }
+
+    }
+  }
+
+  &__content {
+    position: relative;
+    width: 100%;
+    height: calc(342/1400*100vw);
+    max-height: 342px;
+    @include breakpoint(small only) {
+      height: rem-calc(342);
+    }
+    @include breakpoint(584 down) {
+      height: calc(342/584*100vw);
+    }
+    &::before {
+      @include bgimg-pt(500,1140);
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin:auto;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__img {
+    @include bg-option;
+    width: 100%;
+    padding-top: calc(342/552*100%);
+    position: relative;
+    &:before {
+      display: block;
+      width: rem-calc(115);
+      padding: rem-calc(13);
+      text-align: center;
+      @include webfont();
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &.is-before {
+
+      &:before {
+        content: "Before";
+        background: $color-black;
+        color: $color-white;
+      }
+
+    }
+
+    &.is-after {
+
+      &:before {
+        content: "After";
+        background: $color-background;
+        color: $color-secondary;
+      }
+
+    }
+  }
+
+  &__text {
+    margin-top: rem-calc(16);
+    @include font-format(14, .06, 20, 400);
+  }
+}

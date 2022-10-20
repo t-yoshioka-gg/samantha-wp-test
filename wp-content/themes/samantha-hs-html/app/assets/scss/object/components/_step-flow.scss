@@ -1,0 +1,133 @@
+.c-step-flow {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    width: calc((100% + 48px) / 4);
+    position: relative;
+    padding-right: rem-calc(36);
+    padding-top: rem-calc(36);
+    margin-top: rem-calc(32);
+    display: flex;
+    @media (max-width: 1140px) {
+      width: calc((100% + 36px) / 2);
+
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    &:after {
+      content: "";
+      width: rem-calc(26);
+      height: rem-calc(8);
+      background-image: url(../images/icon-arrow-short.png);
+      @include bg-option;
+      background-size: contain;
+      position: absolute;
+      right: rem-calc(10);
+      top: rem-calc(118);
+      @media (max-width: 600px) {
+        background-image: url(../images/icon-triangle-down.png);
+        width: rem-calc(24);
+        height: rem-calc(16);
+        bottom: 0;
+        top: auto;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, 100%);
+      }
+
+    }
+
+    &:nth-child(2n) {
+      @media (min-width: 601px) and (max-width: 1140px) {
+        padding-right: 0;
+        width: calc(50% - 18px);
+        &:after {
+          right: auto;
+          top: auto;
+          bottom: -7px;
+          left: 7px;
+          transform: translate(-100%, 100%) rotate(135deg);
+        }
+
+        .c-step-flow__num {
+          transform: translateX(-50%);
+        }
+
+      }
+
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+
+    &:last-child {
+      width: calc(25% - 36px);
+      padding-right: 0;
+      @media (max-width: 1140px) {
+        width: calc(50% - 18px);
+      }
+
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+
+
+      .c-step-flow__num {
+        transform: translateX(-50%);
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &__num {
+    color: $color-secondary;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(calc(-50% - 18px));
+    @media (max-width: 600px) {
+      transform: translateX(-50%);
+    }
+
+    small {
+      @include webfont();
+      @include font-format(11, .1, 14, 400);
+      display: block;
+
+    }
+
+    span {
+      @include font-format(36, .06, 40, 400);
+      @include webfont-num();
+      display: block;
+    }
+  }
+
+  &__content {
+    background: $color-background;
+    padding: rem-calc(55) rem-calc(29) rem-calc(36);
+    width: 100%;
+  }
+
+  &__title {
+    @include font-format(20, .04, 30, 400);
+    @include webfont();
+    text-align: center;
+
+  }
+
+  &__text {
+    @include font-format(14, .06, 26, 400);
+    margin-top: rem-calc(32);
+  }
+
+
+}

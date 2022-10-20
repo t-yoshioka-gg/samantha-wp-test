@@ -1,0 +1,30 @@
+.c-pagetop {
+  display: block;
+  text-decoration: none;
+  position: absolute;
+  width: rem-calc(50);
+  height: rem-calc(50);
+  background: $color-black;
+  bottom: rem-calc(68);
+  right: rem-calc(24);
+  cursor: pointer;
+  @include breakpoint(small only) {
+    bottom: rem-calc(82);
+    right: rem-calc(12);
+  }
+  &:hover {
+    opacity: .5;
+  }
+
+
+  &:after {
+    content: "\e5ce";
+    font-family: "Material Icons";
+    color: $color-white;
+    @include font-format(20, 0, 21, 400);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

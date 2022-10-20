@@ -1,0 +1,21 @@
+.c-section-top {
+
+  &__title {
+    h2.c-heading.is-md {
+      margin-bottom: 2rem;
+    }
+  }
+  &__text {
+    margin-bottom: rem-calc(46);
+    @include breakpoint(small only) {
+      margin-bottom: rem-calc(24);
+    }
+    &.is-webfont {
+      @include webfont();
+      @include font-format(20, .04, 30, 400);
+    }
+
+  }
+}
+
+

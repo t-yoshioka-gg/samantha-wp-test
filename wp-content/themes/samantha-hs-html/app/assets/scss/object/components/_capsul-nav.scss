@@ -1,0 +1,11 @@
+.c-capsul-nav {
+  &__block {
+    margin-right: rem-calc(36);
+    @include breakpoint(medium down) {
+      margin-right: rem-calc(0);
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.c-hero-block-sm {
+  &__title {}
+
+  &__block {
+    margin-top: rem-calc(60);
+    @include breakpoint(small only) {
+      margin-top: 0;
+    }
+
+  }
+  &__item {
+    position: relative;
+    min-height: rem-calc(433);
+    margin-top: rem-calc(80);
+
+    @include breakpoint(medium down) {
+      min-height: auto;
+      margin-top: rem-calc(64);
+    }
+    @include breakpoint(small only) {
+      margin-top: rem-calc(32);
+    }
+    &:first-child {
+      margin-top: rem-calc(0);
+    }
+    &:nth-child(even) {
+      .c-hero-block-sm__item-image {
+        right: 0;
+        left: inherit;
+      }
+      .c-hero-block-sm__item-inner {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+    &-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin:auto;
+      width: calc(650 / 1140 * 100%);
+      max-height: rem-calc(433);
+      @include breakpoint(medium down) {
+        position: relative;
+        top: inherit;
+        left: inherit;
+        width: 100%;
+        max-height: inherit;
+      }
+      &::before {
+        @include bgimg-pt(433,650);
+      }
+      .bg-img {
+        @include bg-img;
+      }
+    }
+    &-content {
+      padding-top: rem-calc(60);
+      @include breakpoint(medium down) {
+        padding-top: rem-calc(0);
+      }
+    }
+    &-inner {
+      width: calc(588 / 1140 * 100%);
+      margin-left: auto;
+      padding: rem-calc(60) rem-calc(58);
+      box-shadow: 0 0 20px rgba($color-black,.04);
+      position: relative;
+      z-index: 99;
+      background: $color-white;
+      @include breakpoint(medium down) {
+        width: 100%;
+        padding: rem-calc(24) rem-calc(0);
+        box-shadow: none;
+      }
+    }
+    &-title {
+      @include font-format(26, 0, 38);
+      @include webfont-num();
+      @include breakpoint(medium down) {
+        @include font-format(20, .05, 30);
+      }
+    }
+    &-text {
+      margin-top: rem-calc(24);
+      @include font-format(16,.05,32);
+      @include breakpoint(small only) {
+        margin-top: 0;
+        @include font-format(14,.05,28);
+      }
+    }
+  }
+
+  &__button {
+    margin-top: rem-calc(80);
+    text-align: center;
+    @include breakpoint(medium down) {
+      margin-top: rem-calc(40);
+    }
+  }
+}

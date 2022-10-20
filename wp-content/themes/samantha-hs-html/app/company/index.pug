@@ -1,0 +1,161 @@
+extends /inc/foundation/_base.pug
+block append config
+  - current.id = "company" // ページのID
+  - current.title = "会社情報" // タイトル
+  - current.description = "これは会社情報についての説明文です" // 説明文
+  - current.bodyClass = "company" // body に付与するクラス
+  - current.depth = 2 // ページの階層
+
+block page_header
+  +l_page_header({
+    image: "img-page-header-company.jpg",
+    title: "会社情報",
+    subtitle: ""
+  })
+  +c_breadcrumb()
+
+block body
+  main.l-main
+    section.l-section.is-lg
+      +c.block-top-message
+        .l-container
+          +e.title
+            h2.c-heading.is-xlg.is-center
+              small MESSAGE
+              b 代表メッセージ
+            h3.c-heading.is-lg 人の役に立ち、世間の役に立ち、自らの力になる
+          +e.text
+            p.
+              日本でホームステージングが始まって以来、当社はその先駆けとして事業をおこなってまいりました。<br/>
+              東京で10年以上前から始めたホームステージングは、当時は知る人ぞ知るサービスでした。<br/><br/>
+              昨今、既存住宅を販売するために多くの企業が利用されており、現在では売主様が自らホームステージングを行ったり、大家業を営む個人オーナー様も利用されるようになってまいりました。<br/><br/>
+              当社では年間6千件以上のホームステージングを実施しており、現在では首都圏だけでなく、全国でサービスを提供しています。150名以上のホームステージャーが当社には所属しており、ホームステージングというサービスが【業】として成り立ちつつあります。米国では1970年代から始まり、ごく一般的な売却支援サービスとして定着していますが、日本ではまだまだ認知度の低い新サービスです。全国一律で質の高いサービスを提供することで、認知度の向上を目指しております。<br/><br/>
+              光栄なことに、私どもで実施させていただいた居住中ホームステージングのお客様アンケートでは「感激・感心」の評価が99％に上ります。時にはアンケート回答だけではなく、応援・お褒めのメッセージを頂くこともございます。こうしたメッセージは、社員一同の励みとなっており、大変感謝しております。<br/><br/>
+              当社のホームステージングは、今もなお進化し続けようと、社内で新たなる取り組みを日々研鑽しております。日本中でホームステージングを行う事が当たり前になるまで、当社のチャレンジは続きます。これからもサマンサ・ホームステージングをよろしくお願いいたします。
+          +e.post
+            span 株式会社サマンサ・ホームステージング
+            b <small>代表取締役</small>大西　真史
+    section.l-section.is-lg.is-bottom#outline
+      .l-container
+        h2.c-heading.is-md 会社概要
+        .u-mbs.is-top
+          table.c-table.is-th-vertical
+            tbody
+              tr
+                th 商号
+                td 株式会社サマンサ・ホームステージング
+              tr
+                th 代表取締役
+                td 大西　真史
+              tr
+                th 資本金
+                td 9050万円
+              tr
+                th 東京本社
+                td 〒135-0047　東京都江東区富岡1丁目12-8　アサヒビル 2階
+              tr
+                th 日本橋ショールーム
+                td 〒103-0014　東京都中央区日本橋蛎殻町1丁目32-13　プラハ日本橋人形町南 1階
+              tr
+                th 大阪営業所
+                td 〒541-0052　大阪府大阪市中央区安土町２丁目3−13　大阪国際ビルデイング 31階
+              tr
+                th 福岡営業所
+                td 〒811-0801　福岡県福岡市博多区中洲5-3-8　アクア博多 5階
+              tr
+                th 電話番号
+                td 050-1741-6970（代表番号）
+              tr
+                th FAX
+                td 03-5875-8692
+              tr
+                th Eメール
+                td info@samantha-hs.com
+              tr
+                th URL
+                td https://samantha-hs.com/
+              tr
+                th 創業
+                td 2011年8月19日
+              tr
+                th 取引銀行
+                td 三菱UFJ銀行 深川支店、商工中金 本店、りそな銀行 錦糸町支店
+              tr
+                th 許可／認可
+                td 産業廃棄物収集運搬業（13-00-171333号）<br/>第一種貨物利用運送事業 労働者派遣事業　（派13-306644）
+              tr
+                th 古物商番号
+                td 第307711409123号　東京都公安委員会
+              tr
+                th 事業内容
+                td ホームステージング業務、撮影、引越及びリフォームなどの梱包開梱業務、各種物販及びリサイクル業務等
+    section.l-section.is-md.is-bottom
+      .l-container
+        +c.card-business
+          +e.title
+            h2.c-heading.is-md 事業紹介
+          +e.subtitle.
+            5つの業務を柱に、お客様の不動産売却と快適な暮らしづくりを<br>
+            全力でサポートいたします。
+          +e.list
+            +e.item
+              +e.item-inner
+                +e.item-image: +bgimg("img-card-business-01.jpg").bg-img
+                +e.item-content
+                  +e.item-title 空室ホームステージング
+                  +e("ul").item-units.c-list.is-disc
+                    li 家具・小物レンタル
+                    li 家具・小物販売
+            +e.item
+              +e.item-inner
+                +e.item-image: +bgimg("img-card-business-02.jpg").bg-img
+                +e.item-content
+                  +e.item-title 居住中ホームステージング
+                  +e("ul").item-units.c-list.is-disc
+                    li 家財のお片付け
+                    li 小物装飾・香りの演出
+            +e.item
+              +e.item-inner
+                +e.item-image: +bgimg("img-card-business-03.jpg").bg-img
+                +e.item-content
+                  +e.item-title バーチャルホームステージング
+                  +e("ul").item-units.c-list.is-disc
+                    li ウェブ内覧動画撮影
+                    li CG家具合成
+            +e.item
+              +e.item-inner
+                +e.item-image: +bgimg("img-card-business-04.jpg").bg-img
+                +e.item-content
+                  +e.item-title プロカメラマン撮影
+                  +e("ul").item-units.c-list.is-disc
+                    li スチール写真撮影
+                    li ウェブ内覧動画制作
+                    li Matterport３D ウォークスルー
+            +e.item
+              +e.item-inner
+                +e.item-image: +bgimg("img-card-business-05.jpg").bg-img
+                +e.item-content
+                  +e.item-title 引越・暮らしのサポート
+                  +e("ul").item-units.c-list.is-disc
+                    li 梱包・開梱サービス
+                    li 整理収納・お片付け
+    section.l-section
+      +c.top-banner
+        .l-container
+          +c_banner-showroom
+
+    section.l-section.is-lg
+      .l-container
+        +c.block-access
+          +e.title
+            h2.c-heading.is-md アクセス情報
+          +e.map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2159392694653!2d139.79581381525858!3d35.67168458019657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188907a3655555%3A0xcf2118ea78383675!2z5qCq5byP5Lya56S-44K144Oe44Oz44K1772l44Ob44O844Og44K544OG44O844K444Oz44Kw!5e0!3m2!1sja!2sjp!4v1657789335140!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          +e.P.address.
+            「水天宮前」駅から徒歩２分<br>
+            「人形町」駅から徒歩５分<br>
+            【迷われた方は代表電話：<a class="is-tel" href="tel:050-1741-6970">050-1741-6970</a>までお気軽にお問い合わせ下さい。】
+          +e.button: +a-ex("https://goo.gl/maps/Db2dCeKbpS3G2RYq7").c-button Google Mapで見る
+
+
+  +l_offer
+

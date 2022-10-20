@@ -1,0 +1,39 @@
+.c-gallery-homestager {
+
+  //ギャラリー
+  .c-box-image-slider {
+    position: relative;
+    z-index: 1;
+    &__block {
+      width: 263px;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  //ホワイトボード
+  &__whiteboard {
+    position: relative;
+    z-index: 3;
+    background-color: $color-white;
+    padding: 70px 16px;
+    margin: 0 auto;
+    margin-top: -40px;
+    @include breakpoint(small only) {
+      padding: rem-calc(32) rem-calc(16);
+    }
+    .c-heading.is-md {
+      margin-bottom: rem-calc(32);
+    }
+
+    p {
+      text-align: center;
+      @include breakpoint(small only) {
+        text-align: left;
+      }
+    }
+
+  }
+
+}

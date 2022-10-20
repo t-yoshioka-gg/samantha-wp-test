@@ -1,0 +1,66 @@
+.c-page-lead-block {
+  &__text-flex {
+
+    display: flex;
+    margin: 2.6rem auto 0;
+    @include breakpoint(small only) {
+      display: block;
+      margin-top: 1.3rem;
+    }
+
+    .c-page-lead-block__text {
+      width: 100%;
+      text-align: left;
+      margin-top: 2rem;
+      &:not(:first-child) {
+        margin-left: 40px;
+        @include breakpoint(small only) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  &__text {
+    text-align: center;
+    line-height: 2;
+    @include breakpoint(small only) {
+      text-align: left;
+    }
+
+    &.is-left {
+      text-align: left;
+    }
+  }
+
+  &__lg-title {
+    margin-bottom: rem-calc(40);
+    b {
+      display: block;
+      text-align: center;
+      @include font-format(40, .06, 50);
+      @include webfont();
+      @include breakpoint(medium down) {
+        @include font-format(30, .06, 40);
+      }
+    }
+    span {
+      width: rem-calc(275);
+      max-width: rem-calc(275);
+      margin:auto;
+      display: block;
+    }
+  }
+  &.is-sm {
+    margin-bottom: rem-calc(32);
+    @include breakpoint(small only) {
+      margin-bottom: rem-calc(18);
+    }
+  }
+
+  &.is-no-margin {
+    margin-bottom: 0;
+  }
+
+
+
+}

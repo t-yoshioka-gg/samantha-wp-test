@@ -1,0 +1,73 @@
+.c-top-sns {
+  padding-top: rem-calc(120);
+  padding-bottom: rem-calc(100);
+  position: relative;
+  @include breakpoint(small only) {
+    padding-top: rem-calc(60);
+    padding-bottom: rem-calc(100);
+  }
+
+
+
+  &__head {
+    margin-bottom: rem-calc(20);
+    @media (max-width: 500px) {
+      margin-bottom: rem-calc(8);
+    }
+  }
+
+
+
+  &__icon {
+    display: inline-block;
+    @include webfont();
+    @include font-format(22, 0, 27, 400);
+    padding-left: rem-calc(46);
+    padding-top: rem-calc(8);
+    padding-bottom: rem-calc(8);
+    position: relative;
+    &:before {
+      content: "";
+      background-image: url(../images/icon-instagram.png);
+      @include bg-option;
+      background-size: contain;
+      width: rem-calc(41);
+      height: rem-calc(41);
+      position: absolute;
+      left: 0;
+      top: rem-calc(0);
+    }
+
+    @media (max-width: 500px) {
+      display: block;
+      font-size: rem-calc(18);
+      padding: rem-calc(4) 0 rem-calc(4) rem-calc(32);
+      width: rem-calc(126);
+      margin-left: auto;
+      margin-right: auto;
+
+      &:before {
+        width: rem-calc(30);
+        height: rem-calc(30);
+      }
+
+
+    }
+  }
+
+  &__link {
+    position: absolute;
+    top: rem-calc(234);
+    right: calc(130/1400*100%);
+    @media (max-width: 1200px) {
+      right: 32px;
+    }
+    @include breakpoint(small only) {
+      min-width: rem-calc(250);
+      top: auto;
+      bottom: 36px;
+      right: rem-calc(16);
+    }
+  }
+
+}

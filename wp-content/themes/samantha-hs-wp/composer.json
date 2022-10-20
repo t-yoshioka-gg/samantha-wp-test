@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "upstatement/routes": "^0.6.0"
+    }
+}

@@ -1,0 +1,62 @@
+.c-card-business {
+  &__title {}
+
+  &__subtitle {
+    @include font-format(20, .06, 30, 400);
+    text-align: center;
+    margin: rem-calc(40) 0;
+    @include webfont();
+
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 rem-calc(-18);
+    @include breakpoint(medium down) {
+      margin: auto;
+    }
+  }
+  &__item {
+    width: calc(100% / 3);
+    padding: 0 rem-calc(18);
+    margin-top: rem-calc(40);
+    @include breakpoint(medium down) {
+      width: 100%;
+      padding: 0;
+    }
+    &:nth-child(-n + 3) {
+      margin-top: rem-calc(0);
+      @include breakpoint(medium down) {
+        margin-top: rem-calc(40);
+      }
+    }
+    &:first-child {
+      margin-top: rem-calc(0);
+    }
+    &-inner {}
+    &-image {
+      position: relative;
+      width: 100%;
+      &::before {
+        @include bgimg-pt(200,356);
+      }
+      .bg-img {
+        @include bg-img;
+      }
+    }
+    &-content {
+      margin-top: rem-calc(12);
+    }
+    &-title {
+      @include font-format(20, .06, 28);
+      @include webfont();
+    }
+    &-units {
+      margin-top: rem-calc(12);
+      span {
+        display: block;
+      }
+    }
+  }
+}

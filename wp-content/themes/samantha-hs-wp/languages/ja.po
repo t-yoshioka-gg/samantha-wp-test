@@ -1,0 +1,1280 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: growp\n"
+"POT-Creation-Date: 2015-09-28 01:44+0900\n"
+"PO-Revision-Date: 2015-09-28 01:45+0900\n"
+"Last-Translator: ishihara <ishihara@grow-group.jp>\n"
+"Language-Team: ishihara takashi <akeome1369@gmail.com>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x;_ex;_nx;_n_noop\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: bower_components\n"
+"X-Poedit-SearchPathExcluded-2: assets\n"
+
+#: 404.php:14
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "ページが見つかりませんでした。"
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr "何も見つかりませんでした。以下のリンク、または検索してみてください。"
+
+#: 404.php:28
+msgid "Most Used Categories"
+msgstr "最も使用しているカテゴリー"
+
+#: 404.php:43
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "月別アーカイブで探してみてください。 %1$s"
+
+#: classes/class-breadcrumbs.php:85
+msgid "Home"
+msgstr "ホーム"
+
+#: classes/class-breadcrumbs.php:87
+#, php-format
+msgid "Search Result for <em>%s</em>"
+msgstr "%s の 検索結果"
+
+#: classes/class-breadcrumbs.php:88
+#, php-format
+msgid "%s Search results for <em>%s</em>"
+msgstr "%s : %s の検索結果"
+
+#: classes/class-breadcrumbs.php:90
+#, php-format
+msgid "page %d"
+msgstr "ページ %d"
+
+#: classes/class-breadcrumbs.php:91
+msgid "Error: Page not found"
+msgstr "エラー : ページが見つかりませんでした。"
+
+#: classes/class-post-type.php:79 classes/class-post-type.php:80
+#: classes/class-post-type.php:91 classes/class-post-type.php:161
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: classes/class-post-type.php:81 classes/class-post-type.php:82
+#, php-format
+msgid "Add New %s"
+msgstr "新しい%sを追加"
+
+#: classes/class-post-type.php:83
+#, php-format
+msgid "Edit %s"
+msgstr "%sを編集"
+
+#: classes/class-post-type.php:84
+#, php-format
+msgid "New %s"
+msgstr "新しい %s"
+
+#: classes/class-post-type.php:85 classes/class-post-type.php:154
+#, php-format
+msgid "All %s"
+msgstr "すべての%s"
+
+#: classes/class-post-type.php:86
+#, php-format
+msgid "View %s"
+msgstr "%sを見る"
+
+#: classes/class-post-type.php:87
+#, php-format
+msgid "Search %s"
+msgstr "%sを検索"
+
+#: classes/class-post-type.php:88
+#, php-format
+msgid "No %s found"
+msgstr "%sが見つかりませんでした。"
+
+#: classes/class-post-type.php:89
+#, php-format
+msgid "No %s found in Trash"
+msgstr "%sがゴミ箱の中に見つかりませんでした。"
+
+#: classes/class-post-type.php:153
+msgid "Search "
+msgstr "検索"
+
+#: classes/class-post-type.php:155
+#, php-format
+msgid "Parent %s"
+msgstr "親 %s"
+
+#: classes/class-post-type.php:156
+#, php-format
+msgid "Parent: %s"
+msgstr "親 : %s"
+
+#: classes/class-post-type.php:157
+#, php-format
+msgid "Edit: %s"
+msgstr "編集: %s"
+
+#: classes/class-post-type.php:158
+#, php-format
+msgid "Update %s"
+msgstr "%sを更新"
+
+#: classes/class-post-type.php:159
+#, php-format
+msgid "Add new %s"
+msgstr "新しい%sを追加"
+
+#: classes/class-post-type.php:160
+#, php-format
+msgid "New %s Name"
+msgstr "新しい %s の名称"
+
+#: classes/class-related-post.php:105
+msgid "Related Posts"
+msgstr "関連記事"
+
+#: classes/class-walker-comment.php:22
+msgid "Comments"
+msgstr "コメント"
+
+#: classes/class-walker-comment.php:71
+msgid "(Edit)"
+msgstr "(編集)"
+
+#: inc/comment.php:41
+msgid "Post a new comment"
+msgstr "新しいコメントを投稿"
+
+#: inc/comment.php:42
+msgid "Your email address will not be published. Required fields are marked"
+msgstr "あなたのメールアドレスは公開されません。"
+
+#: inc/comment.php:65
+msgid "Your Name (required)"
+msgstr "あなたのお名前 ( 必須 )"
+
+#: inc/comment.php:66
+msgid "Email Address (required)"
+msgstr "メールアドレス ( 必須 )"
+
+#: inc/comment.php:67
+msgid "Website (url)"
+msgstr "Webサイト (url)"
+
+#: inc/comment.php:85
+msgid "Comment"
+msgstr "コメント"
+
+#: inc/extras.php:65
+#, php-format
+msgid "Page %s"
+msgstr "ページ %s"
+
+#: inc/extras.php:109
+msgid "More"
+msgstr "続きを見る"
+
+#: inc/modification.php:18
+msgid "General"
+msgstr "基本的な設定"
+
+#: inc/modification.php:19
+msgid "Please have a set of general setting."
+msgstr "基本的な設定をしてください。"
+
+#: inc/modification.php:22
+msgid "Google Analytics - Tracking code"
+msgstr "Google アナリティクス - トラッキングコード"
+
+#: inc/modification.php:25
+msgid "Tracking Code"
+msgstr "トラッキングコード"
+
+#: inc/modification.php:33 inc/modification.php:36
+msgid "Meta Description"
+msgstr "メタ説明文"
+
+#: inc/modification.php:44 inc/modification.php:47
+msgid "Meta Keyword"
+msgstr "メタキーワード"
+
+#: inc/modification.php:55 inc/modification.php:59
+msgid "Favicon"
+msgstr "ファビコン"
+
+#: inc/modification.php:56
+msgid "16  16 px .ico file or .png"
+msgstr "16×16px のファビコン用の画像ファイルをアップロードしてください。"
+
+#: inc/modification.php:72
+msgid "Header"
+msgstr "ヘッダー 設定"
+
+#: inc/modification.php:73
+msgid "Please have a set of headers."
+msgstr "ヘッダーの設定をしてください。"
+
+#: inc/modification.php:76 inc/modification.php:79
+msgid "Header Style"
+msgstr "ヘッダースタイル"
+
+#: inc/modification.php:84
+msgid "Navigation : Top"
+msgstr "ナビゲーション : トップ"
+
+#: inc/modification.php:85
+msgid "Navigation : Bottom"
+msgstr "ナビゲーション : ボトム"
+
+#: inc/modification.php:86
+msgid "Navigation : None"
+msgstr "ナビゲーション : 非表示"
+
+#: inc/modification.php:87
+msgid "Header : None"
+msgstr "ヘッダー : 非表示"
+
+#: inc/modification.php:91
+msgid "Header Text Align"
+msgstr "ヘッダー : テキストの位置"
+
+#: inc/modification.php:96
+msgid "Text Align: Left"
+msgstr "テキストの位置 : 左"
+
+#: inc/modification.php:97
+msgid "Text Align: Center"
+msgstr "テキストの位置 : センター"
+
+#: inc/modification.php:98
+msgid "Text Align: Right"
+msgstr "テキストの位置 : 右"
+
+#: inc/modification.php:107
+msgid "Logo"
+msgstr "ロゴ"
+
+#: inc/modification.php:110
+msgid "Logo Image"
+msgstr "ロゴ画像"
+
+#: inc/modification.php:116
+msgid "Font Size"
+msgstr "文字の大きさ"
+
+#: inc/modification.php:139
+msgid "Color"
+msgstr "配色"
+
+#: inc/modification.php:151 inc/modification.php:673
+msgid "Background"
+msgstr "背景"
+
+#: inc/modification.php:154 inc/modification.php:289 inc/modification.php:676
+msgid "Background Image"
+msgstr "背景画像"
+
+#: inc/modification.php:163 inc/modification.php:298 inc/modification.php:685
+msgid "Background Attachment"
+msgstr "背景画像の固定"
+
+#: inc/modification.php:168 inc/modification.php:303 inc/modification.php:690
+msgid "Fixed"
+msgstr "固定"
+
+#: inc/modification.php:169 inc/modification.php:691
+msgid "Scroll"
+msgstr "スクロール"
+
+#: inc/modification.php:176 inc/modification.php:280 inc/modification.php:698
+msgid "Background Color"
+msgstr "背景色"
+
+#: inc/modification.php:185 inc/modification.php:311
+msgid "Background Size"
+msgstr "背景サイズ"
+
+#: inc/modification.php:190 inc/modification.php:316
+msgid "Horizontal : auto Vertical : auto"
+msgstr "横 : auto 縦 : auto"
+
+#: inc/modification.php:191 inc/modification.php:317
+msgid "Horizontal : 100%, Vertical : auto"
+msgstr "横 : 100%, 縦 : auto"
+
+#: inc/modification.php:192 inc/modification.php:318
+msgid "Horizontal : auto, Vertical : 100%"
+msgstr "横 : auto, 縦 : 100%"
+
+#: inc/modification.php:193 inc/modification.php:319
+msgid "Horizontal : 100%, Vertical : 100%"
+msgstr "横 : 100%, 縦 : 100%"
+
+#: inc/modification.php:208 inc/modification.php:215
+msgid "Theme Style"
+msgstr "テーマスタイル"
+
+#: inc/modification.php:211
+msgid "Theme Style "
+msgstr "テーマスタイル"
+
+#: inc/modification.php:212 inc/modification.php:232
+msgid "Setting for Theme color."
+msgstr "テーマカラーの設定"
+
+#: inc/modification.php:220 inc/modification.php:472
+msgid "Normal"
+msgstr "ノーマル"
+
+#: inc/modification.php:221
+msgid "Blog"
+msgstr "ブログ"
+
+#: inc/modification.php:231
+msgid "Theme Color "
+msgstr "テーマカラー"
+
+#: inc/modification.php:235
+msgid "Theme Color"
+msgstr "テーマカラー"
+
+#: inc/modification.php:273
+msgid "Body Settings"
+msgstr "コンテンツ"
+
+#: inc/modification.php:274
+msgid "Please have a set of body."
+msgstr "サイトボディ内の設定をしてください。"
+
+#: inc/modification.php:277
+msgid "Body "
+msgstr "ボディ内"
+
+#: inc/modification.php:304
+msgid "Initial"
+msgstr "スクロール"
+
+#: inc/modification.php:328
+msgid "Headings"
+msgstr "見出し"
+
+#: inc/modification.php:331
+msgid "Heading Color"
+msgstr "見出しカラー"
+
+#: inc/modification.php:340
+msgid "H1 Font Size"
+msgstr "H1 : フォントサイズ"
+
+#: inc/modification.php:353
+msgid "H2 Font Size"
+msgstr "H2 : フォントサイズ"
+
+#: inc/modification.php:365
+msgid "H3 Font Size"
+msgstr "H3 : フォントサイズ "
+
+#: inc/modification.php:378
+msgid "H4 Font Size"
+msgstr "H4 : フォントサイズ"
+
+#: inc/modification.php:390
+msgid "H5 Font Size"
+msgstr "H5 : フォントサイズ"
+
+#: inc/modification.php:402
+msgid "H6 Font Size"
+msgstr "H6 : フォントサイズ"
+
+#: inc/modification.php:416
+msgid "Text"
+msgstr "テキスト"
+
+#: inc/modification.php:419
+msgid "Text Color"
+msgstr "テキストカラー"
+
+#: inc/modification.php:429
+msgid "Base Font Size"
+msgstr "ベース文字サイズ"
+
+#: inc/modification.php:459
+msgid "Home Page Settings"
+msgstr "トップページ 設定"
+
+#: inc/modification.php:460
+msgid "Please settings for home page."
+msgstr "トップページの設定をしてください。"
+
+#: inc/modification.php:463 inc/modification.php:467
+msgid "Post List Style"
+msgstr "投稿リストスタイル"
+
+#: inc/modification.php:464
+msgid "Please select the style of Posts List"
+msgstr "投稿一覧のスタイルを選択してください。"
+
+#: inc/modification.php:473
+msgid "Tile"
+msgstr "タイル"
+
+#: inc/modification.php:487
+msgid "Single Post Settings"
+msgstr "投稿記事 表示設定"
+
+#: inc/modification.php:488
+msgid "Please settings for single post."
+msgstr "投稿ページの設定をしてください。"
+
+#: inc/modification.php:491 inc/modification.php:495
+msgid "Display Thumbnail"
+msgstr "アイキャッチ画像の表示"
+
+#: inc/modification.php:492
+msgid "Do you want to display a thumbnail?"
+msgstr "アイキャッチ画像を自動出力しますか？"
+
+#: inc/modification.php:500 inc/modification.php:529 inc/modification.php:545
+#: inc/modification.php:561 inc/modification.php:577 inc/modification.php:593
+#: inc/modification.php:609 inc/modification.php:720
+msgid "Yes"
+msgstr "はい"
+
+#: inc/modification.php:501 inc/modification.php:530 inc/modification.php:546
+#: inc/modification.php:562 inc/modification.php:578 inc/modification.php:594
+#: inc/modification.php:610 inc/modification.php:721
+#: vendor/1shiharat/growp-theme-customizer/fields/select/class-taxonomy-dropdown-custom-control.php:30
+msgid "None"
+msgstr "いいえ"
+
+#: inc/modification.php:507 inc/modification.php:511
+msgid "Except Number of characters"
+msgstr "投稿一覧の本文の文字数"
+
+#: inc/modification.php:508
+msgid "Do you want to display a excerpt?"
+msgstr "投稿一覧の文章を何文字出力するか指定してください。"
+
+#: inc/modification.php:520 inc/modification.php:524
+msgid "Display Date"
+msgstr "日付の表示"
+
+#: inc/modification.php:521
+msgid "Do you want to display a posted date?"
+msgstr "投稿日時を表示しますか？"
+
+#: inc/modification.php:536 inc/modification.php:540
+msgid "Display Author"
+msgstr "投稿者の表示"
+
+#: inc/modification.php:537
+msgid "Do you want to display a posted author?"
+msgstr "投稿者を表示しますか？"
+
+#: inc/modification.php:552 inc/modification.php:556
+msgid "Display Category"
+msgstr "カテゴリの表示"
+
+#: inc/modification.php:553
+msgid "Do you want to display a category?"
+msgstr "カテゴリ表示しますか？"
+
+#: inc/modification.php:568 inc/modification.php:572
+msgid "Display Tags"
+msgstr "タグの表示"
+
+#: inc/modification.php:569
+msgid "Do you want to display a tag?"
+msgstr "タグを表示しますか？"
+
+#: inc/modification.php:584
+msgid "Display Comment Number"
+msgstr "コメント数の表示"
+
+#: inc/modification.php:585 inc/modification.php:588
+msgid "Do you want to display the comment number?"
+msgstr "コメント数を表示しますか？"
+
+#: inc/modification.php:600
+msgid "Display Related Post"
+msgstr "関連記事の表示"
+
+#: inc/modification.php:601 inc/modification.php:604
+msgid "Do you want to display the associated article?"
+msgstr "関連記事を表示しますか？"
+
+#: inc/modification.php:622
+msgid "Layout Settings"
+msgstr "レイアウト 設定"
+
+#: inc/modification.php:623
+msgid "Please have a set of layout."
+msgstr "レイアウトの設定を行ってください。"
+
+#: inc/modification.php:626
+msgid "Top Page"
+msgstr "トップページ"
+
+#: inc/modification.php:627 inc/modification.php:639 inc/modification.php:651
+msgid "Please select the layout."
+msgstr "レイアウトを選択してください"
+
+#: inc/modification.php:630
+msgid "Layout of top page"
+msgstr "トップページのレイアウト"
+
+#: inc/modification.php:638
+msgid "static page"
+msgstr "固定ページ"
+
+#: inc/modification.php:642
+msgid "Layout of static page"
+msgstr "固定ページのレイアウト"
+
+#: inc/modification.php:650
+msgid "single page"
+msgstr "投稿ページ"
+
+#: inc/modification.php:654
+msgid "Layout of single page"
+msgstr "投稿ページのレイアウト"
+
+#: inc/modification.php:668
+msgid "Footer"
+msgstr "フッター"
+
+#: inc/modification.php:669
+msgid "Please have a set of footer."
+msgstr "フッターの設定をしてください。"
+
+#: inc/modification.php:711
+msgid "Scroll Top"
+msgstr "スクロールトップ"
+
+#: inc/modification.php:712
+msgid "Setting for Scroll top."
+msgstr "スクロールトップの設定を行って下さい。"
+
+#: inc/modification.php:715
+msgid "Display"
+msgstr "表示"
+
+#: inc/modification.php:725
+msgid "Page Top Background"
+msgstr "スクロールトップの背景色"
+
+#: inc/modification.php:737
+msgid "Copyright"
+msgstr "コピーライト"
+
+#: inc/modification.php:738
+msgid "Setting for Copyright."
+msgstr "コピーライト文の設定"
+
+#: inc/modification.php:741
+msgid "Copyright text"
+msgstr "コピーライト文"
+
+#: inc/modification.php:747
+msgid "Copyright Background"
+msgstr "コピーライトの背景"
+
+#: inc/setup.php:53
+msgid "Header Primary Navigation"
+msgstr "ヘッダープライマリーナビゲーション"
+
+#: inc/sidebar.php:32
+msgid "Sidebar Primary"
+msgstr "サイドバー"
+
+#: inc/sidebar.php:41
+msgid "Header Primary Area"
+msgstr "ヘッダー"
+
+#: inc/sidebar.php:50
+msgid "Main Visual"
+msgstr "メインビジュアル"
+
+#: inc/sidebar.php:59
+msgid "Above Contents"
+msgstr "コンテンツ上部"
+
+#: inc/sidebar.php:68
+msgid "Under Content"
+msgstr "コンテンツ下部"
+
+#: inc/sidebar.php:77
+msgid "Under title (single post)"
+msgstr "タイトル下部 ( 投稿 )"
+
+#: inc/sidebar.php:86
+msgid "Footer Primary"
+msgstr "フッター"
+
+#: inc/template-tags.php:21
+msgid "&laquo; Previous"
+msgstr "前へ"
+
+#: inc/template-tags.php:22
+msgid "Next &raquo;"
+msgstr "次へ"
+
+#: inc/template-tags.php:52
+msgid "Post navigation"
+msgstr "投稿ナビゲーション"
+
+#: inc/template-tags.php:55
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr "<span class=\"meta-nav\">&larr;</span> %title"
+
+#: inc/template-tags.php:56
+msgid "%title <span class=\"meta-nav\">&rarr;</span>"
+msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:82
+#, php-format
+msgid ""
+"<i class=\"fa fa-calendar-o\"></i> <span class=\"posted-on\">Posted on %1$s</"
+"span> "
+msgstr ""
+"<i class=\"fa fa-calendar-o\"></i> <span class=\"posted-on\">投稿日 : %1$s</"
+"span> "
+
+#: inc/template-tags.php:83
+#, php-format
+msgid "<i class=\"fa fa-user\"></i><span class=\"byline\"> by %1$s</span>"
+msgstr ""
+"<i class=\"fa fa-user\"></i><span class=\"byline\"> 投稿者 : %1$s</span>"
+
+#: inc/template-tags.php:181
+msgid "Previous"
+msgstr "前へ"
+
+#: inc/template-tags.php:182
+msgid "Next"
+msgstr "次へ"
+
+#: inc/tgmpa.php:85
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr "この通知を閉じる"
+
+#: inc/tgmpa.php:89
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:333
+msgid "Install Required Plugins"
+msgstr "必要なプラグインをインストール"
+
+#: inc/tgmpa.php:90
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:334
+msgid "Install Plugins"
+msgstr "プラグインをインストール"
+
+#: inc/tgmpa.php:91
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:335
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "インストールしているプラグイン: %s"
+
+#: inc/tgmpa.php:92
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:336
+msgid "Something went wrong with the plugin API."
+msgstr "何かがプラグインAPIを使用して間違いが起こりました。"
+
+#: inc/tgmpa.php:94
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:338
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgstr "このテーマは、次のプラグインを必要とします: %1$s"
+
+#: inc/tgmpa.php:99
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgstr "このテーマは、次のプラグインを必要とします: %1$s"
+
+#: inc/tgmpa.php:104
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:348
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugin."
+msgstr ""
+"申し訳ありませんが、あなたは%1$sプラグインをインストールするための適切な権限"
+"がありません。"
+
+#: inc/tgmpa.php:109
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:353
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr ""
+"次のプラグインは、このテーマに最大限の互換性を確保するために、その最新バー"
+"ジョンに更新する必要があります。: %1$s."
+
+#: inc/tgmpa.php:114
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:358
+#, php-format
+msgid "There is an update available for: %1$s."
+msgstr "利用可能なアップデートがあります : %1$s."
+
+#: inc/tgmpa.php:119
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:363
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgstr ""
+"申し訳ありませんが、あなたは%1$sプラグインをインストールするための適切な権限"
+"がありません。"
+
+#: inc/tgmpa.php:124
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:368
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgstr "以下の必要なプラグインは、現在無効です： %1$s."
+
+#: inc/tgmpa.php:129
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgstr "次の推奨プラグインは現在有効になっていません:  %1$s"
+
+#: inc/tgmpa.php:134
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:378
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugin."
+msgstr ""
+"申し訳ありませんが、あなたは%1$sプラグインをインストールするための適切な権限"
+"がありません。"
+
+#: inc/tgmpa.php:139
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:383
+msgid "Begin installing plugin"
+msgstr "プラグインのインストールを開始"
+
+#: inc/tgmpa.php:144
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:388
+msgid "Begin updating plugin"
+msgstr "プラグインの更新を開始します"
+
+#: inc/tgmpa.php:149
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:393
+msgid "Begin activating plugin"
+msgstr "プラグインの有効化を開始"
+
+#: inc/tgmpa.php:153
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:397
+msgid "Return to Required Plugins Installer"
+msgstr "プラグインインストーラーへ戻る"
+
+#: inc/tgmpa.php:154
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:399
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3029
+msgid "Plugin activated successfully."
+msgstr "プラグインの有効化に成功しました。"
+
+#: inc/tgmpa.php:155
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:400
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2832
+msgid "The following plugin was activated successfully:"
+msgstr "以下のプラグインを有効化しました:"
+
+#: inc/tgmpa.php:156
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "アクションはありません。%1$s  プラグインは既に有効化されています。"
+
+#: inc/tgmpa.php:157
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:402
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"プラグインは有効化されていません。%s のバージョンが新しいものがこのテーマでは"
+"必要です。プラグインを更新してください。"
+
+#: inc/tgmpa.php:158
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:403
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "すべてのプラグインのインストール・有効化に成功しました。 %1$s"
+
+#: inc/tgmpa.php:159
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr "ヘルプについては、このサイトの管理者に連絡してください。"
+
+#: modules/comments.php:29
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgstr "&ldquo;%2$s&rdquo;の上の一つの返信"
+
+#: modules/comments.php:38 modules/comments.php:58
+msgid "Comment navigation"
+msgstr "コメントナビゲーション"
+
+#: modules/comments.php:39 modules/comments.php:59
+msgid "&larr; Older Comments"
+msgstr "&larr; 古いコメント"
+
+#: modules/comments.php:40 modules/comments.php:60
+msgid "Newer Comments &rarr;"
+msgstr "新しいコメント &rarr;"
+
+#: modules/comments.php:69
+msgid "Comments are closed."
+msgstr "コメントは受け付けていません。"
+
+#: modules/searchform.php:13 modules/searchform.php:16
+msgid "Search"
+msgstr "検索"
+
+#: modules/searchform.php:19
+msgid "Submit"
+msgstr "送信"
+
+#: modules/sidebar.php:20
+msgid "Archives"
+msgstr "アーカイブ"
+
+#: modules/sidebar.php:27
+msgid "Meta"
+msgstr "メタ"
+
+#: search.php:18
+#, php-format
+msgid "Search Results for&#x3A; %s"
+msgstr "%sの検索結果 &#x3A;"
+
+#: templates/content-none.php:14
+msgid "Nothing Found"
+msgstr "見つかりませんでした。"
+
+#: templates/content-none.php:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"あなたの最初の投稿を公開する準備はできましたか？<a href=“%1$s”>最初の投稿を書"
+"く。</a>"
+
+#: templates/content-none.php:26
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"申し訳ありません。キーワードと一致するコンテンツが見つかりませんでした。他の"
+"キーワードで、もう一度やり直してください。"
+
+#: templates/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"あなたが探しているものを見つけることができませんでした。下の検索フォームから"
+"別の単語でお探し下さい。"
+
+#: templates/content-page.php:23 templates/content-single.php:36
+#: templates/content.php:45 templates/template-one-column.php:28
+msgid "Pages:"
+msgstr "ページ : "
+
+#: templates/content-page.php:30 templates/content-single.php:79
+#: templates/content-tile.php:84 templates/content.php:88
+#: templates/template-one-column.php:35
+msgid "Edit"
+msgstr "編集"
+
+#: templates/content-related-post.php:47 templates/content-related-post.php:60
+#: templates/content-single.php:48 templates/content-single.php:51
+#: templates/content-tile.php:51 templates/content-tile.php:64
+#: templates/content.php:60 templates/content.php:73
+msgid ", "
+msgstr ""
+
+#: templates/content-related-post.php:51 templates/content-tile.php:55
+#: templates/content.php:64
+#, php-format
+msgid "Posted in %1$s"
+msgstr "%1$s への投稿"
+
+#: templates/content-related-post.php:64 templates/content-tile.php:68
+#: templates/content.php:77
+#, php-format
+msgid "Tagged %1$s"
+msgstr "タグ : %1$s"
+
+#: templates/content-related-post.php:73 templates/content-tile.php:81
+#: templates/content.php:85
+msgid "Leave a comment"
+msgstr "コメントを残す"
+
+#: templates/content-related-post.php:73 templates/content-tile.php:81
+#: templates/content.php:85
+msgid "1 Comment"
+msgstr "1つのコメント"
+
+#: templates/content-related-post.php:73 templates/content-tile.php:81
+#: templates/content.php:85
+msgid "% Comments"
+msgstr "% コメント"
+
+#: templates/content-single.php:56
+#, php-format
+msgid ""
+"This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark"
+"\">permalink</a>."
+msgstr ""
+"このエントリーは%2$sにタグ付けされています。ブックマークは<a href=“%3$s” "
+"rel=“bookmark”>こちら</a>"
+
+#: templates/content-single.php:58
+#, php-format
+msgid "Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "ブックマークは<a href=\"%3$s\" rel=\"bookmark\">こちら</a>"
+
+#: templates/content-single.php:64
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"rel=\"bookmark\">permalink</a>."
+msgstr ""
+"このエントリーは%1$sによって投稿され、%2$sにタグ付けされています。ブックマー"
+"クは<a href=“%3$s” rel=“bookmark”>こちら</a>"
+
+#: templates/content-single.php:66
+#, php-format
+msgid ""
+"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark"
+"\">permalink</a>."
+msgstr ""
+"この投稿は %1$sに投稿されました。ブックマークは <a href=“%3$s” "
+"rel=“bookmark”>こちら</a>から。"
+
+#: templates/content.php:41
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "続きを読む <span class=\"meta-nav\">&rarr;</span>"
+
+#: vendor/1shiharat/growp-theme-customizer/fields/image/class-multi-image-custom-control.php:123
+msgid "Upload"
+msgstr "アップロード"
+
+#: vendor/1shiharat/growp-theme-customizer/fields/image/class-multi-image-custom-control.php:126
+msgid "Remove"
+msgstr "削除"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr "ダッシュボードに戻る"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:1881
+#, php-format
+msgid "TGMPA v%s"
+msgstr "v%s"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2167
+msgid "Required"
+msgstr "必要な更新"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2170
+msgid "Recommended"
+msgstr "おすすめ"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2186
+msgid "WordPress Repository"
+msgstr "WordPress リポジトリ"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2189
+msgid "External Source"
+msgstr "エターナルソース"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2192
+msgid "Pre-Packaged"
+msgstr "プレパッケージ"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2209
+msgid "Not Installed"
+msgstr "インストールされていません。"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2213
+msgid "Installed But Not Activated"
+msgstr "インストールされているが有効化されていません"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2215
+msgid "Active"
+msgstr "有効"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2221
+msgid "Required Update not Available"
+msgstr "利用できる必要な更新はありません。"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2224
+msgid "Requires Update"
+msgstr "必要な更新"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2227
+msgid "Update recommended"
+msgstr "更新をおすすめします。"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2235
+#, php-format
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2280
+#, php-format
+msgid "All <span class=\"count\">(%s)</span>"
+msgstr "すべて <span class=“count”>(%s)</span>"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2283
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "インストール : <span class=\"count\">(%s)</span>"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2286
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "利用可能な更新 <span class=“count”>(%s)</span>"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2289
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "すべて <span class=“count”>(%s)</span>"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2371
+msgid "unknown"
+msgstr "不明 "
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2379
+msgid "Installed version:"
+msgstr "インストールされているバージョン"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2387
+msgid "Minimum required version:"
+msgstr "最低限必要なバージョン : "
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2399
+msgid "Available version:"
+msgstr "利用可能なバージョン : "
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2422
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+"インストールまたは有効化するプラグインはありません。<a href=“%1$s” "
+"title=“ダッシュボードに戻る”>ダッシュボードに戻る</a>"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2436
+msgid "Plugin"
+msgstr "プラグイン"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2437
+msgid "Source"
+msgstr "ソース"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2438
+msgid "Type"
+msgstr "タイプ"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2442
+msgid "Version"
+msgstr "バージョン"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2443
+msgid "Status"
+msgstr "ステータス"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2491
+#, php-format
+msgid "Install %2$s"
+msgstr "%2$s をインストール"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2495
+#, php-format
+msgid "Update %2$s"
+msgstr "%2$sを更新"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2500
+#, php-format
+msgid "Activate %2$s"
+msgstr "%2$s を有効化"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2603
+msgid "Install"
+msgstr "インストール"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2609
+msgid "Update"
+msgstr "更新"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2612
+msgid "Activate"
+msgstr "有効にする"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2643
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "選択したプラグインに利用できる更新はありません。"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2645
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "選択したプラグインに利用できる更新はありません。"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2681
+msgid "No plugins are available to be installed at this time."
+msgstr "利用できるプラグインは現時点でありません。"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:2683
+msgid "No plugins are available to be updated at this time."
+msgstr "利用可能な更新は現時点でありません。"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3028
+msgid "Plugin activation failed."
+msgstr "プラグインの有効化に失敗しました。"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3362
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "プラグインの更新中です。 %1$s (%2$d/%3$d)"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3364
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "%1$s のインストール中にエラーが発生しました : <strong>%2$s</strong>."
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3365
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "%1$s のインストールに失敗しました。"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3369
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"インストールプロセスを開始しています。サーバーによっては少し時間がかかるかも"
+"しれません。しばらくお待ちください。"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3370
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s のインストールと有効化に成功しました。"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3371
+msgid "All installations and activations have been completed."
+msgstr "すべてのインストールと有効化が完了しています。"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3372
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "インストールとプラグインの有効化 %1$s (%2$d/%3$d)"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3375
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr "インストールプロセスが開始されます。"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3377
+msgid "All installations have been completed."
+msgstr "すべてのインストールが完了しました。"
+
+#: vendor/tgmpa/tgm-plugin-activation/class-tgm-plugin-activation.php:3378
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "プラグインをインストールしています: %1$s (%2$d/%3$d)"
+
+#~ msgid "<iframe frameborder='0' width='0' height='0'/>"
+#~ msgstr "<iframe frameborder=‘0’ width=‘0’ height=‘0’/>"
+
+#~ msgid "<script>"
+#~ msgstr "<script>"
+
+#~ msgid "<div>"
+#~ msgstr "<div>"
+
+#~ msgid "Not enough arguments following: %s"
+#~ msgstr "このテーマは、次のプラグインを必要とします: %s"
+
+#~ msgid "Invalid JSON config file: %s"
+#~ msgstr "無効なJSON設定ファイル：%s"
+
+#~ msgid "Commands:"
+#~ msgstr "コマンド: "
+
+#~ msgid "Options:"
+#~ msgstr "オプション : "
+
+#~ msgid "boolean"
+#~ msgstr "真偽値"
+
+#~ msgid "count"
+#~ msgstr "カウント"
+
+#~ msgid "string"
+#~ msgstr "文字列"
+
+#~ msgid "array"
+#~ msgstr "配列"
+
+#~ msgid "required"
+#~ msgstr "必須"
+
+#~ msgid "choices:"
+#~ msgstr "選択肢: "
+
+#~ msgid "Examples:"
+#~ msgstr "例 : "
+
+#~ msgid "generated-value"
+#~ msgstr "変化後の値"
+
+#~ msgid "default:"
+#~ msgstr "初期値: "
+
+#~ msgid "Invalid values:"
+#~ msgstr "間違った値: "
+
+#~ msgid "Argument check failed: %s"
+#~ msgstr "引数のチェックミス: %s"
+
+#~ msgid "Hello"
+#~ msgstr "こんにちわ"
+
+#~ msgid "Hello %s %s"
+#~ msgstr "こんにちわ %s %s"
+
+#~ msgid "banana"
+#~ msgstr "ばなな"
+
+#~ msgid "meow"
+#~ msgstr "ニャー"
+
+#~ msgid "apple"
+#~ msgstr "アップル"
+
+#~ msgid "foo"
+#~ msgstr "foo"
+
+#~ msgid "bar"
+#~ msgstr "bar"

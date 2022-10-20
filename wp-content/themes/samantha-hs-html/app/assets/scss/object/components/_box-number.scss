@@ -1,0 +1,100 @@
+/*
+---
+name: ステップボックス_画像なし
+category: Components
+---
+*/
+.c-box-number {
+  &__block {
+    background: $color-background;
+    display: flex;
+    position: relative;
+    margin-bottom: rem-calc(29);
+
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 16px 12px 0 12px;
+      border-color: $color-secondary transparent transparent transparent;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%,100%);
+    }
+    //*最後は矢印なし
+    &:last-child {
+      margin-bottom: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  //*ナンバー
+  &__head {
+    padding: rem-calc(31) rem-calc(32) rem-calc(32) rem-calc(40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @include breakpoint(small only) {
+      width: rem-calc(72);
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: calc(100% - 63px);
+      background: $border-base-color;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      @include breakpoint(small only) {
+        height: calc(100% - 40px);
+      }
+    }
+  }
+  &__number {
+    color: $color-secondary;
+    text-align: center;
+    @include webfont();
+
+    small {
+      @include font-format(11, .1, 14, 400);
+      display: block;
+
+    }
+    span {
+      @include font-format(36, .06, 40, 400);
+      @include webfont-num();
+      display: block;
+      @include breakpoint(small only) {
+        font-size: rem-calc(32);
+      }
+    }
+  }
+  //*テキストコンテンツ
+  &__content {
+    padding: rem-calc(32) rem-calc(40) rem-calc(31) rem-calc(45);
+    width: calc(100% - 86px);
+    @include breakpoint(small only) {
+      padding: rem-calc(20) rem-calc(24);
+      width: calc(100% - 72px);
+    }
+  }
+
+  &__title {
+    @include webfont();
+    @include font-format(20, .04, 30, 400);
+    @include breakpoint(small only) {
+      font-size: rem-calc(18);
+    }
+  }
+  &__text {
+    margin-top: rem-calc(6);
+  }
+}

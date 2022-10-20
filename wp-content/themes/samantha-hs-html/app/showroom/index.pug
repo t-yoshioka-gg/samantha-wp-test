@@ -1,0 +1,101 @@
+extends /inc/foundation/_base.pug
+block append config
+  - current.id = "showroom" // ページのID
+  - current.title = "日本橋ショールーム" // タイトル
+  - current.description = "これは日本橋ショールームについての説明文です" // 説明文
+  - current.bodyClass = "showroom" // body に付与するクラス
+  - current.depth = 2 // ページの階層
+
+block page_header
+  +l_page_header({
+    image: "img-page-header-showroom.jpg",
+    title: "日本橋ショールーム",
+  })
+  +c_breadcrumb()
+
+block body
+  main.l-main
+
+    section.l-section.is-md
+      .l-container
+        +c_page-lead-block({
+            subtitle: `SHOWROOM / RENTAL STUDIO`,
+            title: `ショールーム / レンタルスタジオ`,
+            text: `サマンサ・ホームステージングで空間演出した、日本橋ショールームです。<br>
+            また、撮影用のレンタルスタジオとしてもご活用いただけます。<br>
+            是非、お気軽に見学にしに来てください。`})
+
+      +c.gallery-slider.u-mbs.is-top.is-xs
+        +e.inner
+          +e.main
+            +loop(4)
+              +e.main-content
+                +e.main-image: +bgimg("img-gallery-01.jpg").c-gallery-slider__main-bgimg
+                +e.text 1行まで説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキ
+              +e.main-content
+                +e.main-image: +bgimg("img-gallery-02.jpg").c-gallery-slider__main-bgimg
+                +e.text 1行まで説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキ…
+              +e.main-content
+                +e.main-image: +bgimg("img-gallery-03.jpg").c-gallery-slider__main-bgimg
+                +e.text 1行まで説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキ…
+              +e.main-content
+                +e.main-image: +bgimg("img-gallery-04.jpg").c-gallery-slider__main-bgimg
+                +e.text 1行まで説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキ…
+              +e.main-content
+                +e.main-image: +bgimg("img-gallery-05.jpg").c-gallery-slider__main-bgimg
+                +e.text 1行まで説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキ…
+              +e.main-content
+                +e.main-image: +bgimg("img-gallery-06.jpg").c-gallery-slider__main-bgimg
+                +e.text 1行まで説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキ…
+              +e.main-content
+                +e.main-image: +bgimg("img-gallery-07.jpg").c-gallery-slider__main-bgimg
+                +e.text 1行まで説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキ…
+
+          +e.thumbnail
+            +loop(4)
+              +e.thumbnail-image: +bgimg("img-gallery-01.jpg").c-gallery-slider__thumbnail-bgimg
+              +e.thumbnail-image: +bgimg("img-gallery-02.jpg").c-gallery-slider__thumbnail-bgimg
+              +e.thumbnail-image: +bgimg("img-gallery-03.jpg").c-gallery-slider__thumbnail-bgimg
+              +e.thumbnail-image: +bgimg("img-gallery-04.jpg").c-gallery-slider__thumbnail-bgimg
+              +e.thumbnail-image: +bgimg("img-gallery-05.jpg").c-gallery-slider__thumbnail-bgimg
+              +e.thumbnail-image: +bgimg("img-gallery-06.jpg").c-gallery-slider__thumbnail-bgimg
+              +e.thumbnail-image: +bgimg("img-gallery-07.jpg").c-gallery-slider__thumbnail-bgimg
+
+    section.l-section.is-sm
+      .l-container
+        h2.c-heading.is-md レンタルスタジオ使用料金
+        .u-mbs.is-sm.is-bottom.u-text-center
+          p
+            | スタジオ利用や商談としての利用や、Wi-Fiも完備しておりますのでテレワークの施設としても利用ができます。<br>
+            | ご興味ある方はお気軽にお問い合わせください。
+        table.c-table
+          tbody
+            tr
+              th レンタル7時間
+              td <strong>¥33,000</strong>（税抜¥30,000）
+            tr
+              th レンタル3時間<br/>
+              td <strong>¥16,500</strong>（税抜¥15,000）
+
+            tr
+              th 追加1時間毎<br/>
+              td <strong>¥6,600</strong>（税抜¥6,000）/ 時間
+
+
+    section.l-section.is-md
+      .l-container
+        +c.block-access
+          +e.title
+            h2.c-heading.is-md アクセス情報
+          +e.map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4013.920816852847!2d139.7845272686661!3d35.68179825985745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889451e388493%3A0x824488c962fce274!2z44CSMTAzLTAwMTQg5p2x5Lqs6YO95Lit5aSu5Yy65pel5pys5qmL6JuO5q6755S677yR5LiB55uu77yT77yS4oiS77yR77yTIOODl-ODqeODj-aXpeacrOapi-S6uuW9oueUuuWNlyAx6ZqO!5e0!3m2!1sja!2sjp!4v1657788798739!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          +e.P.address.
+            日本橋ショールームは、最寄り駅で言うと「水天宮」から徒歩２分、「人形町」から５分、<br class="u-hidden-sm">
+            「茅場町」から８分位のところにあります。<br>
+            【迷われた方は代表電話：<a class="is-tel" href="tel:050-1741-6970">050-1741-6970</a>までお気軽にお問い合わせ下さい。】<br><br>
+            株式会社サマンサ・ホームステージング<br>
+            〒103-0014　東京都中央区日本橋蛎殻町1丁目32-13　プラハ日本橋人形町南 1階
+          +e.button: +a("https://goo.gl/maps/6g7VeuePABT6HcHq6").c-button Google Mapで見る
+
+
+  +l_offer
+

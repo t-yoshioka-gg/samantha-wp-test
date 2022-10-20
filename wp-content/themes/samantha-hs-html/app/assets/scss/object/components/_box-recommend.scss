@@ -1,0 +1,48 @@
+.c-box-recommend {
+  @include breakpoint(medium up){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__box{
+    background: $color-white;
+    @include breakpoint(medium up){
+      width: calc(356/1140 * 100%);
+      padding: rem-calc(32) rem-calc(32) rem-calc(28);
+      &:not(:nth-child(3n+1)){
+        margin-left: calc(36/1140 * 100%);
+      }
+      &:nth-child(n+4){
+        margin-top: rem-calc(36);
+      }
+    }
+    @include breakpoint(small only){
+      padding: rem-calc(16) rem-calc(16) rem-calc(16);
+      display: flex;
+      align-items: center;
+      &:not(:first-child){
+        margin-top: rem-calc(24);
+      }
+    }
+  }
+  &__box-img{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: rem-calc(18);
+    width:rem-calc(48);
+    height: rem-calc(48);
+    flex-shrink: 0;
+    background: url('../images/icon-box-recommend.png') no-repeat center center / contain;
+    @include breakpoint(small only){
+      width:rem-calc(28);
+      height: rem-calc(28);
+      margin: 0 rem-calc(12) 0 0;
+    }
+  }
+  &__box-text{
+    text-align: center;
+    @include breakpoint(small only){
+      text-align: left;
+    }
+  }
+}

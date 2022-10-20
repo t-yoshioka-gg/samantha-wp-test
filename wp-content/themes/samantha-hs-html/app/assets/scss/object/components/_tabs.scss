@@ -1,0 +1,135 @@
+/*
+---
+name: タブ
+category: Tabs
+---
+*/
+.c-tabs {
+  // タブ
+  &__navs {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: rem-calc(40);
+    border-bottom: 1px solid $color-black;
+    @include breakpoint(medium down) {
+      flex-wrap: wrap;
+    }
+
+
+
+    li {
+      width: 50%;
+      max-width: rem-calc(276);
+      margin-bottom: rem-calc(8);
+      @include breakpoint(medium down) {
+        max-width: inherit;
+      }
+
+      a {
+        color: rgba($color-black, .5);
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        padding: rem-calc(14) rem-calc(10);
+        position: relative;
+        transition: all .3s;
+        min-width: rem-calc(160);
+        @include font-format(14,0.05,20,400);
+        @include breakpoint(small only) {
+          min-width: rem-calc(100);
+          padding: rem-calc(7) rem-calc(4) rem-calc(7);
+          white-space: nowrap;
+        }
+
+        &::after {
+          content: "\f107";
+          font-family: "FontAwesome";
+          position: absolute;
+          font-size: rem-calc(24);
+          font-weight: 400;
+          right: rem-calc(16);
+          top: calc(50% + 1px);
+          transform: translateY(-50%);
+          transition: all .3s;
+          @include breakpoint(small only) {
+            font-size: rem-calc(24)*0.8;
+          }
+        }
+
+        // *hover
+        &:hover {
+          color: $color-white;
+          background-color: $color-black;
+          opacity: 1;
+        }
+
+        // *選択時
+        &.is-active {
+          background-color: $color-black;
+          color: $color-white;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  // コンテンツ
+  &__content {
+    visibility: hidden;
+    position: absolute;
+    display: none;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .3s;
+    width: 0;
+
+    &.is-active {
+      position: static;
+      visibility: visible;
+      display: block;
+      opacity: 1;
+      width: auto;
+    }
+  }
+}
+
+/*
+---
+name: タブ_インデックス
+category: Tabs
+---
+
+*/
+
+.c-tabs {
+  // インデックスタブ
+  &.is-index {
+    .c-tabs {
+      &__navs {
+        li {
+          width: inherit;
+          min-width: rem-calc(160);
+          border-width: 1px;
+          border-bottom: none;
+          margin: 0 rem-calc(4) 0 0;
+          @include breakpoint(small only) {
+            width: 50%;
+            min-width: inherit;
+            margin: 0;
+          }
+
+          a {
+            font-size: rem-calc(14);
+
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

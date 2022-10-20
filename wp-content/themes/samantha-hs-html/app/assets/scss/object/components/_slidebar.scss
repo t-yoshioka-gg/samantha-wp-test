@@ -1,0 +1,380 @@
+// スライドメニュー
+//
+// スマホ時のメニュー。別途 GApp プラグインを呼び出す必要があります。
+// Styleguide 4.5
+
+$slidebar-menu-bg: $color-secondary !default;
+$slidebar-menu-width: 75% !default;
+$slidebar-menu-eaasing: all ease-in-out .2s !default;
+$slidebar-container-bg: rgba(0, 0, 0, 0.8) !default;
+
+@include breakpoint(large up) {
+  .c-slidebar-button {
+    display: none;
+  }
+  .c-slidebar-menu {
+    display: none;
+  }
+}
+
+@include breakpoint(medium down) {
+  // トリガーとなるボタン
+  .c-slidebar-button {
+    display: flex;
+    align-items: center;
+    border: 1px solid $font-base-color;
+    border-radius: 50%;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    right: 16px;
+    top: 12px;
+    text-align: center;
+    font-size: rem-calc(12);
+    z-index: 9999;
+    text-decoration: none;
+    background-color: transparent;
+    line-height: 1;
+    width: rem-calc(50);
+    height: rem-calc(50);
+    padding-top: rem-calc(4);
+
+    &:active,
+    &:hover {
+      opacity: 1;
+    }
+
+    &__inner{
+      display: block;
+    }
+
+    // ボーダー
+    &__line {
+      height: rem-calc(16);
+      display: block;
+      > span {
+        display: block;
+        width: rem-calc(19);
+        height: rem-calc(1);
+        background: $font-base-color;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        transition: all ease .2s;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    // メニューテキスト
+    &__text {
+      transition: all ease .2s;
+      font-size: 9px;
+      letter-spacing: 0.4px;
+      @include webfont();
+      margin-top: rem-calc(8);
+      display: block;
+
+      &.is-close {
+        display: none;
+      }
+    }
+  }
+
+  // メニュー自体
+  .c-slidebar-menu {
+    height: calc(100vh - 74px);
+    padding: 0 0 rem-calc(104);
+    position: fixed;
+    background-color: $color-secondary;
+    z-index: 9980;
+    width: $slidebar-menu-width;
+    transform: translate3d(100%, 0px, 0px);
+    right: 0;
+    -webkit-transition: $slidebar-menu-eaasing;
+    transition: $slidebar-menu-eaasing;
+    overflow-x: scroll;
+    top: 0;
+    -webkit-overflow-scrolling: touch;
+
+    &.is-active {
+      height: calc(100% - 65px);
+    }
+
+    // 上から下へ
+    &.is-top-to-bottom {
+      transform: translate3d(0px, -100%, 0px);
+      width: 100%;
+      opacity: 0;
+    }
+
+
+    // メニュー要素（通常）
+    &__list{
+      width: 100%;
+      background: $color-secondary;
+      li {
+        position: relative;
+        &:after {
+          content: "";
+          width: calc(100% - 60px);
+          height: 1px;
+          background: $border-base-color;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      a,
+      span {
+        @include font-format(15, .08, 22, 400);
+        display: block;
+        padding: rem-calc(20) rem-calc(30);
+        text-decoration: none;
+        color: $color-white;
+        font-weight: 400;
+
+        &:hover {
+          color: $color-white;
+          opacity: .5;
+
+        }
+      }
+    }
+
+    // メニュー要素（子）
+    &__children {
+      width: calc(100% - 30px);
+      display: none;
+      background-color: #696259;
+      margin-left: auto;
+
+      li {
+        &:last-child {
+          border-bottom: none;
+        }
+
+        a {
+          color: $color-white;
+          padding: rem-calc(16) 0;
+          &::before,
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+
+    // メニュー要素（親）
+    &__parent {
+      a,
+      span {
+        position: relative;
+
+        &::after,
+        &::before {
+          content: "";
+          display: block;
+          width: rem-calc(1);
+          height: rem-calc(19);
+          background-color: $color-white;
+          position: absolute;
+          top: 50%;
+          right: rem-calc(55);
+          transform: translateY(-50%);
+        }
+
+        &::after {
+          width: rem-calc(19);
+          height: rem-calc(1);
+          right: rem-calc(46);
+        }
+      }
+
+      &.is-open {
+        > span {
+          opacity: .5;
+          font-weight: 500;
+        }
+        &:after {
+          content: none;
+        }
+
+        a,
+        span {
+          &::before {
+            display: none;
+          }
+        }
+
+        .c-slidebar-menu__children {
+          position: relative;
+          &:before {
+            content: "";
+            width: calc(100% - 30px);
+            height: 1px;
+            background: $border-base-color;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+
+          li {
+            &:after {
+              background: rgba($color-white, .15);
+            }
+            a, span {
+              padding: rem-calc(16) rem-calc(30);
+            }
+          }
+        }
+      }
+    }
+
+    &__bottom {
+      padding: 0 rem-calc(30);
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $color-white;
+      @include font-format(12, .06, 18, 400);
+      position: relative;
+      padding-right: rem-calc(16);
+      margin-top: rem-calc(24);
+      display: block;
+      max-width: rem-calc(95);
+      margin-left: auto;
+      &:hover {
+        color: $color-white;
+        opacity: .5;
+      }
+
+      &:after {
+        content: "\e5cc";
+        font-family: "Material Icons";
+        @include font-format(10, .05, 12, 400);
+        position: absolute;
+        top: 4px;
+        right: 0;
+
+      }
+    }
+
+
+
+    &__button {
+      margin-top: rem-calc(32);
+      padding-top: 1.8rem;
+      padding-bottom: 1.8rem;
+      max-width: 100%;
+      color: $font-base-color;
+      font-size: rem-calc(16);
+
+    }
+
+
+
+
+  }
+
+  // メニュー以外をラップする要素
+  // メニュー以外をラップする要素
+  .c-slidebar-container {
+    height: 100%;
+    -webkit-transition: $slidebar-menu-eaasing;
+    transition: $slidebar-menu-eaasing;
+
+    &::after {
+      content: "";
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: $slidebar-container-bg;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      -webkit-transition: $slidebar-menu-eaasing;
+      transition: $slidebar-menu-eaasing;
+      display: none;
+      z-index: 999;
+    }
+  }
+
+  // 有効時
+  .is-slidebar-active {
+    //cursor: pointer;
+
+    .c-slidebar-button {
+      border-color: $color-white;
+      &__line {
+        > span {
+          background: $color-white;
+          &:nth-child(1) {
+            transform: rotate(-45deg) translateY(4px) translateX(-4px);
+          }
+
+          &:nth-child(2) {
+            transform: rotate(45deg) translateY(0px) translateX(0px);
+          }
+
+          &:nth-child(3) {
+            display: none;
+          }
+        }
+      }
+
+      &__text {
+        &.is-close {
+          display: block;
+          margin-top: rem-calc(8);
+        }
+
+        &.is-open {
+          display: none;
+        }
+      }
+    }
+
+    .c-slidebar-container {
+      -webkit-transform: translateX(-$slidebar-menu-width);
+      transform: translate3d(-$slidebar-menu-width, 0px, 0px);
+
+      &::after {
+        content: "";
+        opacity: 1;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: $slidebar-container-bg;
+        display: block;
+        top: 0;
+        left: 0;
+      }
+
+      // 上から下の場合
+      &.is-top-to-bottom {
+        -webkit-transform: translateX(0px);
+        transform: translate3d(0px, 0px, 0px);
+
+        &::after {
+          top: 74px;
+        }
+      }
+    }
+
+    .c-slidebar-menu {
+      -webkit-transform: translateX(0);
+      transform: translate3d(0, 0, 0);
+
+      &.is-top-to-bottom {
+        -webkit-transform: translateY(74px);
+        transform: translate3d(0, 74px, 0);
+        opacity: 1;
+      }
+    }
+  }
+}

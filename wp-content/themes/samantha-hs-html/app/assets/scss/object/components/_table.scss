@@ -1,0 +1,88 @@
+/*
+---
+name: <table> テーブル
+category: Base
+---
+*/
+.c-table {
+  width: 100%;
+  border-top: 1px solid $border-base-color;
+
+  tbody {
+    th,
+    td {
+      text-align: left;
+      border-bottom: 1px solid $border-base-color;
+      padding: rem-calc(24);
+      vertical-align: top;
+      @include breakpoint(small only) {
+        padding: rem-calc(12);
+      }
+    }
+
+  }
+
+  tbody,thead {
+    th {
+      font-weight: 400;
+      background: $color-background;
+      color: #211E1D;
+      width: rem-calc(356);
+      border-bottom: 1px solid $border-base-color;
+      @include breakpoint(small only) {
+        width: rem-calc(120);
+      }
+    }
+  }
+
+  &.is-column {
+    @include breakpoint(small only) {
+      min-width: 750px;
+    }
+
+    tbody {
+      th,
+      td {
+        padding: rem-calc(20) rem-calc(24);
+      }
+      td {
+        padding: rem-calc(24) rem-calc(24);
+        &.is-left {
+          text-align: left;
+        }
+      }
+    }
+
+    tbody,thead {
+      th,td {
+        border-right: 1px solid $border-base-color;
+        text-align: center;
+        vertical-align: middle;
+        width: auto;
+        &:first-child {
+          border-left: 1px solid $border-base-color;
+        }
+      }
+    }
+
+    th {
+      position: relative;
+      padding: rem-calc(20) rem-calc(36);
+
+      &::after {
+        display: none;
+      }
+    }
+
+    td {
+      padding: rem-calc(36) rem-calc(24);
+      max-width: rem-calc(508);
+    }
+  }
+
+   &.is-th-vertical {
+    tbody tr th {
+      vertical-align: middle;
+    }
+  }
+}

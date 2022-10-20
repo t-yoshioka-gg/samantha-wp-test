@@ -1,0 +1,111 @@
+@use "sass:math";
+
+.c-form-head{
+  margin-top: rem-calc(86);
+  @include breakpoint(medium down) {
+    margin-top: 0;
+  }
+  &__block{
+    display: flex;
+    justify-content: space-between;
+    @include breakpoint(medium down) {
+      display: block;
+    }
+  }
+
+  &__title{
+    @include font-format(30, .04, 44, 400);
+    margin-top: 0;
+    @include webfont(400);
+    @include breakpoint(medium down) {
+      font-size: rem-calc(30)*0.7;
+      text-align: center;
+    }
+  }
+
+  &__list{
+    display: flex;
+    @include breakpoint(medium down) {
+      justify-content: center;
+      margin-top: rem-calc(24);
+    }
+  }
+
+  &__item{
+    padding-left: rem-calc(70);
+    position: relative;
+    @include breakpoint(medium down) {
+      padding-left: rem-calc(30);
+    }
+    &:first-of-type{
+      padding-left: rem-calc(0);
+      &::before{
+        display: none;
+      }
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      top: rem-calc(15);
+      left: 0;
+      margin:auto;
+      width: rem-calc(35);
+      height: rem-calc(1);
+      transform: translateX(50%);
+      background: $color-secondary;
+      @include breakpoint(medium down) {
+        width: rem-calc(15);
+      }
+    }
+    &-number{
+      width: rem-calc(30);
+      height: rem-calc(30);
+      color: $color-white;
+      background: lighten($color-gray,30%);
+      border-radius: 1000px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: rem-calc(14);
+      margin:auto;
+      @include breakpoint(medium down) {
+        width: rem-calc(24);
+        height: rem-calc(24);
+        font-size: rem-calc(12);
+      }
+    }
+    &-text{
+      color: lighten($color-gray,30%);
+      font-size: rem-calc(14);
+      letter-spacing: 0.1em;
+      line-height: math.div(24, 14)*1;
+      margin-top: rem-calc(10);
+      @include breakpoint(medium down) {
+        font-size: rem-calc(12);
+      }
+    }
+  }
+}
+
+.c-form-head{
+  &__item{
+    &.is-current{
+      .c-form-head__item-number{
+        background: $color-secondary;
+      }
+      .c-form-head__item-text{
+        color: $color-secondary;
+      }
+    }
+  }
+
+}
+
+.c-form-head.is-contact {
+  @include breakpoint(medium down) {
+    margin-top: rem-calc(40);
+  }
+}
+
+
+

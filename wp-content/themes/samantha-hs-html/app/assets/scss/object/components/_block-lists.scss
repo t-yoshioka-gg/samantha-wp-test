@@ -1,0 +1,39 @@
+.c-block-lists {
+  &__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint(small only) {
+      display: block;
+    }
+
+    .c-card-thumb{
+      flex-basis: 31.2%;
+      margin-bottom: 6.4%;
+      @include breakpoint(medium down) {
+        flex-basis: 48%;
+        margin-right: 4%;
+      }
+      @include breakpoint(small only) {
+        margin: 0 auto!important;
+      }
+
+      @include breakpoint(medium up) {
+        margin-right: 3.1%;
+        &:nth-of-type(3n){
+          margin-right: 0;
+        }
+      }
+
+      @include breakpoint(medium down) {
+        &:nth-of-type(3n){
+          margin-right: 4%;
+        }
+        &:nth-of-type(2n){
+          margin-right: 0;
+        }
+      }
+
+    }
+  }
+}
+

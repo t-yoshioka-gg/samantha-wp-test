@@ -1,0 +1,54 @@
+mixin l-aside(data)
+  if (data == 'news')
+    aside
+      +c.menu-list
+        .u-mbs.is-md.is-bottom
+          h2.c-heading.is-sm.is-sidebar
+            small CATEGORY
+            b カテゴリ
+          ul
+              li.current-cat: +a("#") すべて
+              li: +a("#") ニュースリリース
+              li: +a("#") メディア出演
+              li: +a("#") ブログ
+        .u-mbs.is-md
+          h2.c-heading.is-sm.is-sidebar
+            small ARCHIVES
+            b 年別アーカイブ
+          select(name="archive-dropdown")#archives-dropdown
+            option(disabled,selected) 最新1年分
+            option(value="July 2022") July 2022
+            option(value="June 2022") June 2022
+            option(value="July 2021") July 2021
+  else
+    aside
+      +c.menu-list
+        .u-mbs.is-md.is-bottom
+          h2.c-heading.is-sm.is-sidebar
+            small CATEGORY
+            b カテゴリ
+          ul
+            li.current-cat: +a("#") すべて
+            li: +a("#") ニュースリリース
+            li: +a("#") メディア出演
+            li: +a("#") ブログ
+        .u-mbs.is-md
+          h2.c-heading.is-sm.is-sidebar
+            small KEYWORDS
+            b 関連キーワード
+          ul.tags
+            li: +a("#") #タグ名タグ名
+            li: +a("#") #タグ名
+            li: +a("#") #タグ名タグ名タグ名
+            li: +a("#") #タグ名
+            li: +a("#") #タグ名タグ名タグ名
+            li: +a("#") #タグ名タグ名タグ名タグ名タグ名
+        .u-mbs.is-md
+          h2.c-heading.is-sm.is-sidebar
+            small ARCHIVES
+            b 年別アーカイブ
+          select(name="archive-dropdown")#archives-dropdown
+            option(disabled,selected) 最新1年分
+            option(value="July 2022") July 2022
+            option(value="June 2022") June 2022
+            option(value="July 2021") July 2021

@@ -1,0 +1,122 @@
+// 変数設定
+//
+// プロジェクトのCSSで利用する変数を定義
+
+
+// # 1. Color
+@use "sass:math";
+
+$color-white: #fff !default; // 白
+$color-black: #272523 !default; // 黒
+$color-black-ttl: #141212 !default; //Black_ttl（タイトルでのみ使用する黒）
+$color-black-light: #3D3A39 !default; //Black_light（Accentと共に使用する黒）
+
+// # プライマリ
+$color-primary: #FFCB05 !default; // プライマリカラー
+$color-primary-dark: #B19326 !default; // プライマリダークカラー
+
+// # セカンダリー
+$color-secondary: #837B6F !default; // セカンダリカラー
+
+// # グレイスケールカラー
+$color-tertiary: #FAFAFA !default; // ターシャリカラー
+
+// # アクセント
+$color-accent: #68897D !default; // ターシャリカラー
+$color-accent-dark: #D5B748 !default;
+$color-accent-red: #D10048 !default; //注意書きなど
+$color-accent-green: #65AC29 !default; // ターシャリカラー
+$color-accent-orange: #E6A54D !default; // ターシャリカラー
+
+// # 灰色
+$color-gray: #626262 !default; // 灰色
+$color-gray-light: #EBEBEB !default;
+$color-base: #FAF7EF;
+
+// # 役割別
+$color-state-danger: #D10048 !default; // 危険
+$color-state-warning: #D10048 !default; // 警告
+$color-state-info: #378da3 !default; // お知らせ
+$color-state-success: #13a83a !default; // 成功
+
+// # 2. Grid
+
+$grid-row-width: 1140px !default; // グリッドの幅
+$grid-column-count: 12 !default; // グリッド数
+$grid-column-responsive-gutter: (// カラムとカラムの間隔
+  small: 16px, // モバイル
+  medium: 36px, // タブレット以上
+);
+
+// # 3. font
+$font-base-size: 16px !default; // body のフォントサイズ
+$font-base-line-height: 1.8 !default; // body のフォントサイズ
+$font-base-letter-spacing: 0.06em !default; // body のフォントサイズ
+$font-base-color: #272523 !default; // body のフォントカラー
+$font-base-family: 'Noto Sans JP', sans-serif !default; // フォントファミリー
+$font-base-weight: normal !default; // フォント幅
+$font-base-style: normal !default; // フォントスタイル
+$font-lead-line-height: 2;;
+
+$font-heading-sizes: (// 見出しのフォントサイズ
+  small: (
+    'h1': 24px,
+    'h2': 20px,
+    'h3': 19px,
+    'h4': 18px,
+    'h5': 17px,
+    'h6': 16px,
+  ),
+  medium: (
+    'h1': 48px,
+    'h2': 40px,
+    'h3': 31px,
+    'h4': 25px,
+    'h5': 20px,
+    'h6': 16px,
+  ),
+);
+
+// # 4. Margin
+
+$margin-base: 8px !default;
+//$margin-xlg: $margin-base*12.5 !default;
+$margin-lg: $margin-base*8 !default;
+$margin-md: $margin-base*4 !default;
+$margin-sm: $margin-base*2 !default;
+$margin-xs: $margin-base !default;
+
+// # 5. border
+
+$border-base-color: #E3E3E3;
+$border-base-width: 1px !default;
+$border-radius: 3px !default;
+$border: $border-base-width solid $border-base-color;
+
+// # 6. breakpoint
+
+$breakpoints: (
+  small: 0,
+  medium: 750px,
+  large: 950px,
+  xlarge: 1140px,
+  xxlarge: 1440px,
+) !default;
+
+$breakpoint-classes: (small medium large) !default;
+
+// # 7. background
+$color-background-gray: #FAFAFA;
+$color-background: #F8F7F2;
+$color-background-green: #FAFAF5;
+
+// # 8. two-column
+$asideContainer: 240;
+$mainContainer: calc(100% - #{$asideContainer}px);
+$asideMargin: 117;
+
+// # SNS color
+$color-sns-line: #00B900;
+$color-sns-facebook: #1877f2;
+$color-sns-twitter: #1DA1F2;
+$color-sns-youtube: #DA1725;

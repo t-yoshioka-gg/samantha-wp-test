@@ -1,0 +1,31 @@
+.c-box-caption {
+  background: $color-background-gray;
+  margin-top: rem-calc(16);
+  &__inner {
+    padding: rem-calc(40) rem-calc(62);
+    @include breakpoint(medium down) {
+      padding: rem-calc(20) rem-calc(16);
+    }
+  }
+  &__title {
+    color: $color-secondary;
+  }
+  &__list {
+    margin-top: rem-calc(10);
+  }
+  &__item {
+    position: relative;
+    padding-left: rem-calc(18);
+    &::before {
+      content: "";
+      position: absolute;
+      top: rem-calc(10);
+      left: 0;
+      margin:auto;
+      width: rem-calc(8);
+      height: rem-calc(8);
+      border-radius: 1000px;
+      background: $color-secondary;
+    }
+  }
+}

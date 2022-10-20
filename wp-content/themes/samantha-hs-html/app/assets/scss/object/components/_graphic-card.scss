@@ -1,0 +1,53 @@
+.c-graphic-card {
+  border: 1px solid $border-base-color;
+  padding: rem-calc(40);
+  max-width: rem-calc(552);
+  margin-top: rem-calc(36);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @include breakpoint(small only) {
+    padding: rem-calc(20)
+  }
+
+  &__head {
+    min-height: rem-calc(90);
+  }
+
+  &__title {
+    margin-bottom: rem-calc(32);
+
+    vertical-align: middle;
+    @include webfont();
+    @include font-format(22, .04, 33, 400);
+    text-align: center;
+    small {
+      display: block;
+      @include font-format(16, .04, 30, 400);
+    }
+
+    span {
+      @include font-format(16, .04, 30, 400);
+      display: block;
+      width: 100%;
+      border: 1px solid $color-black;
+      padding: rem-calc(8) rem-calc(8) rem-calc(11);
+      margin-top: rem-calc(8);
+
+    }
+  }
+
+  &__small {
+
+    @include font-format(11, .06, 18, 400);
+    margin-top: rem-calc(31);
+    text-align: right;
+  }
+  &__images {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+  }
+}

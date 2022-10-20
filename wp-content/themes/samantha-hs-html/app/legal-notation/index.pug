@@ -1,0 +1,79 @@
+extends /inc/foundation/_base.pug
+block append config
+  - current.id = "legal-notation" // ページのID
+  - current.title = "特定商取引法に基づく表記" // タイトル
+  - current.description = "これは特定商取引法に基づく表記についての説明文です" // 説明文
+  - current.bodyClass = "legal-notation" // body に付与するクラス
+  - current.depth = 2 // ページの階層
+
+block page_header
+  +l_page_header({
+    image: "img-page-header-privacy-policy.jpg",
+    title: "特定商取引法に基づく表記",
+  })
+  +c_breadcrumb()
+
+block body
+  main.l-main
+    section.l-section.is-lg
+      .l-container
+        table.c-table.u-mbs.is-sm.is-bottom
+          tbody
+            tr
+              th 販売業者名
+              td 株式会社サマンサ・ホームステージング
+            tr
+              th 販売責任者
+              td 大西　真史
+            tr
+              th 所在地
+              td 〒135-0047　東京都江東区富岡1-21-8 アサヒビル2F
+            tr
+              th 電話番号
+              td 050-1741-6970
+            tr
+              th 支払方法
+              td クレジットカード、銀行振込
+            tr
+              th 商品引渡し時期
+              td ご注文から7日以内に発送いたします。
+            tr
+              th 商品以外の必要料金
+              td
+                |
+                +a-ex("https://www.sagawa-exp.co.jp/send/fare/kaden_attention.html") 配送に関しての料金表
+                |、銀行振り込みの場合は振込手数料
+            tr
+              th 販売数量
+              td 1個から
+            tr
+              th お申込み有効期限
+              td 3日以内にお願いします。３日間入金がない場合は、キャンセルとさせていただきます。
+            tr
+              th 商品引渡し時期
+              td 前払いの場合、指定日が無ければ入金確認後3営業日以内で発送致します。<br>
+                | その他の支払方法の場合、指定日が無ければご注文後3日営業日以内で発送致します。
+            tr
+              th 商品引渡し方法
+              td 当方にて手配後、運送会社による配送
+            tr
+              th 返品・不良品について
+              td 不良品・当社の商品の間違い」の場合は当社が負担いたします。<br>
+                | 配送途中の破損などの事故がございましたら、弊社までご連絡下さい。<br>
+                | 送料・手数料ともに弊社負担で早急に新品をご送付致します。<br>
+                |<br>
+                | 【返品対象】<br>
+                | 「不良品・当社の商品の間違い」の場合<br>
+                |<br>
+                | 【返品時期】<br>
+                | ご購入後7日以内にご連絡があった場合に返金可能となります。<br>
+                |<br>
+                | 【返品方法】<br>
+                | メールにて返金要請してください。<br>
+                | 7日以内にご購入代金を指定の口座へお振込みいたします。
+            tr
+              th 表現、及び商品に<br>関する注意書き
+              td 本商品に示された表現や再現性には個人差があり、<br>必ずしも利益や効果を保証したものではございません。
+
+  +l_offer
+

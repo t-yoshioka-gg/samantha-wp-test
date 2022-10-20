@@ -1,0 +1,66 @@
+//- filename: footer.jade
+//- description: フッター
+
+footer.l-footer
+  a(href="html" data-anchor-target="html").js-anchor.c-pagetop
+  .l-container
+    .l-footer__main
+      .l-footer__content
+        +a("/").l-footer__logo: +img("logo.png","サマンサホームステージング")
+        address.l-footer__address
+          b 東京本社
+          | 〒135-0047　東京都江東区富岡1丁目12-8　アサヒビル 2階<br/>
+          | TEL：050-1741-6970（代）　FAX：03-5875-8692
+        ul.l-footer__bases
+          li: +a("/company/#outline") 事業所一覧
+          li: +a("/showroom/") 日本橋ショールーム
+        ul.l-footer__sns
+          li
+            +a-ex("https://www.instagram.com/samantha_homestaging/").is-instagram
+              +img("icon-instagram.png","instagram")
+          li
+            +a-ex("https://twitter.com/samanthahs01").is-twitter
+              +img("icon-twitter.png","twitter")
+      .l-footer__sitemap
+        .l-footer__menu.is-left
+          .l-footer__block
+            ul.l-footer__menulist
+              li: +a("/") ホーム
+              li: +a("/about-us/") 私たちについて
+              li: +a("/homestaging/") ホームステージングとは
+          .l-footer__block
+            +a("/service/").l-footer__menutitle サービス
+            ul.l-footer__menulist.is-sub
+              li: +a("/service/vacant/") 空室ホームステージング
+              li: +a("/service/occupied/") 居住中ホームステージング
+              li: +a("/service/still-photography/") スチール写真撮影
+              li: +a("/service/still-photography/#3d-walk") 3Dウォークスルー動画撮影
+              li: +a("/service/vacant/#vr-home-stasing") バーチャルホームステージング <br class="u-hidden-sm"/>roOomy
+              li: +a("/service/home-organization/") 片付け代行
+              li: +a("/service/packing-unpacking/") 荷造り・荷解き代行
+        .l-footer__menu.is-right
+          .l-footer__block
+            +a("/useful/").l-footer__menutitle お役立ち情報
+            ul.l-footer__menulist.is-sub
+              li: +a("/useful/category/") お役立ち情報
+              li: +a("/useful/category/") 用語集
+            +a("/news/").l-footer__menutitle お知らせ
+            ul.l-footer__menulist.is-sub
+              li: +a("/news/category/") ニュースリリース
+              li: +a("/news/category/") メディア出演
+              li: +a("/news/category/") ブログ
+          .l-footer__block
+            +a("/company/").l-footer__menutitle <span>会社情報</span>
+            ul.l-footer__menulist.is-sub
+              li: +a("/showroom/") ショールーム
+            +a("/recruit/").l-footer__menutitle 採用情報
+            +a("/contact/").l-footer__menutitle お問い合わせ
+  .l-footer__bottom
+    .l-container
+      .l-footer__bottom-content
+        small.l-footer__copyright Copyright © サマンサ・ホームステージング
+        ul.l-footer__links
+          li: +a("/legal-notation/") 特定商取引法に基づく表記
+          li: +a("/privacy-policy/") 個人情報の取り扱いについて
+
+

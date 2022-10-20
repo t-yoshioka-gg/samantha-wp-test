@@ -1,0 +1,19 @@
+.c-top-banner {
+  position: relative;
+  padding-bottom: rem-calc(120);
+  @include breakpoint(small only) {
+    padding-bottom: rem-calc(60);
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    background: $color-background;
+    height: calc(100% - 150px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+  }
+
+}

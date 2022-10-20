@@ -1,0 +1,26 @@
+.c-select-archive {
+  display: flex;
+  justify-content: right;
+  .widget-content{
+    flex-basis: rem-calc(500);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include breakpoint(small down) {
+      display: block;
+      padding-top: rem-calc(30);
+      padding-bottom: rem-calc(30);
+    }
+
+    select{
+      flex-basis: 60%;
+    }
+    .c-heading{
+      flex-basis: 40%;
+      margin-bottom: 0;
+      @include breakpoint(small down) {
+        margin-bottom: rem-calc(10);
+      }
+    }
+  }
+}

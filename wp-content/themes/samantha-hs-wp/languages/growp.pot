@@ -1,0 +1,587 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: growp\n"
+"POT-Creation-Date: 2015-09-27 16:19+0900\n"
+"PO-Revision-Date: 2014-09-21 20:21+0900\n"
+"Last-Translator: ishihara <ishihara@grow-group.jp>\n"
+"Language-Team: ishihara takashi <akeome1369@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x;_ex;_nx\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:14
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../404.php:18
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: ../404.php:26
+msgid "Most Used Categories"
+msgstr ""
+
+#: ../404.php:42
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: ../archive.php:23
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: ../archive.php:26
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: ../archive.php:29
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: ../archive.php:29
+msgid "F Y"
+msgstr ""
+
+#: ../archive.php:32
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: ../archive.php:32
+msgid "Y"
+msgstr ""
+
+#: ../archive.php:35
+msgid "Asides"
+msgstr ""
+
+#: ../archive.php:38
+msgid "Galleries"
+msgstr ""
+
+#: ../archive.php:41
+msgid "Images"
+msgstr ""
+
+#: ../archive.php:44
+msgid "Videos"
+msgstr ""
+
+#: ../archive.php:47
+msgid "Quotes"
+msgstr ""
+
+#: ../archive.php:50
+msgid "Links"
+msgstr ""
+
+#: ../archive.php:53
+msgid "Statuses"
+msgstr ""
+
+#: ../archive.php:56
+msgid "Audios"
+msgstr ""
+
+#: ../archive.php:59
+msgid "Chats"
+msgstr ""
+
+#: ../archive.php:62 ../modules/sidebar.php:20
+msgid "Archives"
+msgstr ""
+
+#: ../search.php:15
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../classes/class-breadcrumbs.php:84
+msgid "Home"
+msgstr ""
+
+#: ../classes/class-breadcrumbs.php:86
+#, php-format
+msgid "Search Result for <em>%s</em>"
+msgstr ""
+
+#: ../classes/class-breadcrumbs.php:87
+#, php-format
+msgid "%s Search results for <em>%s</em>"
+msgstr ""
+
+#: ../classes/class-breadcrumbs.php:89
+#, php-format
+msgid "page %d"
+msgstr ""
+
+#: ../classes/class-breadcrumbs.php:90
+msgid "Error: Page not found"
+msgstr ""
+
+#: ../classes/class-post-type.php:81 ../classes/class-post-type.php:82
+#: ../classes/class-post-type.php:93 ../classes/class-post-type.php:164
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: ../classes/class-post-type.php:83 ../classes/class-post-type.php:84
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#: ../classes/class-post-type.php:85
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: ../classes/class-post-type.php:86
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: ../classes/class-post-type.php:87 ../classes/class-post-type.php:157
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: ../classes/class-post-type.php:88
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: ../classes/class-post-type.php:89
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: ../classes/class-post-type.php:90
+#, php-format
+msgid "No %s found"
+msgstr ""
+
+#: ../classes/class-post-type.php:91
+#, php-format
+msgid "No %s found in Trash"
+msgstr ""
+
+#: ../classes/class-post-type.php:156
+msgid "Search "
+msgstr ""
+
+#: ../classes/class-post-type.php:158
+#, php-format
+msgid "Parent %s"
+msgstr ""
+
+#: ../classes/class-post-type.php:159
+#, php-format
+msgid "Parent: %s"
+msgstr ""
+
+#: ../classes/class-post-type.php:160
+#, php-format
+msgid "Edit: %s"
+msgstr ""
+
+#: ../classes/class-post-type.php:161
+#, php-format
+msgid "Update %s"
+msgstr ""
+
+#: ../classes/class-post-type.php:162
+#, php-format
+msgid "Add new %s"
+msgstr ""
+
+#: ../classes/class-post-type.php:163
+#, php-format
+msgid "New %s Name"
+msgstr ""
+
+#: ../classes/class-walker-comment.php:22
+msgid "Comments"
+msgstr ""
+
+#: ../classes/class-walker-comment.php:71
+msgid "(Edit)"
+msgstr ""
+
+#: ../classes/class-walker-nav.php:201
+msgid "Add a menu"
+msgstr ""
+
+#: ../inc/comment.php:39
+msgid "Post a new comment"
+msgstr ""
+
+#: ../inc/comment.php:40
+msgid "Your email address will not be published. Required fields are marked"
+msgstr ""
+
+#: ../inc/comment.php:60
+msgid "Your Name (required)"
+msgstr ""
+
+#: ../inc/comment.php:61
+msgid "Email Address (required)"
+msgstr ""
+
+#: ../inc/comment.php:62
+msgid "Website (url)"
+msgstr ""
+
+#: ../inc/comment.php:78
+msgid "Comment"
+msgstr ""
+
+#: ../inc/extras.php:65
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../inc/setup.php:53
+msgid "Header Primary Navigation"
+msgstr ""
+
+#: ../inc/sidebar.php:17
+msgid "Sidebar Primary"
+msgstr ""
+
+#: ../inc/sidebar.php:26
+msgid "Header Primary Area"
+msgstr ""
+
+#: ../inc/sidebar.php:35
+msgid "Main Visual"
+msgstr ""
+
+#: ../inc/sidebar.php:44
+msgid "Above Contents"
+msgstr ""
+
+#: ../inc/sidebar.php:53
+msgid "Footer Primary"
+msgstr ""
+
+#: ../inc/template-tags.php:25
+msgid "Posts navigation"
+msgstr ""
+
+#: ../inc/template-tags.php:29
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: ../inc/template-tags.php:33
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:58
+msgid "Post navigation"
+msgstr ""
+
+#: ../inc/template-tags.php:61
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr ""
+
+#: ../inc/template-tags.php:62
+msgid "%title <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:84
+msgid "Updated : "
+msgstr ""
+
+#: ../inc/template-tags.php:87
+#, php-format
+msgid ""
+"<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by "
+"%2$s</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:181
+msgid "Previous"
+msgstr ""
+
+#: ../inc/template-tags.php:182
+msgid "Next"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:68
+msgid "Header"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:69
+msgid "Please have a set of headers."
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:72
+#: ../inc/theme-customizer/customizer.php:75
+msgid "Header Style"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:87
+msgid "Logo"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:90
+msgid "Font Size"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:113
+msgid "Color"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:125
+msgid "Background"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:128
+#: ../inc/theme-customizer/customizer.php:254
+#: ../inc/theme-customizer/customizer.php:305
+msgid "Background Image"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:137
+#: ../inc/theme-customizer/customizer.php:263
+#: ../inc/theme-customizer/customizer.php:314
+msgid "Background Attachment"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:150
+#: ../inc/theme-customizer/customizer.php:245
+msgid "Background Color"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:167
+#: ../inc/theme-customizer/customizer.php:175
+msgid "Theme Color"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:171
+msgid "Theme Color "
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:172
+#: ../inc/theme-customizer/customizer.php:199
+msgid "Setting for Theme color."
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:198
+msgid "Navigation Color "
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:202
+msgid "Normal Background"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:212
+msgid "Hover Background"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:222
+msgid "Active Background"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:238
+msgid "Body Settings"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:239
+msgid "Please have a set of body."
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:242
+msgid "Body "
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:276
+#: ../inc/theme-customizer/customizer.php:327
+msgid "Background Size"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:293
+msgid "Headings "
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:296
+msgid "Heading Color"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:350
+msgid "Social Settings"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:351
+msgid "Please have a set of social."
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:354
+msgid "Social link"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:355
+msgid "Please enter the link of social services."
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:358
+msgid "Facebook URL"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:364
+msgid "Twitter URL"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:370
+msgid "Github URL"
+msgstr ""
+
+#: ../inc/theme-customizer/customizer.php:376
+msgid "Google+ URL"
+msgstr ""
+
+#: ../inc/theme-customizer/fields/image/class-multi-image-custom-control.php:123
+msgid "Upload"
+msgstr ""
+
+#: ../inc/theme-customizer/fields/image/class-multi-image-custom-control.php:126
+msgid "Remove"
+msgstr ""
+
+#: ../inc/theme-customizer/fields/select/class-taxonomy-dropdown-custom-control.php:30
+msgid "None"
+msgstr ""
+
+#: ../modules/comments.php:28
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: ../modules/comments.php:36 ../modules/comments.php:56
+msgid "Comment navigation"
+msgstr ""
+
+#: ../modules/comments.php:37 ../modules/comments.php:57
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../modules/comments.php:38 ../modules/comments.php:58
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../modules/comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#: ../modules/searchform.php:13 ../modules/searchform.php:15
+msgid "Search"
+msgstr ""
+
+#: ../modules/searchform.php:17
+msgid "Submit"
+msgstr ""
+
+#: ../modules/sidebar.php:27
+msgid "Meta"
+msgstr ""
+
+#: ../templates/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: ../templates/content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../templates/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../templates/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../templates/content-page.php:23 ../templates/content-single.php:33
+#: ../templates/content.php:40 ../templates/template-one-column.php:28
+msgid "Pages:"
+msgstr ""
+
+#: ../templates/content-page.php:30 ../templates/content-single.php:75
+#: ../templates/content.php:77 ../templates/template-one-column.php:35
+msgid "Edit"
+msgstr ""
+
+#: ../templates/content-single.php:44 ../templates/content-single.php:47
+#: ../templates/content.php:52 ../templates/content.php:62
+msgid ", "
+msgstr ""
+
+#: ../templates/content-single.php:52
+#, php-format
+msgid ""
+"This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark"
+"\">permalink</a>."
+msgstr ""
+
+#: ../templates/content-single.php:54
+#, php-format
+msgid "Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../templates/content-single.php:60
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../templates/content-single.php:62
+#, php-format
+msgid ""
+"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark"
+"\">permalink</a>."
+msgstr ""
+
+#: ../templates/content.php:35
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../templates/content.php:56
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: ../templates/content.php:66
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: ../templates/content.php:73
+msgid "Leave a comment"
+msgstr ""
+
+#: ../templates/content.php:73
+msgid "1 Comment"
+msgstr ""
+
+#: ../templates/content.php:73
+msgid "% Comments"
+msgstr ""

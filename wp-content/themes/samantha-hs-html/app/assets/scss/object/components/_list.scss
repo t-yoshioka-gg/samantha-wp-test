@@ -1,0 +1,216 @@
+.c-list {
+  list-style: none;
+
+  li {
+    list-style: inherit;
+  }
+}
+
+
+/*
+---
+name: <ul> 順序なしテキストデフォルト
+category: Base
+---
+
+*/
+
+.c-list.is-disc {
+  > li {
+    list-style: none;
+    padding-left: rem-calc(20);
+    position: relative;
+    margin-bottom: rem-calc(6);
+
+    &::before {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      background: $color-accent-dark;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      left: 0;
+    }
+  }
+
+  ul {
+    > li {
+      list-style: none;
+      padding-left: rem-calc(20);
+      position: relative;
+      margin-bottom: rem-calc(6);
+
+      &::before {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        background: $color-accent-dark;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+      }
+    }
+  }
+
+
+  ol {
+    counter-reset: small_num;
+    list-style: none;
+    padding-left: 0;
+
+    > li {
+      position: relative;
+      padding-left: 22px;
+
+      &:before {
+        position: absolute;
+        counter-increment: small_num;
+        content: counter(small_num) ".";
+        display: inline-block;
+        color: $color-secondary;
+        @include webfont(400);
+        left: 0;
+        top: 0;
+        width: 14px;
+        height: 22px;
+
+      }
+    }
+  }
+
+
+}
+
+/*
+---
+name: <ul> 順序なしテキスト
+category: Base
+---
+
+*/
+.c-list.is-icon {
+  padding-left: rem-calc(20);
+
+  @include breakpoint(small only) {
+    padding-left: rem-calc(18);
+  }
+
+  li {
+    position: relative;
+
+    &::before {
+      content: "\f111";
+      font-size: 0.8em;
+      font-family: "FontAwesome";
+      color: $color-primary;
+      position: absolute;
+      top: rem-calc(4);
+      left: -1.5em;
+      @include breakpoint(small only) {
+        top: rem-calc(4);
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin-left: rem-calc(24);
+      padding-left: rem-calc(18);
+
+      li {
+
+        &::before {
+          content: "・";
+          color: $font-base-color;
+        }
+      }
+    }
+  }
+
+  // is-outline の中に入れた場合にmaker削除
+  > li {
+    list-style: none !important;
+  }
+}
+
+/*
+---
+name: <ol> 順序ありテキスト
+category: Base
+---
+
+*/
+.c-list.is-outline {
+  padding-left: 0;
+  list-style: none;
+  counter-reset: num;
+
+  > li {
+    position: relative;
+    padding-left: rem-calc(22);
+
+    &:before {
+      position: absolute;
+      counter-increment: num;
+      content: counter(num) ".";
+      display: inline-block;
+      color: $color-secondary;
+      @include webfont(400);
+      left: 0;
+      top: 0;
+      width: 14px;
+      height: 22px;
+
+    }
+
+    ol {
+      counter-reset: small_num;
+      list-style: none;
+      padding-left: 0;
+
+
+      > li {
+        position: relative;
+        padding-left: 22px;
+
+        &:before {
+          position: absolute;
+          counter-increment: small_num;
+          content: counter(small_num) ".";
+          display: inline-block;
+          color: $color-secondary;
+          @include webfont(400);
+          left: 0;
+          top: 0;
+          width: 14px;
+          height: 22px;
+
+        }
+      }
+    }
+  }
+
+
+  ul {
+    > li {
+      list-style: none;
+      padding-left: rem-calc(20);
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        background: $color-accent-dark;
+        border-radius: 50%;
+        position: absolute;
+        top: 8px;
+        left: 0;
+      }
+    }
+  }
+}

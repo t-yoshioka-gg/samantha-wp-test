@@ -1,0 +1,373 @@
+/*
+---
+name: ボタン_カラー別
+category: Buttons
+---
+*/
+.c-button {
+  display: inline-block;
+  text-decoration: none;
+  color: $font-base-color;
+  border-bottom: 1px solid $color-accent;
+  padding-bottom: rem-calc(18);
+  padding-right: rem-calc(78);
+  padding-top: rem-calc(8);
+  position: relative;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    @include transition();
+
+  }
+
+  &:before {
+    width: rem-calc(40);
+    height: rem-calc(40);
+    border: 1px solid $color-accent;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+  }
+
+  &:after {
+    width: rem-calc(46);
+    height: rem-calc(6);
+    background-image: url(../images/icon-arrow.png);
+    @include bg-option;
+    background-size: contain;
+    top: rem-calc(17);
+    right: rem-calc(15);
+    @include transition();
+
+  }
+
+  &:hover {
+
+    border-bottom: 1px solid transparent;
+    &:before {
+      transform: scale(1.5);
+      background: $color-accent;
+    }
+
+    &:after {
+      opacity: 0.5;
+    }
+  }
+
+
+}
+
+/*
+---
+name: ボタン_サイズ別
+category: Buttons
+---
+*/
+.c-button {
+  // サイズ設定
+  // -> 大
+  &.is-xlg {
+
+  }
+
+  // -> 中
+  &.is-lg {
+
+  }
+
+  // -> 小
+  &.is-sm {
+    padding-top: rem-calc(5);
+    padding-right: rem-calc(74);
+    padding-bottom: rem-calc(10);
+    &:before {
+      width: rem-calc(30);
+      height: rem-calc(30);
+    }
+    &:after {
+      top: rem-calc(12);
+      right: rem-calc(12);
+
+    }
+
+    &:hover {
+      &:before {
+        transform: scale(1.5);
+      }
+    }
+
+  }
+
+  // -> 極小
+  &.is-xs {
+
+  }
+
+  //ボーダー
+  &__border {
+    color: $font-base-color;
+    font-weight: 400;
+    display: inline-block;
+    text-align: center;
+    min-width: rem-calc(318);
+    padding: rem-calc(15) rem-calc(57) rem-calc(15) rem-calc(20);
+    position: relative;
+    @include breakpoint(small only) {
+      min-width: rem-calc(260);
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      @include transition();
+    }
+    &:before {
+      width: calc(100% - 35px);
+      height: 100%;
+      border: 1px solid $font-base-color;
+      left: 0;
+      top: 0;
+
+    }
+    &:after {
+      width: rem-calc(78);
+      height: rem-calc(6);
+      background-image: url(../images/icon-arrow-long.png);
+      @include bg-option;
+      background-size: contain;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+
+    }
+
+    &:hover {
+      &:before,
+      &:after {
+        opacity: .5;
+      }
+    }
+  }
+
+  //CV
+  &__contact {
+    color: $font-base-color;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    max-width: rem-calc(400);
+    padding: rem-calc(30) rem-calc(50);
+    background: $color-primary;
+    @include font-format(18, .06, 27, 500);
+    @include breakpoint(small only) {
+      font-size: rem-calc(16);
+      padding: 1.8rem;
+    }
+
+    span.icon-contact {
+
+      background-image: url("../images/icon-contact.png");
+      @include bg-option;
+      background-size: contain;
+      display: inline-block;
+      width: 19px;
+      height: 14px;
+      margin-right: 8px;
+    }
+
+
+    &:hover {
+      color: $font-base-color;
+      opacity: .5;
+    }
+
+  }
+
+  //page内リンク
+  &__page-link {
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: rem-calc(16);
+    border-bottom: 2px solid $color-gray-light;
+    text-align: center;
+    color: $font-base-color;
+    min-width: rem-calc(356);
+    margin-bottom: rem-calc(16);
+    @include transition();
+    @include breakpoint(small only) {
+      width: 100%;
+      min-width: auto;
+      &:not(:first-child) {
+        margin-top: rem-calc(16);
+      }
+    }
+
+    span {
+      padding-right: rem-calc(36);
+      position: relative;
+      &:after {
+        content: "\e5cf";
+        font-family: "Material Icons";
+        @include font-format(18, .05, 22, 400);
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+
+    }
+
+    &:hover {
+      border-bottom: 2px solid $color-accent;
+      color: rgba($font-base-color, .5);
+    }
+
+  }
+
+  //フローティング
+  &__floating {
+    position: fixed;
+    right: 0;
+    bottom: rem-calc(80);
+    color: $font-base-color;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    max-width: rem-calc(249);
+    padding: rem-calc(23) rem-calc(20) rem-calc(23) rem-calc(69);
+    background: $color-primary;
+    z-index: 9970;
+    @include font-format(14, .06, 22, 400);
+    @include breakpoint(medium down) {
+      max-width: rem-calc(200);
+      bottom: rem-calc(30);
+      padding: rem-calc(14) rem-calc(14) rem-calc(14) rem-calc(46);
+      @include font-format(12, .06, 19, 400);
+    }
+    @include breakpoint(small only) {
+      max-width: none;
+      width: 100%;
+      bottom: 0;
+      font-size: rem-calc(14);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: rem-calc(14);
+    }
+
+    span.icon-contact {
+      position: absolute;
+      top: 50%;
+      left: rem-calc(30);
+      transform: translateY(-50%);
+      background-image: url("../images/icon-contact.png");
+      @include bg-option;
+      background-size: contain;
+      display: inline-block;
+      width: 19px;
+      height: 14px;
+      margin-right: 8px;
+      @include breakpoint(medium down) {
+        left: rem-calc(16);
+      }
+      @include breakpoint(small only) {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+      }
+    }
+
+
+    &:hover {
+      color: $font-base-color;
+      opacity: .5;
+    }
+
+    &.is-hidden {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+}
+
+
+
+.c-button {
+  // デザイン設定
+
+  // ->矢印左
+  &.is-arrow-left {
+    padding-right: 0;
+    padding-left: rem-calc(72);
+    @include breakpoint(small only){
+      padding-left: rem-calc(60)
+    }
+    &::after {
+      transform: scaleX(-1);
+      right: auto;
+      left: rem-calc(14);
+    }
+    &::before {
+      right: auto;
+      left: 0;
+    }
+  }
+
+  //記事詳細ページ
+  &.is-simple{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: solid 1px $color-black;
+    padding:rem-calc(14) rem-calc(16);
+
+    @include breakpoint(medium up){
+      min-width: rem-calc(190);
+    }
+    @include breakpoint(small only){
+      width: 100%;
+      padding: rem-calc(8);
+    }
+
+    &::before{
+      content: none;
+    }
+    &::after{
+      background: transparent;
+      content:'chevron_right';
+      font-family: "Material Icons";
+      font-size: 1rem;
+      letter-spacing: 0;
+      line-height: 1;
+      width: rem-calc(16);
+      height: rem-calc(16);
+      top: calc(50% - 8px);
+      @include breakpoint(small only){
+        right: rem-calc(8);
+      }
+    }
+    &.is-arrow-left{
+      @include breakpoint(small only){
+        &::after{
+          left: rem-calc(8);
+        }
+      }
+    }
+
+    &:hover {
+      border-color: rgba($color-black, .5);
+    }
+  }
+}

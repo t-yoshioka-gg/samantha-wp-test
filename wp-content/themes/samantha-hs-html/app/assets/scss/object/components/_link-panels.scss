@@ -1,0 +1,146 @@
+.c-link-panels {
+  padding-top: rem-calc(120);
+  padding-bottom: rem-calc(140);
+  @include breakpoint(small only) {
+    padding-top: rem-calc(60);
+    padding-bottom: rem-calc(60);
+  }
+
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+
+  }
+
+  &__images {
+    position: relative;
+  }
+
+
+  &__img {
+    @include bg-option;
+    width: 100%;
+    padding-top: calc(221/380*100%);
+    position: relative;
+    z-index: 0;
+    @include transition();
+
+  }
+
+  &__arrow {
+    position: absolute;
+    width: rem-calc(48);
+    height: rem-calc(48);
+    background: $color-white;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      width: rem-calc(24);
+      height: rem-calc(7);
+      background-image: url(../images/icon-arrow-short.png);
+      @include bg-option;
+      background-size: contain;
+      right: rem-calc(12);
+      bottom: rem-calc(22);
+      @include transition();
+    }
+  }
+
+  &__inner {
+    padding: rem-calc(40);
+    @include transition();
+    @media (max-width: 649px) {
+      padding: rem-calc(30) rem-calc(20);
+    }
+  }
+
+  &__title {
+    .c-heading.is-lg {
+      @include font-format(24, .1, 34, 700);
+      margin-bottom: 0.8rem;
+      @include breakpoint(small only) {
+        font-size: rem-calc(24)*0.8;
+      }
+
+      small {
+        @include font-format(11, .1, 15, 400);
+        margin-bottom: rem-calc(5);
+      }
+
+      b {
+        @include font-format(22, .04, 33, 400);
+      }
+    }
+  }
+
+  &__text {
+    @include font-format(14, .06, 26, 400);
+    color: $color-secondary;
+  }
+
+  &__panel {
+    border: 1px solid $border-base-color;
+    width: calc((99.999%) / 3);
+    text-decoration: none;
+    color: $font-base-color;
+    @include transition();
+    @include breakpoint(large up) {
+      &:not(:nth-child(3n - 2)) {
+        border-left: none;
+      }
+      &:nth-child(n+3) {
+        border-top: none;
+      }
+    }
+
+    @include breakpoint(medium down) {
+      width: calc((100% - 3px) / 2);
+      &:nth-child(even) {
+        border-left: none;
+      }
+      &:nth-child(n+2) {
+        border-top: none;
+      }
+    }
+
+    @media (max-width: 649px) {
+      width: 100%;
+      &:nth-child(even) {
+        border-left: 1px solid $border-base-color;
+      }
+      &:not(:first-child) {
+        border-top: none;
+      }
+    }
+
+    &:hover {
+      opacity: 1;
+
+      .c-link-panels__img {
+        opacity: .5;
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      .c-link-panels__inner {
+        opacity: .5;
+      }
+    }
+
+
+  }
+
+
+}

@@ -1,0 +1,31 @@
+.c-block-area-map {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__map-text{
+    background: $color-white;
+  }
+
+  @include breakpoint(small only){
+    flex-direction: column;
+    &__map-img{
+      width: 80%;
+    }
+    &__map-text{
+      margin-top: rem-calc(24);
+      padding: rem-calc(24) rem-calc(20);
+    }
+  }
+
+  @include breakpoint(medium up){
+    &__map-img{
+      width: calc(490 / 1140 * 100%);
+    }
+    &__map-text{
+      width: calc(588 / 1140 * 100%);
+      padding: rem-calc(44) rem-calc(60);
+    }
+  }
+
+}

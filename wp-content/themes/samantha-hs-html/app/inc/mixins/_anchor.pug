@@ -1,0 +1,9 @@
+//- アンカータグ
+mixin a(href)
+  a(href!= config.rootpath + href )&attributes(attributes)
+    block
+
+//- external link
+mixin a-ex(href)
+  a(href!= href target="_blank")&attributes(attributes)
+    block

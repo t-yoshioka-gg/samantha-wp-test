@@ -1,0 +1,107 @@
+extends /inc/foundation/_base.pug
+block append config
+  - current.id = "homestaging" // ページのID
+  - current.title = "ホームステージングとは" // タイトル
+  - current.description = "これはホームステージングとはの説明文です" // 説明文
+  - current.bodyClass = "homestaging" // body に付与するクラス
+  - current.depth = 2 // ページの階層
+
+block page_header
+  +l_page_header({
+    image: "img-page-header-homestaging.jpg",
+    title: "ホームステージングとは",
+  })
+  +c_breadcrumb()
+
+block body
+  main.l-main
+    section.l-section.is-md
+      .l-container
+        +c_page-lead-block({
+          subtitle: `ABOUT SAMANTHA HOME STAGING`,
+          title: `不動産をスピーディーに<br class="u-hidden-lg"/>売却するための<br class="u-hidden-lg"/>「空間演出」`,
+          text: `家具・小物の設置や片付けなど、物件本来の魅力が伝わる演出を施すことで、<br class="u-hidden-sm"/>検討者の購買意欲を掻き立てる「売却支援サービス」です。<br/>何もない空室や生活感に溢れた居住中のお部屋では、欠点ばかりに注目されてしまいますが、<br class="u-hidden-sm"/>適切な演出＝ホームステージングを行うことにより明るく清潔な印象を与え、<br class="u-hidden-sm">そこでの新生活をイメージさせることができ、早期売却につながりやすくなります。`
+        })
+    section.l-section
+      +c.homestaging-hero
+        +c_hero-block-wide([{
+          switch: true,
+          img01: "img-hero-vacant-before.jpg",
+          img02: "img-hero-vacant-after.jpg",
+          url: "/service/vacant/",
+          subtitle: `VACANT HOME STAGING`,
+          title: `空室ホームステージング`,
+          text: `新築マンションギャラリーのように既存不動産物件や賃貸マンション、高齢者施設等をインテリアでホームステージングします。<br/>ターゲットとなる顧客像に合わせた家具・小物を設置し、お客様に具体的な生活イメージが湧き、ホームステージングされたお部屋を素敵に演出し、物件の価値を正しく評価いただけます。`
+        }, {
+          switch: true,
+          img01: "img-hero-occupied-before.jpg",
+          img02: "img-hero-occupied-after.jpg",
+          url: "/service/occupied/",
+          subtitle: `OCCUPIED HOME STAGING`,
+          title: `居住中ホームステージング`,
+          text: `住みながら売るための、お片付けと空間演出。<br/>専門のホームステージャーが、住宅の演出を行うサービスです。<br/>売主様の住まいを片付け所有品をお借りして演出し、生活感を抑え、物件本来の魅力・価値が伝わる空間をつくります。<br/>物件本来の価値を正しく評価いただけます。`
+        }])
+      .c-homestaging-hero__link: +a("/service/").c-button サービスについてはこちら
+    section.l-section
+      .l-container
+        +c.infographic
+          +c_page-lead-block({
+            class: "is-no-margin",
+            subtitle: `INFOGRAPHIC`,
+            title: `ホームステージングの<br class="u-hidden-lg"/>販促効果`,
+            text: `ホームステージングにより訴求力が高まることで、以下のような効果が期待できます。`
+          })
+          +c_step-flow([
+            {
+              title: `物件本来の価値を<br/>見てもらえる`,
+              text: `物件そのものが持つ ポテンシャルを引き出し、購入後の生活 を イメージしやすく させます。`
+            },
+            {
+              title: `内見者数が<br/>増える`,
+              text: `ホームステージングにより、ポータルサイト・SNS・広告等で公開する写真・動画の見栄えや情報量が向上し、反響率アップが見込めます。`
+            },
+            {
+              title: `売却期間が<br/>短くなる`,
+              text: `内覧者が増え、人気物件である印象が伝わることで、購入希望者に対し、早期決断の後押しに繋がります。`
+            },
+            {
+              title: `価格の下落を<br/>抑えられる`,
+              text: `売却期間の長期化による値下げを防ぐことにつながります。`
+            },
+          ])
+          +e.graphics
+            +c_graphic-card([
+              {
+                title: `当社ホームステージング<br class="u-hidden-lg"/>実施件数<small>（空室・居住中の場合）</small>`,
+                img: "img-infographic-homestaging-01.png"
+              },
+              {
+                title: `サービスを利用した<br class="u-hidden-lg"/>不動産仲介会社の声<span>ホームステージングは効果があると思いますか？</span>`,
+                img: "img-infographic-homestaging-02.png",
+                small:  `出典：ホームステージング白書2020<br/>( 一般社団法人日本ホームステージング協会発行 )`
+              },
+              {
+                title: `ホームステージング後、<br/>契約までの期間は<br class="u-hidden-lg"/>どれくらい？`,
+                img: "img-infographic-homestaging-03.png",
+                small: `出典：ホームステージング白書2020<br/>( 一般社団法人日本ホームステージング協会発行 )`
+              },
+              {
+                title: `平均販売日数の短縮`,
+                img: "img-infographic-homestaging-04.png",
+                small: `出典：ホームステージング白書2017<br/>( 一般社団法人日本ホームステージング協会発行 )`
+              },
+            ])
+    section.l-section.is-bg-color
+      +c.hero-block-homestager
+        +e.bg
+          +bgimg("bg-hero-block-homestager.jpg").c-hero-block-homestager__bg-img
+          +img("img-text-home-stager.png").c-hero-block-homestager__bg-text
+        +e.content
+          +e.card
+            +e.title 経験豊富なスタッフが、確かな品質とサービスで信頼にお応えします
+            +e("p").text 弊社のサービス提供するスタッフは 、一般社団法人日本ホームステージング協会の認定資格「ホームステージャー2級」以上の資格を習得しています 。
+            +a("/about-us/#homestager").c-button.is-sm ホームステージャーとは
+
+
+  +l_offer
+

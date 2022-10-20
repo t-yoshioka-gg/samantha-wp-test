@@ -1,0 +1,166 @@
+.c-plan-card {
+
+  &__content {
+    display: flex;
+    @include breakpoint(medium down) {
+      display: block;
+    }
+  }
+  &.is-vertical{
+    .c-plan-card{
+      &__content{
+        display: block;
+      }
+      &__card{
+        width: 100%;
+        max-width: rem-calc(800);
+        margin: auto;
+      }
+    }
+  }
+
+  &__card {
+    width: calc((100% - 36px) / 2);
+    @include breakpoint(medium down) {
+      width: 100%;
+      margin-bottom: rem-calc(36);
+    }
+    &:nth-child(odd) {
+      margin-right: rem-calc(36);
+    }
+    &:nth-child(even) {
+      .c-plan-card__card-head {
+        background: $color-primary-dark;
+      }
+
+    }
+
+    &-head {
+      color: $color-white;
+      background: $color-secondary;
+      padding: rem-calc(29) rem-calc(62) rem-calc(20);
+      text-align: center;
+      @include webfont();
+      @include font-format(26, .04, 38, 400);
+      @include breakpoint(small only) {
+        padding: rem-calc(16) rem-calc(20) rem-calc(16);
+        font-size: rem-calc(18);
+      }
+
+    }
+
+    &-content {
+      padding: rem-calc(32) rem-calc(37) rem-calc(40);
+      background: $color-background;
+      @include breakpoint(small only) {
+        padding: rem-calc(20) rem-calc(16);
+      }
+    }
+
+    &-price {
+      text-align: center;
+      span {
+        @include webfont-num();
+        @include font-format(36, .06, 54, 400);
+        display: block;
+
+      }
+      small {
+        display: block;
+        font-size: rem-calc(16);
+        color: #626262;
+        @include breakpoint(medium down) {
+          font-size: rem-calc(14);
+        }
+
+      }
+
+    }
+
+    &-text {
+      margin-top: rem-calc(24);
+      @include font-format(14, .06, 26, 400);
+
+      &.is-lg{
+        font-size:rem-calc(16);
+      }
+    }
+
+    &-box {
+      margin-top: rem-calc(24);
+      background: $color-white;
+      padding: rem-calc(20) rem-calc(32);
+      @include font-format(14, .06, 20, 400);
+      @include breakpoint(small only) {
+        padding: rem-calc(10);
+      }
+
+
+      ul.is-inner {
+        color: $color-secondary;
+        li {
+          display: flex;
+          align-items: center;
+          &:not(:first-child) {
+            margin-top: rem-calc(10);
+          }
+
+          span {
+            text-align: center;
+            padding: rem-calc(3) rem-calc(4) rem-calc(4);
+            border: 1px solid $color-secondary;
+            border-radius: 17px;
+            margin-right: rem-calc(10);
+            min-width: rem-calc(91);
+            @include breakpoint(small only) {
+              font-size: rem-calc(12);
+              min-width: rem-calc(70);
+            }
+          }
+          p {
+            @include breakpoint(small only) {
+              font-size: rem-calc(12);
+            }
+
+          }
+        }
+
+        &.is-horizontal{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: rem-calc(-10);
+          margin-left: rem-calc(-10);
+          li{
+            margin-top: rem-calc(10);
+            margin-left: rem-calc(10);
+            span{
+              margin: 0;
+              padding: rem-calc(3) rem-calc(10) rem-calc(4);
+            }
+          }
+        }
+
+
+      }
+    }
+
+    &-table {
+      margin-top: rem-calc(30);
+      .c-table-sm tbody {
+        th,td {
+          text-align: left;
+        }
+      }
+    }
+
+  }
+
+  &__note {
+    margin-top: rem-calc(24);
+    text-align: center;
+    @include breakpoint(small only) {
+      text-align: left;
+    }
+  }
+}

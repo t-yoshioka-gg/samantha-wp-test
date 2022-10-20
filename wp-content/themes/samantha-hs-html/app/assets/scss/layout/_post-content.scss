@@ -1,0 +1,96 @@
+// エディタ出力調整
+//
+// ヴィジュアルエディタ出力調整用css
+//
+
+@use "sass:math";
+
+.l-post-content {
+  // clearfix
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  p,h1,h2,h3,h4,h5,h6{
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+
+  > p,
+  div > p {
+    margin-top: rem-calc(24);
+  }
+  h1 {
+    @extend .c-heading, .is-xlg;
+    margin-top: rem-calc(84);
+  }
+  h2 {
+    @extend .c-heading, .is-lg;
+    margin-top: rem-calc(84);
+  }
+  h3 {
+    @extend .c-heading, .is-md, .is-left;
+    margin-top: rem-calc(84);
+  }
+  h4 {
+    @extend .c-heading, .is-sm;
+    margin-top: rem-calc(80);
+  }
+  h5 {
+    @extend .c-heading, .is-xs;
+    margin-top: rem-calc(72);
+  }
+  h6 {
+    @extend .c-heading, .is-xxs;
+    margin-top: rem-calc(64);
+  }
+
+  dl {
+    margin-top: rem-calc(16);
+    margin-bottom: rem-calc(16);
+
+    dt {
+      font-weight: bold;
+    }
+
+    dd {
+      margin-bottom: 1em;
+    }
+  }
+
+  table {
+    @extend .c-table;
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    @extend .c-list,.is-disc;
+  }
+  ol {
+    @extend .c-list,.is-outline;
+  }
+
+  blockquote{
+    @extend .c-blockquote;
+    margin-top: rem-calc(48);
+    margin-bottom: rem-calc(36);
+    @include breakpoint(small only){
+      margin-top: rem-calc(36);
+      margin-bottom: rem-calc(28);
+    }
+  }
+
+  iframe {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  pre {
+    background: $color-secondary;
+    padding: rem-calc(16) rem-calc(24);
+  }
+}

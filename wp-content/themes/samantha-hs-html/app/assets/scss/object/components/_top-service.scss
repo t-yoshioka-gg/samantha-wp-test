@@ -1,0 +1,8 @@
+.c-top-service {
+  padding-top: rem-calc(151);
+
+  @include breakpoint(small only) {
+    padding-top: rem-calc(60);
+  }
+
+}

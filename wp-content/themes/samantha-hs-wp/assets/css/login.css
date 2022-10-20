@@ -1,0 +1,8 @@
+/**
+ * ログイン画面_ロゴのスタイル
+ */
+#login h1 a {
+	background-size: 224px;
+	height: 64px;
+	width: 234px;
+}

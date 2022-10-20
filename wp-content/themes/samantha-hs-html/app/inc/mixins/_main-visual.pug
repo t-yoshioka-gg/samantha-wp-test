@@ -1,0 +1,50 @@
+//- メインビジュアル
+mixin c_main-visual
+  .c-main-visual__scroll.js-anchor(data-anchor-target="#main")
+    small Scroll Down
+    span
+  +c.main-visual
+    +e.slider
+      +e.main
+        +e.item
+          +bgimg("img-main-visual-01.jpg").c-main-visual__item-image.is-pc
+          +bgimg("img-main-visual-01-sp.jpg").c-main-visual__item-image.is-sp
+          +e.ba.is-before Before
+          +e.ba.is-after After
+          +e.item-content
+            .c-heading.is-xlg
+              b 「住みたい」を引き出す、<br class="u-hidden-sm"/>不動産演出
+              small HOME STAGING SERVICE
+              small CASEⅠ
+        +e.item
+          +bgimg("img-main-visual-02.jpg").c-main-visual__item-image.is-pc
+          +bgimg("img-main-visual-02-sp.jpg").c-main-visual__item-image.is-sp
+          +e.ba.is-before Before
+          +e.ba.is-after After
+          +e.item-content
+            .c-heading.is-xlg
+              b 快適な暮らしづくり
+              small Organize and Manage Possessions
+              small CASEⅡ
+        +e.item
+          +bgimg("img-main-visual-03.jpg").c-main-visual__item-image.is-pc
+          +bgimg("img-main-visual-03-sp.jpg").c-main-visual__item-image.is-sp
+          +e.ba.is-before Before
+          +e.ba.is-after After
+          +e.item-content
+            .c-heading
+              b 新生活を迎える<br class="u-hidden-sm"/>準備をサポート
+              small Packing / Unpacking Support
+              small CASEⅢ
+        //+e.item
+        //  +bgimg("img-main-visual-04.jpg").c-main-visual__item-image.is-pc
+        //  +bgimg("img-main-visual-04-sp.jpg").c-main-visual__item-image.is-sp
+        //  +e.item-content
+        //    .c-heading
+        //      b 「新しい生活様式」に<br class="u-hidden-sm"/>合わせた最新技術
+        //      small Utilizing VR in Home Staging
+    +e.slider-progress
+      +e.slider-progress-bar
+
+
+

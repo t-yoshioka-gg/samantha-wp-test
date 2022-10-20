@@ -1,0 +1,122 @@
+/*
+---
+name: アコーディオン_通常
+category: Components
+---
+*/
+
+.c-accordion-list {
+  &__block {
+    margin-bottom: rem-calc(40);
+    @include breakpoint(small only) {
+      margin-bottom: rem-calc(20);
+    }
+  }
+  &__head {
+    cursor: pointer;
+    @include webfont();
+    @include font-format(20, .04, 30, 400);
+    color: $color-black;
+    border-bottom: 1px solid $color-secondary;
+    padding-bottom: rem-calc(20);
+    padding-right: rem-calc(40);
+    @include transition();
+    position: relative;
+    @include breakpoint(small only) {
+      font-size: rem-calc(14);
+      border-width: 1px;
+      padding-bottom: rem-calc(8);
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      background: $color-secondary;
+      @include transition();
+
+    }
+
+    &:before {
+      width: rem-calc(25);
+      height: rem-calc(1);
+      right: 0;
+      top: rem-calc(16);
+      @include breakpoint(small only) {
+        width: rem-calc(19);
+        top: rem-calc(12);
+      }
+
+    }
+
+    &:after {
+      width: rem-calc(1);
+      height: rem-calc(25);
+      right: rem-calc(12);
+      top: rem-calc(5);
+      @include breakpoint(small only) {
+        height: rem-calc(19);
+        right: rem-calc(9);
+        top: rem-calc(3);
+      }
+    }
+    &:hover {
+      border-bottom: 1px solid $color-accent;
+
+      color: rgba($color-black, .5);
+      &:before,&:after {
+        opacity: .5;
+      }
+    }
+  }
+  &__content {
+    display: none;
+    padding: rem-calc(40) rem-calc(62);
+    @include breakpoint(small only) {
+      padding: rem-calc(20) 0;
+    }
+    ul {
+      li {
+        padding: rem-calc(24) rem-calc(8);
+        border-bottom: 1px solid $border-base-color;
+        @include breakpoint(small only) {
+          padding: rem-calc(16) 0;
+        }
+        a {
+          font-weight: 400;
+
+        }
+      }
+    }
+
+    table.c-table {
+      @include breakpoint(small only) {
+        font-size: rem-calc(13);
+      }
+
+      tbody tr th {
+        @include breakpoint(small only) {
+          width: rem-calc(74);
+          padding: rem-calc(7)
+        }
+
+      }
+    }
+  }
+
+  .is-open {
+    .c-accordion-list__head {
+      color: $color-secondary;
+      border-bottom: 1px solid $color-accent;
+      &:before {
+        background: $color-secondary;
+      }
+      &:after {
+        opacity: 0;
+        visibility: hidden;
+
+      }
+    }
+  }
+}

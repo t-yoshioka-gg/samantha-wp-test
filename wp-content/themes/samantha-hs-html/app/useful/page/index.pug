@@ -1,0 +1,79 @@
+extends /inc/foundation/_base-twocolumn.pug
+block append config
+  - current.id = "page" // ページのID
+  - current.title = "お役立ち情報_詳細" // タイトル
+  - current.description = "これはお役立ち情報_詳細ついての説明文です" // 説明文
+  - current.bodyClass = "page" // body に付与するクラス
+  - current.depth = 3 // ページの階層
+
+block page_header
+  +l_page_header({
+    image: "img-page-header-useful.jpg",
+    title: "お役立ち情報_詳細",
+    subtitle: ""
+  })
+  +c_breadcrumb("お役立ち情報","/useful/")
+
+block body
+  main.l-main
+    section.l-section.is-lg.is-bottom
+      .l-container
+        +c.block-page
+          +h2.title
+            | 見出しレベル2_ここに記事のタイトルが入ります。 ここに記事のタイトルが入ります。
+          +e.meta
+            +e.meta-category
+              +a("#") カテゴリ名が入ります
+            +e.meta-date 2022.05.31
+            +e.meta-tags
+              +c.menu-list.is-post
+                ul.tags
+                  li: +a("#") #タグ名タグ名
+                  li: +a("#") #タグ名
+                  li: +a("#") #タグ名タグ名タグ名
+                  li: +a("#") #タグ名
+                  li: +a("#") #タグ名タグ名タグ名
+                  li: +a("#") #タグ名タグ名タグ名タグ名タグ名
+          .l-post-content
+            p
+              +img("img-default.jpg")
+            <div id="toc_container" class="no_bullets"><p class="toc_title">目次 <span class="toc_toggle">[<a href="#">非表示</a>]</span></p><ul class="toc_list"><li><a href="#Web"><span class="toc_number toc_depth_1">1.</span> Webマーケティングとは？</a></li><li><a href="#Web-2"><span class="toc_number toc_depth_1">2.</span> Webマーケティングのメリットとは？</a><ul><li><a href="#i"><span class="toc_number toc_depth_2">2.1</span> あらゆる方たちに配信ができる</a></li><li><a href="#i-2"><span class="toc_number toc_depth_2">2.2</span> 素早く情報を配信できる</a></li><li><a href="#i-3"><span class="toc_number toc_depth_2">2.3</span> 修正を簡単に実行できる</a></li><li><a href="#i-4"><span class="toc_number toc_depth_2">2.4</span> 少ない費用で情報を配信できる</a></li><li><a href="#i-5"><span class="toc_number toc_depth_2">2.5</span> ターゲットを細かく設定できる</a></li></ul></li></ul></div>
+            h3 見出しレベル3見出しレベル3見出しレベル3見出しレベ
+            h4 見出しレベル4見出しレベル4見出しレベル4見出しレベ
+            h5 見出しレベル5見出しレベル5見出しレベル5見出しレベ
+            h6 見出しレベル6見出しレベル6見出しレベル6見出しレベ
+            p 通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト
+            p
+              strong 強調テキスト
+            p
+              a テキストリンク
+            blockquote 引用テキスト引用テキスト引用テキスト引用テキスト引用テキスト引用テキスト引用テキスト引用テキスト引用テキスト
+
+
+          +c.box-share
+            +e.inner
+              +e.title: span この記事が気に入ったら<br class="u-hidden-lg">「いいね！」
+              +e.items
+                |<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fsamantha-hs.grgr.blue&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId" width="92" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          +c_post_nav
+
+    section.l-section
+      h2.c-heading.is-sm おすすめの記事
+
+      +c.block-posts
+        +loop(5)
+          +a("/useful/page/").c-block-posts__block
+            +e.block-image
+              +bgimg('img-default.jpg').bg-img
+            +e.block-text
+              +h3.block-title 投稿のタイトルがここに入ります。
+              +e.block-category-wrap
+                +span.block-category-label カテゴリ名が入ります
+              +p.block-excerpt 本文内容の一文が抜粋されてここに掲載を行います。本文内容の一文が抜粋されてここに掲載を行います。本文内容の一文が抜粋されてここに掲…[続きを見る]
+              +p.block-date 2022.05.31
+
+
+block aside
+  +l-aside()
+
+

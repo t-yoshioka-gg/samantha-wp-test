@@ -1,0 +1,58 @@
+/*
+---
+name: シェアボックス
+category: PostContent
+---
+# いいねボタンのHTMLは自動生成
+*/
+
+.c-box-share {
+  width: 100%;
+  min-height: rem-calc(270);
+  background: url("../images/bg-sns.jpg");
+  @include bg-option();
+  position: relative;
+  text-align: center;
+  margin: rem-calc(48) 0;
+  @include breakpoint(small only) {
+    margin: rem-calc(24) 0;
+    min-height: rem-calc(200);
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-black,0.6);
+  }
+  &__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    width: 100%;
+  }
+  &__title {
+    color: $color-white;
+    font-size: rem-calc(22);
+    @include webfont(400);
+    letter-spacing: 0.04em;
+    line-height: calc(33/22);
+    margin-bottom: rem-calc(32);
+    @include breakpoint(small only) {
+      font-size: rem-calc(20);
+      margin-bottom: rem-calc(14);
+    }
+  }
+  &__items{
+    position: relative;
+    overflow: hidden;
+    iframe{
+      margin-top: -21px;
+    }
+  }
+}

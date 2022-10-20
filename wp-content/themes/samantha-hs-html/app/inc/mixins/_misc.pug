@@ -1,0 +1,403 @@
+//- img タグ
+mixin img(file,alt,width,height)
+  -
+    if (typeof alt === "undefined") {
+      var alt = ""
+    }
+  img(src=config.rootpath + "/assets/images/" + file, alt!=alt, width!=width, height!=height)&attributes(attributes)
+
+//- 背景画像
+mixin bgimg(file)
+  div(style="background-image: url(" + config.rootpath + "/assets/images/" + file + ")")&attributes(attributes)
+    block
+
+//- ループ
+//- +loop(10)
+//-   p ここにループするコンテンツ
+mixin loop(count)
+  - var n = 0
+  while n < count
+    block
+    - n++
+
+
+
+//- 投稿ページナビゲーション
+mixin c_post_nav()
+  nav.c-post-navs
+    ul
+      li.c-post-navs__prev: +a("#").c-button.is-simple.is-arrow-left 前の記事へ
+      li.c-post-navs__archive: +a("#").c-button.is-simple <span class="material-icons">apps</span>記事一覧へ
+      li.c-post-navs__next: +a("#").c-button.is-simple  次の記事へ
+
+//- table row
+mixin tr(th, td)
+  tr&attributes(attributes)
+    th!= th
+    td!= td
+
+mixin c_relation()
+  +c.relation
+    .l-container
+      +e.title 関連するコンテンツ
+      +e.button
+        ul
+          li: +a("/about-us/") 私たちについて
+          li: +a("/company/greeting/") 代表あいさつ
+          li: +a("/company/profile/") 会社概要
+          li: +a("/company/history/") 沿革
+
+mixin select-prefectures()
+  select(name="都道府県")
+    option(disabled,selected) 選択してください
+    <option value="北海道">北海道</option>
+    <option value="青森県">青森県</option>
+    <option value="岩手県">岩手県</option>
+    <option value="宮城県">宮城県</option>
+    <option value="秋田県">秋田県</option>
+    <option value="山形県">山形県</option>
+    <option value="福島県">福島県</option>
+    <option value="茨城県">茨城県</option>
+    <option value="栃木県">栃木県</option>
+    <option value="群馬県">群馬県</option>
+    <option value="埼玉県">埼玉県</option>
+    <option value="千葉県">千葉県</option>
+    <option value="東京都">東京都</option>
+    <option value="神奈川県">神奈川県</option>
+    <option value="新潟県">新潟県</option>
+    <option value="富山県">富山県</option>
+    <option value="石川県">石川県</option>
+    <option value="福井県">福井県</option>
+    <option value="山梨県">山梨県</option>
+    <option value="長野県">長野県</option>
+    <option value="岐阜県">岐阜県</option>
+    <option value="静岡県">静岡県</option>
+    <option value="愛知県">愛知県</option>
+    <option value="三重県">三重県</option>
+    <option value="滋賀県">滋賀県</option>
+    <option value="京都府">京都府</option>
+    <option value="大阪府">大阪府</option>
+    <option value="兵庫県">兵庫県</option>
+    <option value="奈良県">奈良県</option>
+    <option value="和歌山県">和歌山県</option>
+    <option value="鳥取県">鳥取県</option>
+    <option value="島根県">島根県</option>
+    <option value="岡山県">岡山県</option>
+    <option value="広島県">広島県</option>
+    <option value="山口県">山口県</option>
+    <option value="徳島県">徳島県</option>
+    <option value="香川県">香川県</option>
+    <option value="愛媛県">愛媛県</option>
+    <option value="高知県">高知県</option>
+    <option value="福岡県">福岡県</option>
+    <option value="佐賀県">佐賀県</option>
+    <option value="長崎県">長崎県</option>
+    <option value="熊本県">熊本県</option>
+    <option value="大分県">大分県</option>
+    <option value="宮崎県">宮崎県</option>
+    <option value="鹿児島県">鹿児島県</option>
+    <option value="沖縄県">沖縄県</option>
+
+mixin select-ages()
+  select(name="年齢")
+    option(disabled,selected) 選択してください
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+    <option value="32">32</option>
+    <option value="33">33</option>
+    <option value="34">34</option>
+    <option value="35">35</option>
+    <option value="36">36</option>
+    <option value="37">37</option>
+    <option value="38">38</option>
+    <option value="39">39</option>
+    <option value="40">40</option>
+    <option value="41">41</option>
+    <option value="42">42</option>
+    <option value="43">43</option>
+    <option value="44">44</option>
+    <option value="45">45</option>
+    <option value="46">46</option>
+    <option value="47">47</option>
+    <option value="48">48</option>
+    <option value="49">49</option>
+    <option value="50">50</option>
+    <option value="51">51</option>
+    <option value="52">52</option>
+    <option value="53">53</option>
+    <option value="54">54</option>
+    <option value="55">55</option>
+    <option value="56">56</option>
+    <option value="57">57</option>
+    <option value="58">58</option>
+    <option value="59">59</option>
+    <option value="60">60</option>
+    <option value="61">61</option>
+    <option value="62">62</option>
+    <option value="63">63</option>
+    <option value="64">64</option>
+    <option value="65">65</option>
+    <option value="66">66</option>
+    <option value="67">67</option>
+    <option value="68">68</option>
+    <option value="69">69</option>
+    <option value="70">70</option>
+    <option value="71">71</option>
+    <option value="72">72</option>
+    <option value="73">73</option>
+    <option value="74">74</option>
+    <option value="75">75</option>
+    <option value="76">76</option>
+    <option value="77">77</option>
+    <option value="78">78</option>
+    <option value="79">79</option>
+    <option value="80">80</option>
+    <option value="81">81</option>
+    <option value="82">82</option>
+    <option value="83">83</option>
+    <option value="84">84</option>
+    <option value="85">85</option>
+    <option value="86">86</option>
+    <option value="87">87</option>
+    <option value="88">88</option>
+    <option value="89">89</option>
+    <option value="90">90</option>
+    <option value="91">91</option>
+    <option value="92">92</option>
+    <option value="93">93</option>
+    <option value="94">94</option>
+    <option value="95">95</option>
+    <option value="96">96</option>
+    <option value="97">97</option>
+    <option value="98">98</option>
+    <option value="99">99</option>
+  | 歳
+mixin link(href)
+  link(href=config.rootpath + href)&attributes(attributes)
+
+mixin script(src)
+  script(src=config.rootpath + src)&attributes(attributes)
+
+mixin c_top-service-hero(props)
+  .c-hero-block-square
+    each data in props
+      .c-hero-block-square__block
+        +bgimg(data.img).c-hero-block-square__image
+        +a(data.url).c-hero-block-square__content
+          .c-hero-block-square__inner
+            h3.c-heading.is-lg
+              small !{data.subtitle}
+              b !{data.title}
+            p !{data.text}
+          .c-hero-block-square__arrow
+
+mixin c_top-service-card(props)
+  .c-link-panels
+    .l-container
+      .c-link-panels__content
+        each data in props
+          +a(data.url).c-link-panels__panel
+            .c-link-panels__images
+              +bgimg(data.img).c-link-panels__img
+              .c-link-panels__arrow
+            .c-link-panels__inner
+              .c-link-panels__title
+                h4.c-heading.is-lg
+                  small !{data.subtitle}
+                  b !{data.title}
+              p.c-link-panels__text !{data.text}
+
+mixin c_card-thumb(props)
+  each data in props
+    +a(data.url).c-card-thumb.js-slider-item
+      +bgimg(data.img).c-card-thumb__img
+      .c-card-thumb__content
+        if (data.category)
+          each category in data.category
+            span.c-card-thumb__category !{category}
+        .c-card-thumb__title !{data.text}
+        if (data.tags)
+          ul.c-card-thumb__tags
+            each tag in data.tags
+              li.c-card-thumb__tag #!{tag}
+        .c-card-thumb__date !{data.date}
+
+mixin c_banner-showroom()
+  +a("/showroom/").c-banner-showroom
+    .c-banner-showroom__title
+      .c-heading.is-xlg
+        small 日本橋ショールーム
+        b SHOWROOM
+    .c-banner-showroom__content
+      p.c-banner-showroom__text
+        | 日本橋にたたずむ別世界の空間です。<br/>
+        | レンタルスタジオとしてもご利用できます。
+      .c-banner-showroom__button.c-button__border 詳しくはこちら
+
+
+mixin c_page-lead-block(data)
+  .c-page-lead-block(class=data.class)
+    .c-page-lead-block__title
+      h2.c-heading.is-lg.is-center
+        small !{data.subtitle}
+        b !{data.title}
+    p.c-page-lead-block__text !{data.text}
+
+mixin c_hero-block-wide(props)
+  .c-hero-block-wide
+    each data in props
+      if (data.switch)
+      -
+        var $options = {
+          selector: 'js-tabs',
+          activeClass: 'is-active',
+          navsClass: 'js-tabs-nav',
+          navTargetAttr: 'data-tab-target',
+          paneClass: 'js-tabs-content'
+        }
+      .c-hero-block-wide__block
+        .c-hero-block-wide__images(class=$options.selector)
+          .c-hero-block-wide__image
+            +bgimg(data.img01).c-hero-block-wide__img.is-01(class=$options.paneClass data-tab-name="0")
+            if(data.img02)
+              +bgimg(data.img02).c-hero-block-wide__img.is-02(class=$options.paneClass data-tab-name="1")
+          if(data.switch)
+            ul.c-hero-block-wide__switch(class=$options.navsClass)
+              li: +a("#")(data-tab-target="0").c-hero-block-wide__button.is-before.is-active Before
+              li: +a("#")(data-tab-target="1").c-hero-block-wide__button.is-after After
+        .c-hero-block-wide__content
+          .c-hero-block-wide__title
+            h3.c-heading.is-lg
+              small !{data.subtitle}
+              b !{data.title}
+          .c-hero-block-wide__text !{data.text}
+          if(data.url)
+            .c-hero-block-wide__link
+              +a(data.url).c-button.is-sm 詳しくはこちら
+
+//横並びフローチャート
+mixin c_step-flow(props)
+  ul.c-step-flow
+    each data, i in props
+      li
+        .c-step-flow__num
+          small FLOW
+          span 0!{i + 1}
+        .c-step-flow__content
+          .c-step-flow__title !{data.title}
+          p.c-step-flow__text !{data.text}
+
+mixin c_box-point(props)
+  +c.box-point
+    .l-container
+      +e.list
+        each data, i in props
+          +e.item
+            +e.item-inner
+              +e.item-numbers
+                small POINT
+                span 0!{i + 1}
+              +e.item-title !{data.title}
+              +e.item-text !{data.text}
+
+
+//グラフチャート
+mixin c_graphic-card(props)
+  each data in props
+    .c-graphic-card
+      .c-graphic-card__head
+        .c-graphic-card__title !{data.title}
+        if(data.text)
+          .c-graphic-card__text !{data.text}
+      .c-graphic-card__images
+        +img(data.img).c-graphic-card__img
+        if (data.small)
+          p.c-graphic-card__small !{data.small}
+
+// カード
+mixin c_panel-card(props)
+  each data in props
+    +a(data.url).c-panel-card
+      .c-panel-card__images
+        +bgimg(data.img).c-panel-card__img
+        .c-panel-card__arrow
+      .c-panel-card__inner
+        .c-panel-card__title
+          h4.c-heading.is-lg
+            small !{data.subtitle}
+            b !{data.title}
+        p.c-panel-card__text !{data.text}
+
+
+mixin c_capsul-nav(props)
+  .c-capsul-nav
+    each data in props
+      a.c-capsul-nav__block.c-button__page-link.is-pagelink.js-anchor(target="_self" href=data.id): span !{data.text}
+
+
+mixin c_floating-contact(query)
+  +a(query).c-button__floating <span class="icon-contact"></span>このサービスへの<br class="u-hidden-sm"/>お問い合わせはこちら
+
+//縦積みフローチャート
+mixin c_flow-block(props)
+  .c-box-number
+    each data, i in props
+      - var num = i + 1;
+      .c-box-number__block
+        .c-box-number__head
+          .c-box-number__number
+            if (data.small)
+              small !{data.small}
+            else
+              small FLOW
+            if (num < 10)
+              span 0#{num}
+            else
+              span #{num}
+        .c-box-number__content
+          .c-box-number__title !{data.title}
+          .c-box-number__text !{data.text}
+mixin c_service-relation
+  +c.block-relation
+    .l-container
+      +e.container
+        +e.head
+          +e.title NEXT<br class="u-hidden-md">CONTENTS
+        +e.list
+          +e.item: +a("/service/vacant/").c-block-relation__item-link.js-current-nav 空室ホームステージング
+          +e.item: +a("/service/occupied/").c-block-relation__item-link.js-current-nav 居住中ホームステージング
+          +e.item: +a("/service/still-photography/").c-block-relation__item-link.js-current-nav スチール写真撮影
+          +e.item: +a("/service/still-photography/#3d-walk").c-block-relation__item-link.js-current-nav 3Dウォークスルー動画撮影
+          +e.item: +a("/service/vacant/#vr-home-stasing").c-block-relation__item-link.js-current-nav バーチャルホームステージング<br>roOomy
+          +e.item: +a("/service/home-organization/").c-block-relation__item-link.js-current-nav 片付け代行
+          +e.item: +a("/service/packing-unpacking/").c-block-relation__item-link.js-current-nav 荷造り・荷解き代行

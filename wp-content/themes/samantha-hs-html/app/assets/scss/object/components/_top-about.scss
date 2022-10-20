@@ -1,0 +1,58 @@
+.c-top-about {
+  width: 100%;
+  position: relative;
+  padding-top: rem-calc(162);
+  padding-bottom: rem-calc(120);
+
+
+  @media (max-width: 1140px) {
+    padding-top: rem-calc(300);
+  }
+  @include breakpoint(medium down) {
+    padding-top: 0;
+    padding-bottom: rem-calc(40);
+  }
+  &__bgimg {
+    @include bg-option;
+    background-position-x: right;
+    width: 100%;
+    height: rem-calc(480);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    @include breakpoint(medium down) {
+      background-position-x: 90%;
+      position: relative;
+      height: rem-calc(320);
+    }
+  }
+
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    background: $color-white;
+    padding: rem-calc(80) rem-calc(78) 0 rem-calc(100);
+    max-width: rem-calc(753);
+    @include breakpoint(medium down) {
+      padding: rem-calc(40) rem-calc(60);
+      max-width: none;
+    }
+
+    @include breakpoint(small only) {
+      padding: rem-calc(40) rem-calc(20) ;
+    }
+
+  }
+
+  &__text {
+
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: rem-calc(48);
+  }
+
+}

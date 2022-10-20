@@ -1,0 +1,21 @@
+// regular400
+@mixin webfont($weight:400) {
+  font-family: "Libre Baskerville", "Zen Old Mincho", serif;
+  font-weight: $weight;
+}
+
+@mixin webfont-num($weight:400) {
+  font-family:  "Zen Old Mincho", serif;
+  font-weight: $weight;
+}
+
+@mixin webfont-num-gothic($weight:400) {
+  font-family:  "Robot", sans-serif;
+  font-weight: $weight;
+}
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+- var isFixed = "";
+if current.id == 'top'
+  - var isFixed = "js-fixedheader"
+header.l-header(class=isFixed)
+  .l-header__content
+    if current.id == 'top'
+      h1.l-header__logo: +a("/"): +img("logo.png","サマンサ・ホームステージング")
+    else
+      .l-header__logo: +a("/"): +img("logo.png","サマンサ・ホームステージング")
+    nav.l-header__nav
+      +a("/news/").l-header__news お知らせ一覧<span class="material-symbols-outlined icon-arrow">chevron_right</span>
+      ul
+        li: +a("/about-us/") 私たちについて
+        li: +a("/homestaging/") ホームステージングとは
+        li
+          +a("/service/").l-header__parent サービス
+          .l-header__submenu
+            .l-header__submenu__outer
+              .l-header__submenu__title
+                .c-heading.is-xlg
+                  small SERVICE
+                  b サービス
+              .l-header__submenu__content
+                .l-header__submenu__table
+                  ul
+                    li: +a("/service/vacant/").l-header__submenu__block 空室ホームステージング
+                    li: +a("/service/occupied/").l-header__submenu__block 居住中ホームステージング
+                    li: +a("/service/still-photography/").l-header__submenu__block スチール写真撮影
+                  ul
+                    li: +a("/service/still-photography/#3d-walk").l-header__submenu__block 3Dウォークスルー動画撮影
+                    li: +a("/service/vacant/#vr-home-stasing").l-header__submenu__block バーチャルホームステージング<br/>roOomy
+                    li: +a("/service/home-organization/").l-header__submenu__block 片付け代行
+                  ul
+                    li: +a("/service/packing-unpacking/").l-header__submenu__block 荷造り・荷解き代行
+        li
+          +a("/useful/").l-header__parent お役立ち情報
+          .l-header__submenu
+            .l-header__submenu__outer
+              .l-header__submenu__title
+                .c-heading.is-xlg
+                  small COLUMN
+                  b お役立ち情報
+              .l-header__submenu__content
+                .l-header__submenu__flex
+                  +a("/useful/category/").l-header__submenu__block お役立ち情報
+                  +a("/useful/category/").l-header__submenu__block 用語集
+
+        li: +a("/company/") 会社情報
+        li: +a("/recruit/") 採用情報
+    +a("/contact/").l-header__contact <span class="icon-contact"></span>お問い合わせ
+
+

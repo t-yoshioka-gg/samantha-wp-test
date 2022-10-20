@@ -1,0 +1,81 @@
+.c-hero-block-homestager {
+  padding-top: rem-calc(135);
+  padding-bottom: rem-calc(152);
+  position: relative;
+  @include breakpoint(medium down) {
+    padding-top: 0;
+    padding-bottom: rem-calc(60);
+  }
+  &__bg {
+    background-color: $color-white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: rem-calc(56);
+    z-index: 0;
+    height: auto;
+    @include breakpoint(medium down) {
+      position: relative;
+      padding-top: rem-calc(20);
+    }
+
+    &-img {
+      @include bg-option;
+      z-index: 0;
+      background-size: cover;
+      width: calc(816/1400*100%);
+      padding-top: calc(420/1400*100%);
+      @include breakpoint(medium down) {
+        width: 100%;
+        padding-top: calc(420/816*100%);
+      }
+    }
+
+    &-text {
+
+      width: calc(844/1400*100%);
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__content {
+
+  }
+
+  &__card {
+    position: relative;
+    z-index: 1;
+    background: $color-white;
+    width: calc(738/1400*100%);
+    padding: rem-calc(77) calc(101/1400*100%) rem-calc(77) calc(95/1400*100%);
+    box-shadow: 0 0 30px rgba(#000, .04);
+    margin-left: auto;
+    @include breakpoint(medium down) {
+      width: 100%;
+      padding-top: rem-calc(40);
+      padding-bottom: rem-calc(40);
+    }
+  }
+
+  &__title {
+    @include webfont();
+    @include font-format(30, .06, 45, 400);
+    margin-bottom: rem-calc(24);
+    @include breakpoint(medium down) {
+      @include webfont();
+    @include font-format(25, .06, 35, 400);
+    }
+
+  }
+
+  &__text {
+    line-height: $font-lead-line-height;
+  }
+
+  .c-button {
+    margin-top: rem-calc(32);
+  }
+}

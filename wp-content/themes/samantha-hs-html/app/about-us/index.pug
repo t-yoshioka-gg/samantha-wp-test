@@ -1,0 +1,171 @@
+extends /inc/foundation/_base.pug
+block append config
+  - current.id = "about-us" // ページのID
+  - current.title = "私たちについて" // タイトル
+  - current.description = "これは私たちについてについての説明文です" // 説明文
+  - current.bodyClass = "about-us" // body に付与するクラス
+  - current.depth = 2 // ページの階層
+
+block page_header
+  +l_page_header({
+    image: "img-page-header-about-us.jpg",
+    title: "私たちについて",
+    subtitle: ""
+  })
+  +c_breadcrumb()
+
+block body
+  main.l-main
+    section.l-section
+      .l-container
+        +c.service-page-lead
+          +e.lead
+            +c_page-lead-block({
+              subtitle: `SETTING THE STAGE`,
+              title: `不動産売却のための<br class="u-hidden-lg"/>空間演出`,
+              text: `サマンサ・ホームステージングは日本ホームステージング協会認定のホームステージングカンパニーです。<br class="u-hidden-sm">当社のホームステージャーは全員「ホームステージャー2級※」以上の資格を習得しています。<br class="u-hidden-sm">不動産売却の為のお片づけとインテリア小物設置で内覧のお手伝いを致します。<br class="u-hidden-sm">空き家、空室の家具配置、収納プランニング、インテリアレンタルで家の演出致します。<br><small>※ホームステージャー2級：一般社団法人日本ホームステージング協会認定資格</small>`
+            })
+            .u-text-center.u-mbs.is-top
+              +a('#homestager').c-button.js-anchor ホームステージャーについて
+    section.l-section.is-lg.is-top
+      .l-container
+        h2.c-heading.is-md 会社紹介動画
+        .u-mbs.is-top
+          +c.block-iframe
+            <iframe src="https://www.youtube.com/embed/Rn8n6oUylZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    section.l-section.is-lg.is-top
+      .l-container
+        +c.infographic
+          h3.c-heading.is-md サマンサ・ホームステージング <br class="u-hidden-lg"/>3つの強み
+          +c_box-point([
+            {
+              title: `2012年からホーム<br>ステージングを開始`,
+              text: `創業間もない頃、あるお客様から「持ち家が早く売れるようにサポートしてほしい」というご依頼がありました。<br/>それにお応えするため、片付けとインテリア演出を行ったのが、当社のホームステージングの始まりです。`
+            },
+            {
+              title: `年間サービス提供件数<br/>5,000件以上の実績`,
+              text: `空室・居住中物件のご依頼を合わせて、年間5,000件以上のホームステージングを実施しています。<br/>全国に150名以上在籍している自社専門スタッフの育成・研修に力を入れており、お客様満足度アンケートでは、毎年99％以上の評価をいただいております（2021年現在）。`
+            },
+            {
+              title: `日本全国で<br/>ホームステージングを提供`,
+              text: `空室・居住中ともに日本全国でサービスを提供しており、対象物件は既存の売却用不動産に限らず、新築マンションモデルルームや賃貸住宅、高齢者向け施設も演出いたします。<br/>地方の1物件だけのお見積りから、複数エリアを跨ぐ大規模見学会のご相談まで、幅広く対応いたします。`
+            },
+
+          ])
+    section.l-section.is-lg.is-top
+      .l-container
+        +c_page-lead-block({
+          subtitle: "VISION",
+          title: `ビジョン`,
+        })
+      +c.hero-block-aboutus
+        +e.container
+          +e.inner
+            +e.image
+              +bgimg("img-hero-block-aboutus-01.jpg").c-hero-block-aboutus__bgimg
+            +e.contentbox
+              .l-container
+                +e.content
+                  +e.H2.title
+                    strong 人の役に立ち、世間の役に立ち、<br/>自らの力になる
+                    small “Help people, help the world, help yourself.”
+                  +e.P.text.
+                    当社では、仕事をする上で「チームワークを最も大切にしてほしい」と伝えています。<br/>まず優先すべきことは、「目の前にいる人の役に立とうと努める」こと。<br/>そうすることによって、次第に「世間の役に立っている」ことが実感できるようになり、結果として「自分自身の糧になる」と考えています。
+
+    section.l-section.is-lg.is-top
+      .l-container
+        +c_page-lead-block({
+          subtitle: "MISSION",
+          title: `ミッション`,
+        })
+
+      +c.hero-block-aboutus.is-reverse
+        +e.container
+          +e.inner
+            +e.image
+              +bgimg("img-hero-block-aboutus-02.jpg").c-hero-block-aboutus__bgimg
+            +e.contentbox
+              .l-container
+                +e.content
+                  +e.H2.title
+                    strong ホームステージングで<br/>日本の経済発展に貢献したい
+                  +e.P.text.
+                    ホームステージングは不動産を有利に販売できる最高の手法です。<br/>
+                    このサービスを通じて、適正価格での既存物件の流通を促進し、日本経済の活性化に少しでも貢献できる企業でありたいと考えます。
+
+
+    section.l-section.is-lg
+      .l-container
+        h2.c-heading.is-md 私たちは、ホームステージングの事業を日本全国で<br class="u-hidden-sm">サービスを提供しております。
+        +c.areamap-circle
+          +e.map
+            +img('img-area-map-circle.jpg','事業エリア、提供エリア紹介')
+          +e.content
+            +e.content__list
+              ul
+                li
+                  strong 事業拠点
+                  small 東京・大阪・愛知・福岡・沖縄
+                li
+                  strong ホームステージング提供エリア
+                  small 日本全国<br/><span>エリアによっては、別途、家具配送費や<br/>交通費等をいただく場合がございます。</span>
+            +e.content__button
+              +a('#').c-button サービスについてはこちら
+
+    section.l-section.is-bg-color.is-lg#homestager
+      .l-container
+        .c-heading.is-xlg.is-center
+          small ABOUT HOME STAGER
+          b ホームステージャー<br class="u-hidden-lg"/>について
+      +c.gallery-homestager
+        .c-box-image-slider
+          .c-box-image-slider__slider.owl-carousel.js-image-slider
+            div(style="background-image: url(/assets/images/img-gallery-homestager-01.jpg);").c-box-image-slider__block
+            div(style="background-image: url(/assets/images/img-gallery-homestager-02.jpg);").c-box-image-slider__block
+            div(style="background-image: url(/assets/images/img-gallery-homestager-03.jpg);").c-box-image-slider__block
+            div(style="background-image: url(/assets/images/img-gallery-homestager-04.jpg);").c-box-image-slider__block
+            div(style="background-image: url(/assets/images/img-gallery-homestager-05.jpg);").c-box-image-slider__block
+            div(style="background-image: url(/assets/images/img-gallery-homestager-06.jpg);").c-box-image-slider__block
+            div(style="background-image: url(/assets/images/img-gallery-homestager-07.jpg);").c-box-image-slider__block
+        .l-container
+          +e.whiteboard
+            h2.c-heading.is-md 経験豊富なスタッフが、<br/>確かな品質とサービスで<br class="u-hidden-lg"/>信頼にお応えします
+            p 当社のホームステージャーは全員「ホームステージャー2級※」以上の資格を習得しています。<br class="u-hidden-sm">不動産売却の為のお片づけとインテリア小物設置で内覧のお手伝いを致します。<br class="u-hidden-sm">空き家、空室の家具配置、収納プランニング、インテリアレンタルで家の演出致します。<br><small>※ホームステージャー2級：<br class="u-hidden-lg"/><a href="https://www.homestaging.or.jp/" target="_blank">一般社団法人日本ホームステージング協会認定資格</a></small>
+    section.l-section.is-lg
+      +c.homestaging-hero
+        .l-container
+          .u-mbs.is-bottom
+            h2.c-heading.is-md 日本一のホームステージャーを<br class="u-hidden-lg">育成します
+        +c_hero-block-wide([
+        {
+          switch: false,
+          img01: "img-hero-block-sm-aboutus-01.jpg",
+          title: '',
+          text: `新築マンションギャラリーのように既存不動産物件や賃貸マンション、高齢者施設等をインテリアでホームステージングします。<br>
+                    当社では「ホームステージャー」の育成に力を入れており、日本橋にある自社ショールームを使った実践練習や動画講習など、日頃から丁寧な研修を行っています。<br><br>
+                    実践的なトレーニングをはじめ、日々の挨拶や作業の段取りもお教えしていますので、やる気のある方でしたら、未経験者でも問題なくお仕事を始めていただけます。<br><br>
+                    一般社団法人日本ホームステージング協会が発行する「ホームステージャー認定資格」有資格者の方には、資格手当を支給しております。また、現場経験の数やスキルに応じて昇給するシステムですので、ぜひステップアップを目指してください。`
+        },
+        {
+          switch: false,
+          img01: "img-hero-block-sm-aboutus-02.jpg",
+          title: `スタッフ研修・階級制度`,
+          text: `安定した高品質のサービスをご提供するため、当社ホームステージャーは、日本ホームステージング協会の認定資格「ホームステージャー２級」以上の取得に加え、独自研修を修了した者のみを現場スタッフとして認定しております。<br>
+                    ホームステージングだけではなく、家財の梱包や、割れ物の取り扱いに特化した研修プログラムを、引越梱包経験30年以上のベテランスタッフから学ぶことができます。<br>
+                    また、現場経験を積み、研修をクリアすることでステップアップできる階級制度を設けています。`
+        },
+        {
+          switch: false,
+          img01: "img-hero-block-sm-aboutus-03.jpg",
+          title: `育成サポート体制`,
+          text: `当社スタッフは全国150名以上（2022年現在）。各地のスタッフがスキルアップに励み、モチベーションを保ちながら業務に取り組めるよう、トレーニングセンター（育成専門部署）による定期的な研修会や交流会を行っています。<br>
+                    「守破離」の考えに基づいて、現場責任者であるリーダーや、スタッフ育成にあたるトレーナーを目指すことも可能です。昇格後もフォローアップ研修、更新テストなどを実施し、階級に合わせたスキルの維持・向上に努めていただける仕組みを用意しています。<br>
+                    一人ひとりのスタッフに合わせた、きめ細かい指導・サポートが当社の特徴です。`
+        },
+        ])
+
+        .u-mbs.is-top.is-lg.u-text-center: +a("/recruit/").c-button 採用情報はこちら
+
+
+  +l_offer
+

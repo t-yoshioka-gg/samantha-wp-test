@@ -1,0 +1,163 @@
+extends /inc/foundation/_base.pug
+block append config
+  - current.id = "category" // ページのID
+  - current.title = "お知らせ-カテゴリ" // タイトル
+  - current.description = "これはお知らせ-カテゴリついての説明文です" // 説明文
+  - current.bodyClass = "category" // body に付与するクラス
+  - current.depth = 2 // ページの階層
+
+block page_header
+  +l_page_header({
+    image: "img-page-header-news.jpg",
+    title: "お知らせ",
+    subtitle: ""
+  })
+  +c_breadcrumb()
+
+block body
+  main.l-main
+    section.l-section.is-lg.is-bottom
+      .l-container
+        +c.select-archive
+          div.u-mbs.is-sm.is-bottom.widget-content
+            p.c-heading.is-xs.widget-title 年別アーカイブ
+            select(name="archive-dropdown")#archives-dropdown
+              option(disabled,selected) 最新1年分
+              option(value="July 2022") July 2022
+              option(value="June 2022") June 2022
+              option(value="July 2021") July 2021
+
+
+        +c.tabs.is-index
+          ul.c-tabs__navs
+            li: +a("#") すべて
+            li: +a("#").is-active ニュースリリース
+            li: +a("#") メディア出演
+            li: +a("#") ブログ
+
+          .c-tabs__content.is-active.js-tabs-content(data-tab-name="0")
+            +c.block-lists
+              +e.wrap
+                +c_card-thumb([
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`カテゴリが入ります`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`お役立ち情報`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`お役立ち情報`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`カテゴリカテゴリカテゴリカテゴリ`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`カテゴリが入ります`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`カテゴリが入ります`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`カテゴリが入ります`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`カテゴリが入ります`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`カテゴリが入ります`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`カテゴリが入ります`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`カテゴリが入ります`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`カテゴリが入ります`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`カテゴリが入ります`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`カテゴリが入ります`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                  {
+                    url: "/news/page/",
+                    img: `img-default.jpg`,
+                    category: [`カテゴリが入ります`],
+                    text: `2行まで投稿タイトルが入ります。投稿タイトルが入ります。投稿タイトルがが入ります…`,
+                    date: `2022.05.31`
+                  },
+                ])
+          .c-tabs__content
+          .c-tabs__content
+
+        +c.pagination
+          ul
+            li: +a("#").c-pagination__prev <i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+            li: span.is-current 1
+            li: +a("#") 2
+            li: +a("#") 3
+            li: span.is-dot …
+            li: +a("#") 10
+            li: +a("#").c-pagination__next <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+
+    +l_offer
+

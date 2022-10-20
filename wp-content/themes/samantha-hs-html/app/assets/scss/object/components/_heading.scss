@@ -1,0 +1,224 @@
+/*
+---
+name: 見出し_テンプレート
+category: Heading
+---
+*/
+
+.c-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  @include webfont(400);
+
+  b {
+    display: block;
+    @include webfont();
+
+  }
+
+  small {
+    @include webfont();
+    display: block;
+    color: $color-secondary;
+    @include font-format(15, .16, 22, 400);
+
+  }
+
+
+  //h1
+  &.is-xlg {
+    color: $color-black;
+    @include font-format(36, .06, 52, 400);
+    margin-bottom: rem-calc(40);
+    @include breakpoint(medium down) {
+      @include font-format(25, .06, 35);
+      margin-bottom: 1.6rem;
+    }
+    b {
+      @include webfont(400);
+
+    }
+
+    small {
+      display: block;
+      @include webfont();
+      margin-bottom: .6rem;
+      @include breakpoint(medium down) {
+        @include font-format(12, .08, 19);
+        margin-bottom: rem-calc(10);
+      }
+    }
+  }
+
+
+
+
+  //h2
+  &.is-lg {
+    @include webfont();
+    @include font-format(30, .04, 45, 400);
+    margin-bottom: rem-calc(22);
+    @include breakpoint(medium down) {
+      @include webfont();
+    @include font-format(26, .04, 36, 400);
+    }
+    small {
+      margin-bottom: 0.4rem;
+
+    }
+  }
+
+  //h3
+  &.is-md {
+    @include font-format(26, .04, 38, 400);
+    @include webfont();
+    padding-bottom: rem-calc(24);
+    margin-bottom: rem-calc(24);
+    position: relative;
+    text-align: center;
+    @include breakpoint(medium down) {
+      @include font-format(22, .04, 32);
+      padding-bottom: rem-calc(18);
+    }
+    &:after {
+      content: "";
+      width: rem-calc(68);
+      height: rem-calc(1);
+      background: $color-secondary;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &.is-left{
+      text-align: left;
+      &::after{
+        left: 0;
+        transform: none;
+      }
+    }
+
+  }
+
+  // h4
+  &.is-sm {
+    @include font-format(22, .04, 33, 400);
+    border-bottom: 1px solid $border-base-color;
+    padding-bottom: rem-calc(24);
+    margin-bottom: rem-calc(32);
+    position: relative;
+    @include breakpoint(medium down) {
+      @include font-format(20, .04, 30);
+      padding-bottom: rem-calc(18);
+    }
+
+    &:after {
+      content: "";
+      width: rem-calc(32);
+      height: rem-calc(1);
+      background: $color-secondary;
+      position: absolute;
+      left: 0;
+      bottom: rem-calc(-1);
+    }
+
+    &.is-sidebar{
+      font-size: rem-calc(20);
+      border-color: $color-secondary;
+      padding-bottom: rem-calc(10);
+      margin-bottom: rem-calc(20);
+      &::after{
+        content: none;
+      }
+      small{
+        font-size: rem-calc(11);
+        margin-bottom: rem-calc(8);
+      }
+
+    }
+
+  }
+
+  //h5
+  &.is-xs {
+    @include font-format(20, .04, 30, 400);
+    margin-bottom: 32px;
+    padding-left: rem-calc(20);
+    position: relative;
+    @include breakpoint(small only) {
+      margin-bottom: rem-calc(24);
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      border: 1px solid $color-secondary;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: rem-calc(9);
+    }
+
+  }
+
+  //h6
+  &.is-xxs {
+    @include font-format(18, .04, 22, 400);
+    padding-left: rem-calc(16);
+    border-left: solid 1px $color-secondary;
+  }
+
+
+
+
+}
+
+.c-heading.is-xlg.is-mb-sm,
+.c-heading.is-lg.is-mb-sm {
+  margin-bottom: rem-calc(32);
+  @include breakpoint(small only) {
+    margin-bottom: rem-calc(24);
+  }
+}
+
+.c-heading.is-sm.is-mb-sm,
+.c-heading.is-sm.is-mb-xs{
+  margin-bottom: rem-calc(24);
+  @include breakpoint(small only) {
+    margin-bottom: rem-calc(20);
+  }
+}
+
+.c-heading.is-xlg.is-mb-lg {
+  margin-bottom: rem-calc(48);
+  @include breakpoint(small only) {
+    margin-bottom: rem-calc(30);
+  }
+}
+
+
+.c-heading.is-color-primary {
+  color: $color-primary;
+}
+
+// マージン調整
+.c-heading.is-top {
+  margin-bottom: 0 !important;
+}
+
+.c-heading.is-bottom {
+  margin-top: 0 !important;
+}
+
+.c-heading.is-center{
+  text-align: center;
+}
+
+.c-heading.is-mg-none {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}

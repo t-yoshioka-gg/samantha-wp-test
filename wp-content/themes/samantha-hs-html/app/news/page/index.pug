@@ -1,0 +1,47 @@
+extends /inc/foundation/_base-twocolumn.pug
+block append config
+  - current.id = "news" // ページのID
+  - current.title = "お知らせ" // タイトル
+  - current.description = "これはお知らせの説明文です" // 説明文
+  - current.bodyClass = "news" // body に付与するクラス
+  - current.depth = 3 // ページの階層
+
+block page_header
+  +l_page_header({
+      image: "img-page-header-news.jpg",
+      title: "お知らせ",
+      subtitle: ""
+    })
+  +c_breadcrumb("お知らせ","news")
+
+block body
+  main.l-main
+  section.l-section.is-lg.is-bottom
+    .l-container
+      +c.block-page
+        +h2.title
+          | 見出しレベル2_ここに記事のタイトルが入ります。 ここに記事のタイトルが入ります。
+        +e.meta
+          +e.meta-category
+            +a("#") カテゴリ名が入ります
+          +e.meta-date 2022.05.31
+        .l-post-content
+          +img("img-default.jpg")
+          <div id="toc_container" class="no_bullets"><p class="toc_title">目次 <span class="toc_toggle">[<a href="#">非表示</a>]</span></p><ul class="toc_list"><li><a href="#Web"><span class="toc_number toc_depth_1">1.</span> Webマーケティングとは？</a></li><li><a href="#Web-2"><span class="toc_number toc_depth_1">2.</span> Webマーケティングのメリットとは？</a><ul><li><a href="#i"><span class="toc_number toc_depth_2">2.1</span> あらゆる方たちに配信ができる</a></li><li><a href="#i-2"><span class="toc_number toc_depth_2">2.2</span> 素早く情報を配信できる</a></li><li><a href="#i-3"><span class="toc_number toc_depth_2">2.3</span> 修正を簡単に実行できる</a></li><li><a href="#i-4"><span class="toc_number toc_depth_2">2.4</span> 少ない費用で情報を配信できる</a></li><li><a href="#i-5"><span class="toc_number toc_depth_2">2.5</span> ターゲットを細かく設定できる</a></li></ul></li></ul></div>
+
+          h3 見出しレベル3見出しレベル3見出しレベル3見出しレベ
+          h4 見出しレベル4見出しレベル4見出しレベル4見出しレベ
+          h5 見出しレベル5見出しレベル5見出しレベル5見出しレベ
+          h6 見出しレベル6見出しレベル6見出しレベル6見出しレベ
+          p 通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト通常テキスト
+          p
+            strong 強調テキスト
+          p
+            a テキストリンク
+          blockquote 引用テキスト引用テキスト引用テキスト引用テキスト引用テキスト引用テキスト引用テキスト引用テキスト引用テキスト
+
+
+        +c_post_nav
+
+block aside
+  +l-aside('news')

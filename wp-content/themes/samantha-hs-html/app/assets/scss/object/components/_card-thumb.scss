@@ -1,0 +1,63 @@
+.c-card-thumb {
+  text-decoration: none;
+  color: $font-base-color;
+  display: block;
+  width: 100%;
+  @include transition();
+  &:hover {
+    opacity: .5;
+  }
+
+  &__img {
+    @include bg-option;
+    width: 100%;
+    padding-top: calc(224/356*100%);
+    border: 1px solid $border-base-color;
+
+  }
+
+  &__category {
+    display: inline-block;
+    text-align: center;
+    @include font-format(12,.08, 18, 400);
+    padding: rem-calc(4) rem-calc(14);
+    min-width: rem-calc(105);
+    border: 1px solid $color-black;
+    margin-right: rem-calc(4);
+    margin-top: rem-calc(20);
+
+  }
+
+  &__title {
+    margin-top: rem-calc(16);
+    @include font-format(16, .06, 28, 400);
+
+
+  }
+
+  &__tags {
+    margin-top: rem-calc(14);
+    li {
+      background: rgba($color-gray, 0.1);
+      border-radius: rem-calc(13);
+      display: inline-block;
+      margin-top: rem-calc(8);
+      margin-right: rem-calc(8);
+      padding: rem-calc(3) rem-calc(12);
+      color: $color-gray;
+      @include font-format(12, .08, 18, 400);
+
+
+    }
+  }
+
+  &__date {
+    font-family: Roboto, sans-serif;
+    color: $color-gray;
+    @include font-format(14, .05, 24, 400);
+    margin-top: rem-calc(16);
+    text-align: right;
+
+  }
+
+}
